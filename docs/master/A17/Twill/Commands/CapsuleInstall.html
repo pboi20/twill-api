@@ -1,0 +1,1249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>A17\Twill\Commands\CapsuleInstall | Twill API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../fonts/doctum-font.css">
+        <script src="../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../doctum.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:A17_Twill_Commands_CapsuleInstall" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                    <form action="#">
+                <select  class="form-control" id="version-switcher" name="version">
+                                            <option value="../../../../1.1/index.html" data-version="1.1">1.1 branch</option>
+                                            <option value="../../../../1.2/index.html" data-version="1.2">1.2 branch</option>
+                                            <option value="../../../../2.x/index.html" data-version="2.x">2.x branch</option>
+                                            <option value="../../../../master/index.html" data-version="master">master branch</option>
+                                    </select>
+            </form>
+                <form id="search-form" action="../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">Twill API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                    <li><a href="../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../A17.html">A17</a></li><li class="backslash">\</li><li><a href="../../../A17/Twill.html">Twill</a></li><li class="backslash">\</li><li><a href="../../../A17/Twill/Commands.html">Commands</a></li><li class="backslash">\</li><li>CapsuleInstall</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>CapsuleInstall    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>CapsuleInstall</strong>        extends <a href="../../../A17/Twill/Commands/Command.html"><abbr title="A17\Twill\Commands\Command">Command</abbr></a>        (<a href="https://github.com/area17/twill/blob/master/src/Commands/CapsuleInstall.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            
+        
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_exitCode">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$exitCode</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../A17/Twill/Commands/Command.html#property_exitCode">
+<abbr title="A17\Twill\Commands\Command">Command</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_signature">
+                                        protected                                        string
+                                                                                
+                                    </td>
+                <td>$signature</td>
+                <td class="last"><p>The name and signature of the console command.</p></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_description">
+                                        protected                                        string
+                                                                                
+                                    </td>
+                <td>$description</td>
+                <td class="last"><p>The console command description.</p></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_repositoryUri">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$repositoryUri</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_capsule">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$capsule</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_capsuleName">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$capsuleName</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_repositoryUrl">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$repositoryUrl</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method___call">__call</a>($method, $parameters)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Commands/Command.html#method___call">
+<abbr title="A17\Twill\Commands\Command">Command</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_handle">handle</a>()
+        
+                                            <p><p>Create super admin account.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method___construct">__construct</a>()
+        
+                                            <p><p>Create a new console command instance.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_checkParameters">checkParameters</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_configureInstaller">configureInstaller</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_isFullUrl">isFullUrl</a>($capsule)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getRepositoryUrlPrefix">getRepositoryUrlPrefix</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getAREA17RepositoryPrefix">getAREA17RepositoryPrefix</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getBranch">getBranch</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getZipAddress">getZipAddress</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_makeCapsuleName">makeCapsuleName</a>($capsule)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getCapsulePrefix">getCapsulePrefix</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getService">getService</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_displayConfigurationSummary">displayConfigurationSummary</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getModule">getModule</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_canInstallCapsule">canInstallCapsule</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_installCapsule">installCapsule</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getCapsuleDirectory">getCapsuleDirectory</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_directoryExists">directoryExists</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_download">download</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_cleanTempFile">cleanTempFile</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getTempFileName">getTempFileName</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_repositoryExists">repositoryExists</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_uncompress">uncompress</a>($zip, $directory)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_unzipShellCommandExists">unzipShellCommandExists</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_unzipWithExtension">unzipWithExtension</a>($zip, $directory)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_unzipWithShell">unzipWithShell</a>($zip, $directory)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_renameToCapsule">renameToCapsule</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___call">
+        <div class="location">in <a href="../../../A17/Twill/Commands/Command.html#method___call">
+<abbr title="A17\Twill\Commands\Command">Command</abbr></a> <a href="https://github.com/area17/twill/blob/master/src/Commands/Command.php#L12">at line 12</a></div>
+        <code>                    
+    <strong>__call</strong>($method, $parameters)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$method</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$parameters</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_handle">
+        <div class="location"><a href="https://github.com/area17/twill/blob/master/src/Commands/CapsuleInstall.php#L72">at line 72</a></div>
+        <code>                    
+    <strong>handle</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Create super admin account.</p></p>                        
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location"><a href="https://github.com/area17/twill/blob/master/src/Commands/CapsuleInstall.php#L48">at line 48</a></div>
+        <code>                    void
+    <strong>__construct</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Create a new console command instance.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_checkParameters">
+        <div class="location"><a href="https://github.com/area17/twill/blob/master/src/Commands/CapsuleInstall.php#L87">at line 87</a></div>
+        <code>            protected        
+    <strong>checkParameters</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_configureInstaller">
+        <div class="location"><a href="https://github.com/area17/twill/blob/master/src/Commands/CapsuleInstall.php#L104">at line 104</a></div>
+        <code>            protected        
+    <strong>configureInstaller</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isFullUrl">
+        <div class="location"><a href="https://github.com/area17/twill/blob/master/src/Commands/CapsuleInstall.php#L138">at line 138</a></div>
+        <code>            protected        
+    <strong>isFullUrl</strong>($capsule)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$capsule</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRepositoryUrlPrefix">
+        <div class="location"><a href="https://github.com/area17/twill/blob/master/src/Commands/CapsuleInstall.php#L143">at line 143</a></div>
+        <code>            protected        
+    <strong>getRepositoryUrlPrefix</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAREA17RepositoryPrefix">
+        <div class="location"><a href="https://github.com/area17/twill/blob/master/src/Commands/CapsuleInstall.php#L148">at line 148</a></div>
+        <code>            protected        
+    <strong>getAREA17RepositoryPrefix</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getBranch">
+        <div class="location"><a href="https://github.com/area17/twill/blob/master/src/Commands/CapsuleInstall.php#L159">at line 159</a></div>
+        <code>            protected        
+    <strong>getBranch</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getZipAddress">
+        <div class="location"><a href="https://github.com/area17/twill/blob/master/src/Commands/CapsuleInstall.php#L164">at line 164</a></div>
+        <code>            protected        
+    <strong>getZipAddress</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_makeCapsuleName">
+        <div class="location"><a href="https://github.com/area17/twill/blob/master/src/Commands/CapsuleInstall.php#L173">at line 173</a></div>
+        <code>            protected        
+    <strong>makeCapsuleName</strong>($capsule)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$capsule</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCapsulePrefix">
+        <div class="location"><a href="https://github.com/area17/twill/blob/master/src/Commands/CapsuleInstall.php#L180">at line 180</a></div>
+        <code>            protected        
+    <strong>getCapsulePrefix</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getService">
+        <div class="location"><a href="https://github.com/area17/twill/blob/master/src/Commands/CapsuleInstall.php#L185">at line 185</a></div>
+        <code>                    
+    <strong>getService</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_displayConfigurationSummary">
+        <div class="location"><a href="https://github.com/area17/twill/blob/master/src/Commands/CapsuleInstall.php#L190">at line 190</a></div>
+        <code>            protected        
+    <strong>displayConfigurationSummary</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getModule">
+        <div class="location"><a href="https://github.com/area17/twill/blob/master/src/Commands/CapsuleInstall.php#L219">at line 219</a></div>
+        <code>            protected        
+    <strong>getModule</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_canInstallCapsule">
+        <div class="location"><a href="https://github.com/area17/twill/blob/master/src/Commands/CapsuleInstall.php#L224">at line 224</a></div>
+        <code>            protected        
+    <strong>canInstallCapsule</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_installCapsule">
+        <div class="location"><a href="https://github.com/area17/twill/blob/master/src/Commands/CapsuleInstall.php#L244">at line 244</a></div>
+        <code>            protected        
+    <strong>installCapsule</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCapsuleDirectory">
+        <div class="location"><a href="https://github.com/area17/twill/blob/master/src/Commands/CapsuleInstall.php#L266">at line 266</a></div>
+        <code>            protected        
+    <strong>getCapsuleDirectory</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_directoryExists">
+        <div class="location"><a href="https://github.com/area17/twill/blob/master/src/Commands/CapsuleInstall.php#L271">at line 271</a></div>
+        <code>            protected        
+    <strong>directoryExists</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_download">
+        <div class="location"><a href="https://github.com/area17/twill/blob/master/src/Commands/CapsuleInstall.php#L276">at line 276</a></div>
+        <code>            protected        
+    <strong>download</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_cleanTempFile">
+        <div class="location"><a href="https://github.com/area17/twill/blob/master/src/Commands/CapsuleInstall.php#L292">at line 292</a></div>
+        <code>            protected        
+    <strong>cleanTempFile</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getTempFileName">
+        <div class="location"><a href="https://github.com/area17/twill/blob/master/src/Commands/CapsuleInstall.php#L310">at line 310</a></div>
+        <code>            protected        
+    <strong>getTempFileName</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_repositoryExists">
+        <div class="location"><a href="https://github.com/area17/twill/blob/master/src/Commands/CapsuleInstall.php#L315">at line 315</a></div>
+        <code>            protected        
+    <strong>repositoryExists</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_uncompress">
+        <div class="location"><a href="https://github.com/area17/twill/blob/master/src/Commands/CapsuleInstall.php#L336">at line 336</a></div>
+        <code>            protected        
+    <strong>uncompress</strong>($zip, $directory)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$zip</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$directory</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_unzipShellCommandExists">
+        <div class="location"><a href="https://github.com/area17/twill/blob/master/src/Commands/CapsuleInstall.php#L355">at line 355</a></div>
+        <code>            protected        
+    <strong>unzipShellCommandExists</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_unzipWithExtension">
+        <div class="location"><a href="https://github.com/area17/twill/blob/master/src/Commands/CapsuleInstall.php#L362">at line 362</a></div>
+        <code>            protected        
+    <strong>unzipWithExtension</strong>($zip, $directory)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$zip</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$directory</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_unzipWithShell">
+        <div class="location"><a href="https://github.com/area17/twill/blob/master/src/Commands/CapsuleInstall.php#L387">at line 387</a></div>
+        <code>            protected        
+    <strong>unzipWithShell</strong>($zip, $directory)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$zip</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$directory</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_renameToCapsule">
+        <div class="location"><a href="https://github.com/area17/twill/blob/master/src/Commands/CapsuleInstall.php#L398">at line 398</a></div>
+        <code>                    
+    <strong>renameToCapsule</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

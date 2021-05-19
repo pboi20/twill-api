@@ -1,0 +1,2050 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>A17\Twill\Models\File | Twill API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../fonts/doctum-font.css">
+        <script src="../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../doctum.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:A17_Twill_Models_File" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                    <form action="#">
+                <select  class="form-control" id="version-switcher" name="version">
+                                            <option value="../../../../1.1/index.html" data-version="1.1">1.1 branch</option>
+                                            <option value="../../../../1.2/index.html" data-version="1.2">1.2 branch</option>
+                                            <option value="../../../../2.x/index.html" data-version="2.x">2.x branch</option>
+                                            <option value="../../../../master/index.html" data-version="master">master branch</option>
+                                    </select>
+            </form>
+                <form id="search-form" action="../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">Twill API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                    <li><a href="../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../A17.html">A17</a></li><li class="backslash">\</li><li><a href="../../../A17/Twill.html">Twill</a></li><li class="backslash">\</li><li><a href="../../../A17/Twill/Models.html">Models</a></li><li class="backslash">\</li><li>File</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>File    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>File</strong>        extends <a href="../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a>        (<a href="https://github.com/area17/twill/blob/2.x/src/Models/File.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            
+                <h2>Traits</h2>
+
+        
+    <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-6">
+                    <a href="../../../A17/Twill/Models/Behaviors/HasPresenter.html"><abbr title="A17\Twill\Models\Behaviors\HasPresenter">HasPresenter</abbr></a>    </div>
+                <div class="col-md-6"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                    <abbr title="Illuminate\Database\Eloquent\SoftDeletes">SoftDeletes</abbr>    </div>
+                <div class="col-md-6"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                    <abbr title="Cartalyst\Tags\TaggableTrait">TaggableTrait</abbr>    </div>
+                <div class="col-md-6"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                    <a href="../../../A17/Twill/Models/Behaviors/IsTranslatable.html"><abbr title="A17\Twill\Models\Behaviors\IsTranslatable">IsTranslatable</abbr></a>    </div>
+                <div class="col-md-6"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                    <a href="../../../A17/Twill/Services/Capsules/HasCapsules.html"><abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a>    </div>
+                <div class="col-md-6"></div>
+            </div>
+            </div>
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_presenterInstance">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$presenterInstance</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../A17/Twill/Models/Behaviors/HasPresenter.html#property_presenterInstance">
+<abbr title="A17\Twill\Models\Behaviors\HasPresenter">HasPresenter</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_timestamps">
+                                                                                
+                                                                                
+                                    </td>
+                <td>$timestamps</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_fillable">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$fillable</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_present">present</a>($presenter = &#039;presenter&#039;)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Models/Behaviors/HasPresenter.html#method_present">
+<abbr title="A17\Twill\Models\Behaviors\HasPresenter">HasPresenter</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_presentAdmin">presentAdmin</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Models/Behaviors/HasPresenter.html#method_presentAdmin">
+<abbr title="A17\Twill\Models\Behaviors\HasPresenter">HasPresenter</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setPresenter">setPresenter</a>($presenter, $presenterProperty = &#039;presenter&#039;)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Models/Behaviors/HasPresenter.html#method_setPresenter">
+<abbr title="A17\Twill\Models\Behaviors\HasPresenter">HasPresenter</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setPresenterAdmin">setPresenterAdmin</a>($presenter)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Models/Behaviors/HasPresenter.html#method_setPresenterAdmin">
+<abbr title="A17\Twill\Models\Behaviors\HasPresenter">HasPresenter</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_isTranslatable">isTranslatable</a>($columns = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Models/Behaviors/IsTranslatable.html#method_isTranslatable">
+<abbr title="A17\Twill\Models\Behaviors\IsTranslatable">IsTranslatable</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getAutoloader">getAutoloader</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_getAutoloader">
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getCapsuleList">getCapsuleList</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_getCapsuleList">
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getCapsuleByModel">getCapsuleByModel</a>($model)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_getCapsuleByModel">
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getCapsuleByModule">getCapsuleByModule</a>($module)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_getCapsuleByModule">
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Illuminate\Config\Repository">Repository</abbr>|<abbr title="Illuminate\Contracts\Foundation\Application">Application</abbr>|mixed
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getCapsulesPath">getCapsulesPath</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_getCapsulesPath">
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Illuminate\Config\Repository">Repository</abbr>|<abbr title="Illuminate\Contracts\Foundation\Application">Application</abbr>|mixed
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getCapsulesSubdir">getCapsulesSubdir</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_getCapsulesSubdir">
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_makeCapsule">makeCapsule</a>($capsule, $basePath = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_makeCapsule">
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_registerPsr4Autoloader">registerPsr4Autoloader</a>($capsule)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_registerPsr4Autoloader">
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_capsuleRootPath">capsuleRootPath</a>($capsule)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_capsuleRootPath">
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getCapsuleRepositoryClass">getCapsuleRepositoryClass</a>($model)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_getCapsuleRepositoryClass">
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getCapsuleTranslationClass">getCapsuleTranslationClass</a>($model)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_getCapsuleTranslationClass">
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getCapsuleSlugClass">getCapsuleSlugClass</a>($model)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_getCapsuleSlugClass">
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getCapsuleRevisionClass">getCapsuleRevisionClass</a>($model)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_getCapsuleRevisionClass">
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getCapsuleFormRequestClass">getCapsuleFormRequestClass</a>($model)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_getCapsuleFormRequestClass">
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getCapsuleViewPrefix">getCapsuleViewPrefix</a>($capsule)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_getCapsuleViewPrefix">
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_namespaceToPath">namespaceToPath</a>($capsule, $namespace)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_namespaceToPath">
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_capsuleNamespaceToPath">capsuleNamespaceToPath</a>($namespace, $capsuleNamespace, $rootPath)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_capsuleNamespaceToPath">
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getManager">getManager</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_getManager">
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_seedCapsules">seedCapsules</a>($illuminateSeeder)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_seedCapsules">
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_makeCapsuleSeeder">makeCapsuleSeeder</a>($capsule)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_makeCapsuleSeeder">
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_capsuleExists">capsuleExists</a>($module)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_capsuleExists">
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_isTranslationModel">isTranslationModel</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Models/Model.html#method_isTranslationModel">
+<abbr title="A17\Twill\Models\Model">Model</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_scopePublished">scopePublished</a>($query)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Models/Model.html#method_scopePublished">
+<abbr title="A17\Twill\Models\Model">Model</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_scopePublishedInListings">scopePublishedInListings</a>($query)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Models/Model.html#method_scopePublishedInListings">
+<abbr title="A17\Twill\Models\Model">Model</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_scopeVisible">scopeVisible</a>($query)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Models/Model.html#method_scopeVisible">
+<abbr title="A17\Twill\Models\Model">Model</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setPublishStartDateAttribute">setPublishStartDateAttribute</a>($value)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Models/Model.html#method_setPublishStartDateAttribute">
+<abbr title="A17\Twill\Models\Model">Model</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_scopeDraft">scopeDraft</a>($query)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Models/Model.html#method_scopeDraft">
+<abbr title="A17\Twill\Models\Model">Model</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_scopeOnlyTrashed">scopeOnlyTrashed</a>($query)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Models/Model.html#method_scopeOnlyTrashed">
+<abbr title="A17\Twill\Models\Model">Model</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getFillable">getFillable</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Models/Model.html#method_getFillable">
+<abbr title="A17\Twill\Models\Model">Model</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getTranslatedAttributes">getTranslatedAttributes</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Models/Model.html#method_getTranslatedAttributes">
+<abbr title="A17\Twill\Models\Model">Model</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_bootTaggableTrait">bootTaggableTrait</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Models/Model.html#method_bootTaggableTrait">
+<abbr title="A17\Twill\Models\Model">Model</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Illuminate\Database\Eloquent\Relations\MorphToMany">MorphToMany</abbr>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_tags">tags</a>()
+        
+                                            <p><p>{@inheritdoc}</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Models/Model.html#method_tags">
+<abbr title="A17\Twill\Models\Model">Model</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getSizeAttribute">getSizeAttribute</a>($value)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_canDeleteSafely">canDeleteSafely</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_scopeUnused">scopeUnused</a>($query)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_toCmsArray">toCmsArray</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getTable">getTable</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_present">
+        <div class="location">in <a href="../../../A17/Twill/Models/Behaviors/HasPresenter.html#method_present">
+<abbr title="A17\Twill\Models\Behaviors\HasPresenter">HasPresenter</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Models/Behaviors/HasPresenter.php#L9">at line 9</a></div>
+        <code>                    
+    <strong>present</strong>($presenter = &#039;presenter&#039;)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$presenter</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_presentAdmin">
+        <div class="location">in <a href="../../../A17/Twill/Models/Behaviors/HasPresenter.html#method_presentAdmin">
+<abbr title="A17\Twill\Models\Behaviors\HasPresenter">HasPresenter</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Models/Behaviors/HasPresenter.php#L22">at line 22</a></div>
+        <code>                    
+    <strong>presentAdmin</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setPresenter">
+        <div class="location">in <a href="../../../A17/Twill/Models/Behaviors/HasPresenter.html#method_setPresenter">
+<abbr title="A17\Twill\Models\Behaviors\HasPresenter">HasPresenter</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Models/Behaviors/HasPresenter.php#L27">at line 27</a></div>
+        <code>                    
+    <strong>setPresenter</strong>($presenter, $presenterProperty = &#039;presenter&#039;)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$presenter</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$presenterProperty</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setPresenterAdmin">
+        <div class="location">in <a href="../../../A17/Twill/Models/Behaviors/HasPresenter.html#method_setPresenterAdmin">
+<abbr title="A17\Twill\Models\Behaviors\HasPresenter">HasPresenter</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Models/Behaviors/HasPresenter.php#L35">at line 35</a></div>
+        <code>                    
+    <strong>setPresenterAdmin</strong>($presenter)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$presenter</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isTranslatable">
+        <div class="location">in <a href="../../../A17/Twill/Models/Behaviors/IsTranslatable.html#method_isTranslatable">
+<abbr title="A17\Twill\Models\Behaviors\IsTranslatable">IsTranslatable</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Models/Behaviors/IsTranslatable.php#L7">at line 7</a></div>
+        <code>                    
+    <strong>isTranslatable</strong>($columns = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$columns</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAutoloader">
+        <div class="location">in <a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_getAutoloader">
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L9">at line 9</a></div>
+        <code>            protected        
+    <strong>getAutoloader</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCapsuleList">
+        <div class="location">in <a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_getCapsuleList">
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L16">at line 16</a></div>
+        <code>                    
+    <strong>getCapsuleList</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCapsuleByModel">
+        <div class="location">in <a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_getCapsuleByModel">
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L33">at line 33</a></div>
+        <code>                    
+    <strong>getCapsuleByModel</strong>($model)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$model</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCapsuleByModule">
+        <div class="location">in <a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_getCapsuleByModule">
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L40">at line 40</a></div>
+        <code>                    
+    <strong>getCapsuleByModule</strong>($module)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$module</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCapsulesPath">
+        <div class="location">in <a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_getCapsulesPath">
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L52">at line 52</a></div>
+        <code>                    <abbr title="Illuminate\Config\Repository">Repository</abbr>|<abbr title="Illuminate\Contracts\Foundation\Application">Application</abbr>|mixed
+    <strong>getCapsulesPath</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Illuminate\Config\Repository">Repository</abbr>|<abbr title="Illuminate\Contracts\Foundation\Application">Application</abbr>|mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCapsulesSubdir">
+        <div class="location">in <a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_getCapsulesSubdir">
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L60">at line 60</a></div>
+        <code>                    <abbr title="Illuminate\Config\Repository">Repository</abbr>|<abbr title="Illuminate\Contracts\Foundation\Application">Application</abbr>|mixed
+    <strong>getCapsulesSubdir</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Illuminate\Config\Repository">Repository</abbr>|<abbr title="Illuminate\Contracts\Foundation\Application">Application</abbr>|mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_makeCapsule">
+        <div class="location">in <a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_makeCapsule">
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L67">at line 67</a></div>
+        <code>                    
+    <strong>makeCapsule</strong>($capsule, $basePath = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$capsule</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$basePath</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_registerPsr4Autoloader">
+        <div class="location">in <a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_registerPsr4Autoloader">
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L162">at line 162</a></div>
+        <code>                    
+    <strong>registerPsr4Autoloader</strong>($capsule)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$capsule</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_capsuleRootPath">
+        <div class="location">in <a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_capsuleRootPath">
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L180">at line 180</a></div>
+        <code>                    
+    <strong>capsuleRootPath</strong>($capsule)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$capsule</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCapsuleRepositoryClass">
+        <div class="location">in <a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_getCapsuleRepositoryClass">
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L185">at line 185</a></div>
+        <code>                    
+    <strong>getCapsuleRepositoryClass</strong>($model)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$model</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCapsuleTranslationClass">
+        <div class="location">in <a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_getCapsuleTranslationClass">
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L190">at line 190</a></div>
+        <code>                    
+    <strong>getCapsuleTranslationClass</strong>($model)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$model</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCapsuleSlugClass">
+        <div class="location">in <a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_getCapsuleSlugClass">
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L195">at line 195</a></div>
+        <code>                    
+    <strong>getCapsuleSlugClass</strong>($model)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$model</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCapsuleRevisionClass">
+        <div class="location">in <a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_getCapsuleRevisionClass">
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L200">at line 200</a></div>
+        <code>                    
+    <strong>getCapsuleRevisionClass</strong>($model)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$model</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCapsuleFormRequestClass">
+        <div class="location">in <a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_getCapsuleFormRequestClass">
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L205">at line 205</a></div>
+        <code>                    
+    <strong>getCapsuleFormRequestClass</strong>($model)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$model</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCapsuleViewPrefix">
+        <div class="location">in <a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_getCapsuleViewPrefix">
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L210">at line 210</a></div>
+        <code>                    
+    <strong>getCapsuleViewPrefix</strong>($capsule)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$capsule</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_namespaceToPath">
+        <div class="location">in <a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_namespaceToPath">
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L217">at line 217</a></div>
+        <code>                    
+    <strong>namespaceToPath</strong>($capsule, $namespace)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$capsule</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$namespace</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_capsuleNamespaceToPath">
+        <div class="location">in <a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_capsuleNamespaceToPath">
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L226">at line 226</a></div>
+        <code>                    
+    <strong>capsuleNamespaceToPath</strong>($namespace, $capsuleNamespace, $rootPath)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$namespace</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$capsuleNamespace</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$rootPath</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getManager">
+        <div class="location">in <a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_getManager">
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L240">at line 240</a></div>
+        <code>                    
+    <strong>getManager</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_seedCapsules">
+        <div class="location">in <a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_seedCapsules">
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L245">at line 245</a></div>
+        <code>                    
+    <strong>seedCapsules</strong>($illuminateSeeder)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$illuminateSeeder</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_makeCapsuleSeeder">
+        <div class="location">in <a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_makeCapsuleSeeder">
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L258">at line 258</a></div>
+        <code>                    
+    <strong>makeCapsuleSeeder</strong>($capsule)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$capsule</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_capsuleExists">
+        <div class="location">in <a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_capsuleExists">
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L269">at line 269</a></div>
+        <code>                    
+    <strong>capsuleExists</strong>($module)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$module</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isTranslationModel">
+        <div class="location">in <a href="../../../A17/Twill/Models/Model.html#method_isTranslationModel">
+<abbr title="A17\Twill\Models\Model">Model</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Models/Model.php#L22">at line 22</a></div>
+        <code>            protected        
+    <strong>isTranslationModel</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_scopePublished">
+        <div class="location">in <a href="../../../A17/Twill/Models/Model.html#method_scopePublished">
+<abbr title="A17\Twill\Models\Model">Model</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Models/Model.php#L27">at line 27</a></div>
+        <code>                    
+    <strong>scopePublished</strong>($query)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$query</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_scopePublishedInListings">
+        <div class="location">in <a href="../../../A17/Twill/Models/Model.html#method_scopePublishedInListings">
+<abbr title="A17\Twill\Models\Model">Model</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Models/Model.php#L32">at line 32</a></div>
+        <code>                    
+    <strong>scopePublishedInListings</strong>($query)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$query</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_scopeVisible">
+        <div class="location">in <a href="../../../A17/Twill/Models/Model.html#method_scopeVisible">
+<abbr title="A17\Twill\Models\Model">Model</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Models/Model.php#L41">at line 41</a></div>
+        <code>                    
+    <strong>scopeVisible</strong>($query)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$query</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setPublishStartDateAttribute">
+        <div class="location">in <a href="../../../A17/Twill/Models/Model.html#method_setPublishStartDateAttribute">
+<abbr title="A17\Twill\Models\Model">Model</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Models/Model.php#L58">at line 58</a></div>
+        <code>                    
+    <strong>setPublishStartDateAttribute</strong>($value)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_scopeDraft">
+        <div class="location">in <a href="../../../A17/Twill/Models/Model.html#method_scopeDraft">
+<abbr title="A17\Twill\Models\Model">Model</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Models/Model.php#L63">at line 63</a></div>
+        <code>                    
+    <strong>scopeDraft</strong>($query)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$query</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_scopeOnlyTrashed">
+        <div class="location">in <a href="../../../A17/Twill/Models/Model.html#method_scopeOnlyTrashed">
+<abbr title="A17\Twill\Models\Model">Model</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Models/Model.php#L68">at line 68</a></div>
+        <code>                    
+    <strong>scopeOnlyTrashed</strong>($query)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$query</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFillable">
+        <div class="location">in <a href="../../../A17/Twill/Models/Model.html#method_getFillable">
+<abbr title="A17\Twill\Models\Model">Model</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Models/Model.php#L73">at line 73</a></div>
+        <code>                    
+    <strong>getFillable</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getTranslatedAttributes">
+        <div class="location">in <a href="../../../A17/Twill/Models/Model.html#method_getTranslatedAttributes">
+<abbr title="A17\Twill\Models\Model">Model</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Models/Model.php#L101">at line 101</a></div>
+        <code>                    
+    <strong>getTranslatedAttributes</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_bootTaggableTrait">
+        <div class="location">in <a href="../../../A17/Twill/Models/Model.html#method_bootTaggableTrait">
+<abbr title="A17\Twill\Models\Model">Model</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Models/Model.php#L106">at line 106</a></div>
+        <code>        static    protected        
+    <strong>bootTaggableTrait</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_tags">
+        <div class="location">in <a href="../../../A17/Twill/Models/Model.html#method_tags">
+<abbr title="A17\Twill\Models\Model">Model</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Models/Model.php#L114">at line 114</a></div>
+        <code>                    <abbr title="Illuminate\Database\Eloquent\Relations\MorphToMany">MorphToMany</abbr>
+    <strong>tags</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>{@inheritdoc}</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Illuminate\Database\Eloquent\Relations\MorphToMany">MorphToMany</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSizeAttribute">
+        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Models/File.php#L18">at line 18</a></div>
+        <code>                    
+    <strong>getSizeAttribute</strong>($value)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_canDeleteSafely">
+        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Models/File.php#L23">at line 23</a></div>
+        <code>                    
+    <strong>canDeleteSafely</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_scopeUnused">
+        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Models/File.php#L28">at line 28</a></div>
+        <code>                    
+    <strong>scopeUnused</strong>($query)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$query</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_toCmsArray">
+        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Models/File.php#L34">at line 34</a></div>
+        <code>                    
+    <strong>toCmsArray</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getTable">
+        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Models/File.php#L46">at line 46</a></div>
+        <code>                    
+    <strong>getTable</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

@@ -1,0 +1,3103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>A17\Twill\Http\Controllers\Admin\UserController | Twill API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../../../fonts/doctum-font.css">
+        <script src="../../../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../../../js/bootstrap.min.js"></script>
+        <script src="../../../../../js/typeahead.min.js"></script>
+        <script src="../../../../../doctum.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:A17_Twill_Http_Controllers_Admin_UserController" data-root-path="../../../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                    <form action="#">
+                <select  class="form-control" id="version-switcher" name="version">
+                                            <option value="../../../../../../1.1/index.html" data-version="1.1">1.1 branch</option>
+                                            <option value="../../../../../../1.2/index.html" data-version="1.2">1.2 branch</option>
+                                            <option value="../../../../../../2.x/index.html" data-version="2.x">2.x branch</option>
+                                            <option value="../../../../../../master/index.html" data-version="master">master branch</option>
+                                    </select>
+            </form>
+                <form id="search-form" action="../../../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../../index.html">Twill API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../../classes.html">Classes</a></li>
+                    <li><a href="../../../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../../A17.html">A17</a></li><li class="backslash">\</li><li><a href="../../../../../A17/Twill.html">Twill</a></li><li class="backslash">\</li><li><a href="../../../../../A17/Twill/Http.html">Http</a></li><li class="backslash">\</li><li><a href="../../../../../A17/Twill/Http/Controllers.html">Controllers</a></li><li class="backslash">\</li><li><a href="../../../../../A17/Twill/Http/Controllers/Admin.html">Admin</a></li><li class="backslash">\</li><li>UserController</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>UserController    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>UserController</strong>        extends <a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html"><abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a>        (<a href="https://github.com/area17/twill/blob/1.1/src/Http/Controllers/Admin/UserController.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            
+                <h2>Traits</h2>
+
+        
+    <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-6">
+                    <abbr title="Illuminate\Foundation\Auth\Access\AuthorizesRequests">AuthorizesRequests</abbr>    </div>
+                <div class="col-md-6"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                    <abbr title="Illuminate\Foundation\Bus\DispatchesJobs">DispatchesJobs</abbr>    </div>
+                <div class="col-md-6"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                    <abbr title="Illuminate\Foundation\Validation\ValidatesRequests">ValidatesRequests</abbr>    </div>
+                <div class="col-md-6"></div>
+            </div>
+            </div>
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_app">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$app</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#property_app">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_request">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$request</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#property_request">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_routePrefix">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$routePrefix</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#property_routePrefix">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_moduleName">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$moduleName</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_modelName">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$modelName</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#property_modelName">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_repository">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$repository</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#property_repository">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_defaultIndexOptions">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$defaultIndexOptions</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#property_defaultIndexOptions">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_indexWith">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$indexWith</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_formWith">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$formWith</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#property_formWith">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_formWithCount">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$formWithCount</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#property_formWithCount">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_filters">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$filters</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_defaultOrders">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$defaultOrders</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_perPage">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$perPage</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#property_perPage">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_titleColumnKey">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$titleColumnKey</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_titleFormKey">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$titleFormKey</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#property_titleFormKey">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_featureField">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$featureField</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#property_featureField">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_submodule">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$submodule</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#property_submodule">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_submoduleParentId">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$submoduleParentId</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#property_submoduleParentId">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_disableEditor">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$disableEditor</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#property_disableEditor">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_namespace">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$namespace</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_defaultFilters">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$defaultFilters</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_indexColumns">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$indexColumns</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_indexOptions">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$indexOptions</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_removeMiddleware">removeMiddleware</a>($middleware)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../A17/Twill/Http/Controllers/Admin/Controller.html#method_removeMiddleware">
+<abbr title="A17\Twill\Http\Controllers\Admin\Controller">Controller</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method___construct">__construct</a>(<abbr title="Illuminate\Contracts\Foundation\Application">Application</abbr> $app, <abbr title="Illuminate\Http\Request">Request</abbr> $request)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setMiddlewarePermission">setMiddlewarePermission</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_setMiddlewarePermission">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_index">index</a>($parentModuleId = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_index">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_browser">browser</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_browser">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_store">store</a>($parentModuleId = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_store">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_show">show</a>($id, $submoduleId = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_show">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_edit">edit</a>($id, $submoduleId = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_edit">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_update">update</a>($id, $submoduleId = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_update">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_preview">preview</a>($id)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_preview">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_publish">publish</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_publish">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_bulkPublish">bulkPublish</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_bulkPublish">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_destroy">destroy</a>($id, $submoduleId = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_destroy">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_bulkDelete">bulkDelete</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_bulkDelete">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_restore">restore</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_restore">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_bulkRestore">bulkRestore</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_bulkRestore">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_feature">feature</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_feature">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_bulkFeature">bulkFeature</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_bulkFeature">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_reorder">reorder</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_reorder">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_tags">tags</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_tags">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getIndexData">getIndexData</a>($prependScope = [])
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_getIndexData">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_indexData">indexData</a>($request)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getIndexItems">getIndexItems</a>($scopes = [], $forcePagination = false)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_getIndexItems">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_transformIndexItems">transformIndexItems</a>($items)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_transformIndexItems">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getIndexTableData">getIndexTableData</a>($items)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_getIndexTableData">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_indexItemData">indexItemData</a>($item)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_indexItemData">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getItemColumnData">getItemColumnData</a>($item, $column)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_getItemColumnData">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getIndexTableColumns">getIndexTableColumns</a>($items)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_getIndexTableColumns">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getIndexTableMainFilters">getIndexTableMainFilters</a>($items, $scopes = [])
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getIndexUrls">getIndexUrls</a>($moduleName, $routePrefix)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_getIndexUrls">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getIndexOption">getIndexOption</a>($option)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_getIndexOption">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getBrowserData">getBrowserData</a>($prependScope = [])
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_getBrowserData">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getBrowserTableData">getBrowserTableData</a>($items)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_getBrowserTableData">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getBrowserItems">getBrowserItems</a>($scopes = [])
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_getBrowserItems">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_filterScope">filterScope</a>($prepend = [])
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_filterScope">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getRequestFilters">getRequestFilters</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_orderScope">orderScope</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_orderScope">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_form">form</a>($id)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_form">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_modalFormData">modalFormData</a>($id)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_modalFormData">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_formData">formData</a>($request)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_previewData">previewData</a>($item)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_previewData">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_validateFormRequest">validateFormRequest</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_validateFormRequest">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getNamespace">getNamespace</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_getNamespace">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getRoutePrefix">getRoutePrefix</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_getRoutePrefix">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getModelName">getModelName</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_getModelName">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getRepository">getRepository</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_getRepository">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getViewPrefix">getViewPrefix</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_getViewPrefix">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getModelTitle">getModelTitle</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_getModelTitle">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getParentModuleForeignKey">getParentModuleForeignKey</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_getParentModuleForeignKey">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getPermalinkBaseUrl">getPermalinkBaseUrl</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_getPermalinkBaseUrl">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getPermalinkPrefix">getPermalinkPrefix</a>($baseUrl)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_getPermalinkPrefix">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getModuleRoute">getModuleRoute</a>($id, $action)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_getModuleRoute">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_moduleHas">moduleHas</a>($behavior)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_moduleHas">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setBackLink">setBackLink</a>($back_link = null, $params = [])
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_setBackLink">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getBackLink">getBackLink</a>($fallback = null, $params = [])
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_getBackLink">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getBackLinkSessionKey">getBackLinkSessionKey</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_getBackLinkSessionKey">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_redirectToForm">redirectToForm</a>($id, $params = [])
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_redirectToForm">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_respondWithSuccess">respondWithSuccess</a>($message)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_respondWithSuccess">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_respondWithRedirect">respondWithRedirect</a>($redirectUrl)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_respondWithRedirect">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_respondWithError">respondWithError</a>($message)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_respondWithError">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_respondWithJson">respondWithJson</a>($message, $variant)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_respondWithJson">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_fireEvent">fireEvent</a>($input = [])
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_fireEvent">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a></small></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_removeMiddleware">
+        <div class="location">in <a href="../../../../../A17/Twill/Http/Controllers/Admin/Controller.html#method_removeMiddleware">
+<abbr title="A17\Twill\Http\Controllers\Admin\Controller">Controller</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Http/Controllers/Admin/Controller.php#L14">at line 14</a></div>
+        <code>                    
+    <strong>removeMiddleware</strong>($middleware)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$middleware</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location"><a href="https://github.com/area17/twill/blob/1.1/src/Http/Controllers/Admin/UserController.php#L51">at line 51</a></div>
+        <code>                    
+    <strong>__construct</strong>(<abbr title="Illuminate\Contracts\Foundation\Application">Application</abbr> $app, <abbr title="Illuminate\Http\Request">Request</abbr> $request)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Illuminate\Contracts\Foundation\Application">Application</abbr></td>
+                <td>$app</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Illuminate\Http\Request">Request</abbr></td>
+                <td>$request</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setMiddlewarePermission">
+        <div class="location">in <a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_setMiddlewarePermission">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Http/Controllers/Admin/ModuleController.php#L161">at line 161</a></div>
+        <code>            protected        
+    <strong>setMiddlewarePermission</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_index">
+        <div class="location">in <a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_index">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Http/Controllers/Admin/ModuleController.php#L170">at line 170</a></div>
+        <code>                    
+    <strong>index</strong>($parentModuleId = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$parentModuleId</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_browser">
+        <div class="location">in <a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_browser">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Http/Controllers/Admin/ModuleController.php#L198">at line 198</a></div>
+        <code>                    
+    <strong>browser</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_store">
+        <div class="location">in <a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_store">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Http/Controllers/Admin/ModuleController.php#L203">at line 203</a></div>
+        <code>                    
+    <strong>store</strong>($parentModuleId = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$parentModuleId</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_show">
+        <div class="location">in <a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_show">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Http/Controllers/Admin/ModuleController.php#L228">at line 228</a></div>
+        <code>                    
+    <strong>show</strong>($id, $submoduleId = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$id</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$submoduleId</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_edit">
+        <div class="location">in <a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_edit">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Http/Controllers/Admin/ModuleController.php#L237">at line 237</a></div>
+        <code>                    
+    <strong>edit</strong>($id, $submoduleId = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$id</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$submoduleId</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_update">
+        <div class="location">in <a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_update">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Http/Controllers/Admin/ModuleController.php#L261">at line 261</a></div>
+        <code>                    
+    <strong>update</strong>($id, $submoduleId = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$id</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$submoduleId</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_preview">
+        <div class="location">in <a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_preview">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Http/Controllers/Admin/ModuleController.php#L305">at line 305</a></div>
+        <code>                    
+    <strong>preview</strong>($id)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_publish">
+        <div class="location">in <a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_publish">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Http/Controllers/Admin/ModuleController.php#L325">at line 325</a></div>
+        <code>                    
+    <strong>publish</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_bulkPublish">
+        <div class="location">in <a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_bulkPublish">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Http/Controllers/Admin/ModuleController.php#L352">at line 352</a></div>
+        <code>                    
+    <strong>bulkPublish</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_destroy">
+        <div class="location">in <a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_destroy">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Http/Controllers/Admin/ModuleController.php#L373">at line 373</a></div>
+        <code>                    
+    <strong>destroy</strong>($id, $submoduleId = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$id</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$submoduleId</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_bulkDelete">
+        <div class="location">in <a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_bulkDelete">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Http/Controllers/Admin/ModuleController.php#L385">at line 385</a></div>
+        <code>                    
+    <strong>bulkDelete</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_restore">
+        <div class="location">in <a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_restore">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Http/Controllers/Admin/ModuleController.php#L395">at line 395</a></div>
+        <code>                    
+    <strong>restore</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_bulkRestore">
+        <div class="location">in <a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_bulkRestore">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Http/Controllers/Admin/ModuleController.php#L406">at line 406</a></div>
+        <code>                    
+    <strong>bulkRestore</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_feature">
+        <div class="location">in <a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_feature">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Http/Controllers/Admin/ModuleController.php#L416">at line 416</a></div>
+        <code>                    
+    <strong>feature</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_bulkFeature">
+        <div class="location">in <a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_bulkFeature">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Http/Controllers/Admin/ModuleController.php#L444">at line 444</a></div>
+        <code>                    
+    <strong>bulkFeature</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_reorder">
+        <div class="location">in <a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_reorder">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Http/Controllers/Admin/ModuleController.php#L458">at line 458</a></div>
+        <code>                    
+    <strong>reorder</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_tags">
+        <div class="location">in <a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_tags">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Http/Controllers/Admin/ModuleController.php#L469">at line 469</a></div>
+        <code>                    
+    <strong>tags</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getIndexData">
+        <div class="location">in <a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_getIndexData">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Http/Controllers/Admin/ModuleController.php#L479">at line 479</a></div>
+        <code>            protected        
+    <strong>getIndexData</strong>($prependScope = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$prependScope</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_indexData">
+        <div class="location"><a href="https://github.com/area17/twill/blob/1.1/src/Http/Controllers/Admin/UserController.php#L73">at line 73</a></div>
+        <code>            protected        
+    <strong>indexData</strong>($request)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$request</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getIndexItems">
+        <div class="location">in <a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_getIndexItems">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Http/Controllers/Admin/ModuleController.php#L518">at line 518</a></div>
+        <code>            protected        
+    <strong>getIndexItems</strong>($scopes = [], $forcePagination = false)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$scopes</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$forcePagination</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_transformIndexItems">
+        <div class="location">in <a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_transformIndexItems">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Http/Controllers/Admin/ModuleController.php#L529">at line 529</a></div>
+        <code>            protected        
+    <strong>transformIndexItems</strong>($items)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$items</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getIndexTableData">
+        <div class="location">in <a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_getIndexTableData">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Http/Controllers/Admin/ModuleController.php#L534">at line 534</a></div>
+        <code>            protected        
+    <strong>getIndexTableData</strong>($items)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$items</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_indexItemData">
+        <div class="location">in <a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_indexItemData">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Http/Controllers/Admin/ModuleController.php#L584">at line 584</a></div>
+        <code>            protected        
+    <strong>indexItemData</strong>($item)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$item</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getItemColumnData">
+        <div class="location">in <a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_getItemColumnData">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Http/Controllers/Admin/ModuleController.php#L589">at line 589</a></div>
+        <code>            protected        
+    <strong>getItemColumnData</strong>($item, $column)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$item</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$column</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getIndexTableColumns">
+        <div class="location">in <a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_getIndexTableColumns">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Http/Controllers/Admin/ModuleController.php#L635">at line 635</a></div>
+        <code>            protected        
+    <strong>getIndexTableColumns</strong>($items)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$items</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getIndexTableMainFilters">
+        <div class="location"><a href="https://github.com/area17/twill/blob/1.1/src/Http/Controllers/Admin/UserController.php#L110">at line 110</a></div>
+        <code>                    
+    <strong>getIndexTableMainFilters</strong>($items, $scopes = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$items</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$scopes</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getIndexUrls">
+        <div class="location">in <a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_getIndexUrls">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Http/Controllers/Admin/ModuleController.php#L756">at line 756</a></div>
+        <code>            protected        
+    <strong>getIndexUrls</strong>($moduleName, $routePrefix)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$moduleName</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$routePrefix</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getIndexOption">
+        <div class="location">in <a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_getIndexOption">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Http/Controllers/Admin/ModuleController.php#L778">at line 778</a></div>
+        <code>            protected        
+    <strong>getIndexOption</strong>($option)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$option</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getBrowserData">
+        <div class="location">in <a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_getBrowserData">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Http/Controllers/Admin/ModuleController.php#L808">at line 808</a></div>
+        <code>            protected        
+    <strong>getBrowserData</strong>($prependScope = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$prependScope</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getBrowserTableData">
+        <div class="location">in <a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_getBrowserTableData">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Http/Controllers/Admin/ModuleController.php#L821">at line 821</a></div>
+        <code>            protected        
+    <strong>getBrowserTableData</strong>($items)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$items</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getBrowserItems">
+        <div class="location">in <a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_getBrowserItems">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Http/Controllers/Admin/ModuleController.php#L841">at line 841</a></div>
+        <code>            protected        
+    <strong>getBrowserItems</strong>($scopes = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$scopes</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_filterScope">
+        <div class="location">in <a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_filterScope">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Http/Controllers/Admin/ModuleController.php#L846">at line 846</a></div>
+        <code>            protected        
+    <strong>filterScope</strong>($prepend = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$prepend</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRequestFilters">
+        <div class="location"><a href="https://github.com/area17/twill/blob/1.1/src/Http/Controllers/Admin/UserController.php#L105">at line 105</a></div>
+        <code>            protected        
+    <strong>getRequestFilters</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_orderScope">
+        <div class="location">in <a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_orderScope">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Http/Controllers/Admin/ModuleController.php#L903">at line 903</a></div>
+        <code>            protected        
+    <strong>orderScope</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_form">
+        <div class="location">in <a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_form">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Http/Controllers/Admin/ModuleController.php#L925">at line 925</a></div>
+        <code>            protected        
+    <strong>form</strong>($id)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_modalFormData">
+        <div class="location">in <a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_modalFormData">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Http/Controllers/Admin/ModuleController.php#L959">at line 959</a></div>
+        <code>            protected        
+    <strong>modalFormData</strong>($id)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_formData">
+        <div class="location"><a href="https://github.com/area17/twill/blob/1.1/src/Http/Controllers/Admin/UserController.php#L90">at line 90</a></div>
+        <code>            protected        
+    <strong>formData</strong>($request)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$request</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_previewData">
+        <div class="location">in <a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_previewData">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Http/Controllers/Admin/ModuleController.php#L993">at line 993</a></div>
+        <code>            protected        
+    <strong>previewData</strong>($item)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$item</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_validateFormRequest">
+        <div class="location">in <a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_validateFormRequest">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Http/Controllers/Admin/ModuleController.php#L998">at line 998</a></div>
+        <code>            protected        
+    <strong>validateFormRequest</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getNamespace">
+        <div class="location">in <a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_getNamespace">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Http/Controllers/Admin/ModuleController.php#L1003">at line 1003</a></div>
+        <code>            protected        
+    <strong>getNamespace</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRoutePrefix">
+        <div class="location">in <a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_getRoutePrefix">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Http/Controllers/Admin/ModuleController.php#L1008">at line 1008</a></div>
+        <code>            protected        
+    <strong>getRoutePrefix</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getModelName">
+        <div class="location">in <a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_getModelName">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Http/Controllers/Admin/ModuleController.php#L1018">at line 1018</a></div>
+        <code>            protected        
+    <strong>getModelName</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRepository">
+        <div class="location">in <a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_getRepository">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Http/Controllers/Admin/ModuleController.php#L1023">at line 1023</a></div>
+        <code>            protected        
+    <strong>getRepository</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getViewPrefix">
+        <div class="location">in <a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_getViewPrefix">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Http/Controllers/Admin/ModuleController.php#L1028">at line 1028</a></div>
+        <code>            protected        
+    <strong>getViewPrefix</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getModelTitle">
+        <div class="location">in <a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_getModelTitle">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Http/Controllers/Admin/ModuleController.php#L1033">at line 1033</a></div>
+        <code>            protected        
+    <strong>getModelTitle</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getParentModuleForeignKey">
+        <div class="location">in <a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_getParentModuleForeignKey">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Http/Controllers/Admin/ModuleController.php#L1038">at line 1038</a></div>
+        <code>            protected        
+    <strong>getParentModuleForeignKey</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPermalinkBaseUrl">
+        <div class="location">in <a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_getPermalinkBaseUrl">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Http/Controllers/Admin/ModuleController.php#L1043">at line 1043</a></div>
+        <code>            protected        
+    <strong>getPermalinkBaseUrl</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPermalinkPrefix">
+        <div class="location">in <a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_getPermalinkPrefix">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Http/Controllers/Admin/ModuleController.php#L1052">at line 1052</a></div>
+        <code>            protected        
+    <strong>getPermalinkPrefix</strong>($baseUrl)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$baseUrl</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getModuleRoute">
+        <div class="location">in <a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_getModuleRoute">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Http/Controllers/Admin/ModuleController.php#L1057">at line 1057</a></div>
+        <code>            protected        
+    <strong>getModuleRoute</strong>($id, $action)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$id</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$action</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_moduleHas">
+        <div class="location">in <a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_moduleHas">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Http/Controllers/Admin/ModuleController.php#L1067">at line 1067</a></div>
+        <code>            protected        
+    <strong>moduleHas</strong>($behavior)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$behavior</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setBackLink">
+        <div class="location">in <a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_setBackLink">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Http/Controllers/Admin/ModuleController.php#L1072">at line 1072</a></div>
+        <code>            protected        
+    <strong>setBackLink</strong>($back_link = null, $params = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$back_link</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$params</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getBackLink">
+        <div class="location">in <a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_getBackLink">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Http/Controllers/Admin/ModuleController.php#L1092">at line 1092</a></div>
+        <code>            protected        
+    <strong>getBackLink</strong>($fallback = null, $params = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$fallback</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$params</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getBackLinkSessionKey">
+        <div class="location">in <a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_getBackLinkSessionKey">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Http/Controllers/Admin/ModuleController.php#L1098">at line 1098</a></div>
+        <code>            protected        
+    <strong>getBackLinkSessionKey</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_redirectToForm">
+        <div class="location">in <a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_redirectToForm">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Http/Controllers/Admin/ModuleController.php#L1103">at line 1103</a></div>
+        <code>            protected        
+    <strong>redirectToForm</strong>($id, $params = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$id</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$params</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_respondWithSuccess">
+        <div class="location">in <a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_respondWithSuccess">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Http/Controllers/Admin/ModuleController.php#L1115">at line 1115</a></div>
+        <code>            protected        
+    <strong>respondWithSuccess</strong>($message)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$message</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_respondWithRedirect">
+        <div class="location">in <a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_respondWithRedirect">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Http/Controllers/Admin/ModuleController.php#L1120">at line 1120</a></div>
+        <code>            protected        
+    <strong>respondWithRedirect</strong>($redirectUrl)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$redirectUrl</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_respondWithError">
+        <div class="location">in <a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_respondWithError">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Http/Controllers/Admin/ModuleController.php#L1127">at line 1127</a></div>
+        <code>            protected        
+    <strong>respondWithError</strong>($message)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$message</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_respondWithJson">
+        <div class="location">in <a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_respondWithJson">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Http/Controllers/Admin/ModuleController.php#L1132">at line 1132</a></div>
+        <code>            protected        
+    <strong>respondWithJson</strong>($message, $variant)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$message</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$variant</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_fireEvent">
+        <div class="location">in <a href="../../../../../A17/Twill/Http/Controllers/Admin/ModuleController.html#method_fireEvent">
+<abbr title="A17\Twill\Http\Controllers\Admin\ModuleController">ModuleController</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Http/Controllers/Admin/ModuleController.php#L1140">at line 1140</a></div>
+        <code>            protected        
+    <strong>fireEvent</strong>($input = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$input</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

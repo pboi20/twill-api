@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>A17\Twill\Repositories\Behaviors\HandleBrowsers | Twill API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../../fonts/doctum-font.css">
+        <script src="../../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../../js/bootstrap.min.js"></script>
+        <script src="../../../../js/typeahead.min.js"></script>
+        <script src="../../../../doctum.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:A17_Twill_Repositories_Behaviors_HandleBrowsers" data-root-path="../../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                    <form action="#">
+                <select  class="form-control" id="version-switcher" name="version">
+                                            <option value="../../../../../1.1/index.html" data-version="1.1">1.1 branch</option>
+                                            <option value="../../../../../1.2/index.html" data-version="1.2">1.2 branch</option>
+                                            <option value="../../../../../2.x/index.html" data-version="2.x">2.x branch</option>
+                                            <option value="../../../../../master/index.html" data-version="master">master branch</option>
+                                    </select>
+            </form>
+                <form id="search-form" action="../../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Twill API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                    <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">trait</span></li>
+                        <li><a href="../../../../A17.html">A17</a></li><li class="backslash">\</li><li><a href="../../../../A17/Twill.html">Twill</a></li><li class="backslash">\</li><li><a href="../../../../A17/Twill/Repositories.html">Repositories</a></li><li class="backslash">\</li><li><a href="../../../../A17/Twill/Repositories/Behaviors.html">Behaviors</a></li><li class="backslash">\</li><li>HandleBrowsers</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>HandleBrowsers    
+            </h1>
+    </div>
+
+    
+    <p>        trait
+    <strong>HandleBrowsers</strong>        (<a href="https://github.com/area17/twill/blob/1.2/src/Repositories/Behaviors/HandleBrowsers.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            
+        
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_afterSaveHandleBrowsers">afterSaveHandleBrowsers</a>(<a href="../../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a> $object, array $fields)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getFormFieldsHandleBrowsers">getFormFieldsHandleBrowsers</a>(<a href="../../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a> $object, array $fields)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_updateBrowser">updateBrowser</a>(<a href="../../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a> $object, array $fields, string $relationship, string $positionAttribute = &#039;position&#039;, $browserName = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_updateOrderedBelongsTomany">updateOrderedBelongsTomany</a>(<a href="../../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a> $object, array $fields, string $relationship, string $positionAttribute = &#039;position&#039;)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_updateRelatedBrowser">updateRelatedBrowser</a>(mixed $object, array $fields, string $browserName)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getFormFieldsForBrowser">getFormFieldsForBrowser</a>(<a href="../../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a> $object, string $relation, string|null $routePrefix = null, string $titleKey = &#039;title&#039;, string|null $moduleName = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getFormFieldsForRelatedBrowser">getFormFieldsForRelatedBrowser</a>(<a href="../../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a> $object, string $relation)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_afterSaveHandleBrowsers">
+        <div class="location"><a href="https://github.com/area17/twill/blob/1.2/src/Repositories/Behaviors/HandleBrowsers.php#L12">at line 12</a></div>
+        <code>                    void
+    <strong>afterSaveHandleBrowsers</strong>(<a href="../../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a> $object, array $fields)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a></td>
+                <td>$object</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$fields</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFormFieldsHandleBrowsers">
+        <div class="location"><a href="https://github.com/area17/twill/blob/1.2/src/Repositories/Behaviors/HandleBrowsers.php#L33">at line 33</a></div>
+        <code>                    array
+    <strong>getFormFieldsHandleBrowsers</strong>(<a href="../../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a> $object, array $fields)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a></td>
+                <td>$object</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$fields</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_updateBrowser">
+        <div class="location"><a href="https://github.com/area17/twill/blob/1.2/src/Repositories/Behaviors/HandleBrowsers.php#L60">at line 60</a></div>
+        <code>                    void
+    <strong>updateBrowser</strong>(<a href="../../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a> $object, array $fields, string $relationship, string $positionAttribute = &#039;position&#039;, $browserName = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a></td>
+                <td>$object</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$fields</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$relationship</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$positionAttribute</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$browserName</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_updateOrderedBelongsTomany">
+        <div class="location"><a href="https://github.com/area17/twill/blob/1.2/src/Repositories/Behaviors/HandleBrowsers.php#L81">at line 81</a></div>
+        <code>                    void
+    <strong>updateOrderedBelongsTomany</strong>(<a href="../../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a> $object, array $fields, string $relationship, string $positionAttribute = &#039;position&#039;)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a></td>
+                <td>$object</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$fields</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$relationship</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$positionAttribute</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_updateRelatedBrowser">
+        <div class="location"><a href="https://github.com/area17/twill/blob/1.2/src/Repositories/Behaviors/HandleBrowsers.php#L92">at line 92</a></div>
+        <code>                    void
+    <strong>updateRelatedBrowser</strong>(mixed $object, array $fields, string $browserName)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$object</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$fields</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$browserName</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFormFieldsForBrowser">
+        <div class="location"><a href="https://github.com/area17/twill/blob/1.2/src/Repositories/Behaviors/HandleBrowsers.php#L105">at line 105</a></div>
+        <code>                    array
+    <strong>getFormFieldsForBrowser</strong>(<a href="../../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a> $object, string $relation, string|null $routePrefix = null, string $titleKey = &#039;title&#039;, string|null $moduleName = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a></td>
+                <td>$object</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$relation</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$routePrefix</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$titleKey</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$moduleName</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFormFieldsForRelatedBrowser">
+        <div class="location"><a href="https://github.com/area17/twill/blob/1.2/src/Repositories/Behaviors/HandleBrowsers.php#L124">at line 124</a></div>
+        <code>                    array
+    <strong>getFormFieldsForRelatedBrowser</strong>(<a href="../../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a> $object, string $relation)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a></td>
+                <td>$object</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$relation</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>A17\Twill\Exceptions\Handler | Twill API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../fonts/doctum-font.css">
+        <script src="../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../doctum.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:A17_Twill_Exceptions_Handler" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                    <form action="#">
+                <select  class="form-control" id="version-switcher" name="version">
+                                            <option value="../../../../1.1/index.html" data-version="1.1">1.1 branch</option>
+                                            <option value="../../../../1.2/index.html" data-version="1.2">1.2 branch</option>
+                                            <option value="../../../../2.x/index.html" data-version="2.x">2.x branch</option>
+                                            <option value="../../../../master/index.html" data-version="master">master branch</option>
+                                    </select>
+            </form>
+                <form id="search-form" action="../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">Twill API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                    <li><a href="../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../A17.html">A17</a></li><li class="backslash">\</li><li><a href="../../../A17/Twill.html">Twill</a></li><li class="backslash">\</li><li><a href="../../../A17/Twill/Exceptions.html">Exceptions</a></li><li class="backslash">\</li><li>Handler</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>Handler    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>Handler</strong>        extends <abbr title="Illuminate\Foundation\Exceptions\Handler">Handler</abbr>        (<a href="https://github.com/area17/twill/blob/1.2/src/Exceptions/Handler.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            
+        
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_dontReport">
+                                        protected                                        string[]
+                                                                                
+                                    </td>
+                <td>$dontReport</td>
+                <td class="last"><p>Exceptions excluded from reporting.</p></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_isJsonOutputFormat">
+                                        protected                                        bool
+                                                                                
+                                    </td>
+                <td>$isJsonOutputFormat</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_redirector">
+                                        protected                                        <abbr title="Illuminate\Routing\Redirector">Redirector</abbr>
+                                                                                
+                                    </td>
+                <td>$redirector</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_urlGenerator">
+                                        protected                                        <abbr title="Illuminate\Routing\UrlGenerator">UrlGenerator</abbr>
+                                                                                
+                                    </td>
+                <td>$urlGenerator</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_app">
+                                        protected                                        <abbr title="Illuminate\Foundation\Application">Application</abbr>
+                                                                                
+                                    </td>
+                <td>$app</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_viewFactory">
+                                        protected                                        <abbr title="Illuminate\View\Factory">Factory</abbr>
+                                                                                
+                                    </td>
+                <td>$viewFactory</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_responseFactory">
+                                        protected                                        <abbr title="Illuminate\Routing\ResponseFactory">ResponseFactory</abbr>
+                                                                                
+                                    </td>
+                <td>$responseFactory</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_config">
+                                        protected                                        <abbr title="Illuminate\Config\Repository">Repository</abbr>
+                                                                                
+                                    </td>
+                <td>$config</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method___construct">__construct</a>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container, <abbr title="Illuminate\Routing\Redirector">Redirector</abbr> $redirector, <abbr title="Illuminate\Routing\UrlGenerator">UrlGenerator</abbr> $urlGenerator, <abbr title="Illuminate\Foundation\Application">Application</abbr> $app, <abbr title="Illuminate\View\Factory">Factory</abbr> $viewFactory, <abbr title="Illuminate\Routing\ResponseFactory">ResponseFactory</abbr> $responseFactory, <abbr title="Illuminate\Config\Repository">Repository</abbr> $config)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_report">report</a>(<a target="_blank" rel="noopener" href="https://www.php.net/Exception">Exception</a> $e)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Illuminate\Contracts\Routing\ResponseFactory">ResponseFactory</abbr>|<abbr title="Illuminate\Http\JsonResponse">JsonResponse</abbr>|<abbr title="Illuminate\Http\RedirectResponse">RedirectResponse</abbr>|<abbr title="Illuminate\Http\Response">Response</abbr>|string|<abbr title="A17\Twill\Exceptions\Response">Response</abbr>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_render">render</a>(<abbr title="Illuminate\Http\Request">Request</abbr> $request, <a target="_blank" rel="noopener" href="https://www.php.net/Exception">Exception</a> $e)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Illuminate\Http\Response">Response</abbr>|<abbr title="A17\Twill\Exceptions\Response">Response</abbr>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_renderHttpExceptionWithView">renderHttpExceptionWithView</a>(<abbr title="Illuminate\Http\Request">Request</abbr> $request, <a target="_blank" rel="noopener" href="https://www.php.net/Exception">Exception</a> $e)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Illuminate\Contracts\Routing\ResponseFactory">ResponseFactory</abbr>|<abbr title="Illuminate\Http\Response">Response</abbr>|array
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_renderExceptionWithWhoops">renderExceptionWithWhoops</a>(<a target="_blank" rel="noopener" href="https://www.php.net/Exception">Exception</a> $e)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_unsetSensitiveData">unsetSensitiveData</a>()
+        
+                                            <p><p>Don't ever display sensitive data in Whoops pages.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Illuminate\Http\JsonResponse">JsonResponse</abbr>|<abbr title="Illuminate\Http\RedirectResponse">RedirectResponse</abbr>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_handleUnauthenticated">handleUnauthenticated</a>(<abbr title="Illuminate\Http\Request">Request</abbr> $request, <abbr title="Illuminate\Auth\AuthenticationException">AuthenticationException</abbr> $exception)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Illuminate\Http\JsonResponse">JsonResponse</abbr>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_invalidJson">invalidJson</a>(<abbr title="Illuminate\Http\Request">Request</abbr> $request, <abbr title="Illuminate\Validation\ValidationException">ValidationException</abbr> $exception)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location"><a href="https://github.com/area17/twill/blob/1.2/src/Exceptions/Handler.php#L79">at line 79</a></div>
+        <code>                    
+    <strong>__construct</strong>(<abbr title="Illuminate\Contracts\Container\Container">Container</abbr> $container, <abbr title="Illuminate\Routing\Redirector">Redirector</abbr> $redirector, <abbr title="Illuminate\Routing\UrlGenerator">UrlGenerator</abbr> $urlGenerator, <abbr title="Illuminate\Foundation\Application">Application</abbr> $app, <abbr title="Illuminate\View\Factory">Factory</abbr> $viewFactory, <abbr title="Illuminate\Routing\ResponseFactory">ResponseFactory</abbr> $responseFactory, <abbr title="Illuminate\Config\Repository">Repository</abbr> $config)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Illuminate\Contracts\Container\Container">Container</abbr></td>
+                <td>$container</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Illuminate\Routing\Redirector">Redirector</abbr></td>
+                <td>$redirector</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Illuminate\Routing\UrlGenerator">UrlGenerator</abbr></td>
+                <td>$urlGenerator</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Illuminate\Foundation\Application">Application</abbr></td>
+                <td>$app</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Illuminate\View\Factory">Factory</abbr></td>
+                <td>$viewFactory</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Illuminate\Routing\ResponseFactory">ResponseFactory</abbr></td>
+                <td>$responseFactory</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Illuminate\Config\Repository">Repository</abbr></td>
+                <td>$config</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_report">
+        <div class="location"><a href="https://github.com/area17/twill/blob/1.2/src/Exceptions/Handler.php#L103">at line 103</a></div>
+        <code>                    mixed
+    <strong>report</strong>(<a target="_blank" rel="noopener" href="https://www.php.net/Exception">Exception</a> $e)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/Exception">Exception</a></td>
+                <td>$e</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_render">
+        <div class="location"><a href="https://github.com/area17/twill/blob/1.2/src/Exceptions/Handler.php#L113">at line 113</a></div>
+        <code>                    <abbr title="Illuminate\Contracts\Routing\ResponseFactory">ResponseFactory</abbr>|<abbr title="Illuminate\Http\JsonResponse">JsonResponse</abbr>|<abbr title="Illuminate\Http\RedirectResponse">RedirectResponse</abbr>|<abbr title="Illuminate\Http\Response">Response</abbr>|string|<abbr title="A17\Twill\Exceptions\Response">Response</abbr>
+    <strong>render</strong>(<abbr title="Illuminate\Http\Request">Request</abbr> $request, <a target="_blank" rel="noopener" href="https://www.php.net/Exception">Exception</a> $e)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Illuminate\Http\Request">Request</abbr></td>
+                <td>$request</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/Exception">Exception</a></td>
+                <td>$e</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Illuminate\Contracts\Routing\ResponseFactory">ResponseFactory</abbr>|<abbr title="Illuminate\Http\JsonResponse">JsonResponse</abbr>|<abbr title="Illuminate\Http\RedirectResponse">RedirectResponse</abbr>|<abbr title="Illuminate\Http\Response">Response</abbr>|string|<abbr title="A17\Twill\Exceptions\Response">Response</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_renderHttpExceptionWithView">
+        <div class="location"><a href="https://github.com/area17/twill/blob/1.2/src/Exceptions/Handler.php#L153">at line 153</a></div>
+        <code>                    <abbr title="Illuminate\Http\Response">Response</abbr>|<abbr title="A17\Twill\Exceptions\Response">Response</abbr>
+    <strong>renderHttpExceptionWithView</strong>(<abbr title="Illuminate\Http\Request">Request</abbr> $request, <a target="_blank" rel="noopener" href="https://www.php.net/Exception">Exception</a> $e)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Illuminate\Http\Request">Request</abbr></td>
+                <td>$request</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/Exception">Exception</a></td>
+                <td>$e</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Illuminate\Http\Response">Response</abbr>|<abbr title="A17\Twill\Exceptions\Response">Response</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_renderExceptionWithWhoops">
+        <div class="location"><a href="https://github.com/area17/twill/blob/1.2/src/Exceptions/Handler.php#L186">at line 186</a></div>
+        <code>            protected        <abbr title="Illuminate\Contracts\Routing\ResponseFactory">ResponseFactory</abbr>|<abbr title="Illuminate\Http\Response">Response</abbr>|array
+    <strong>renderExceptionWithWhoops</strong>(<a target="_blank" rel="noopener" href="https://www.php.net/Exception">Exception</a> $e)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/Exception">Exception</a></td>
+                <td>$e</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Illuminate\Contracts\Routing\ResponseFactory">ResponseFactory</abbr>|<abbr title="Illuminate\Http\Response">Response</abbr>|array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_unsetSensitiveData">
+        <div class="location"><a href="https://github.com/area17/twill/blob/1.2/src/Exceptions/Handler.php#L227">at line 227</a></div>
+        <code>            protected        void
+    <strong>unsetSensitiveData</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Don't ever display sensitive data in Whoops pages.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_handleUnauthenticated">
+        <div class="location"><a href="https://github.com/area17/twill/blob/1.2/src/Exceptions/Handler.php#L241">at line 241</a></div>
+        <code>            protected        <abbr title="Illuminate\Http\JsonResponse">JsonResponse</abbr>|<abbr title="Illuminate\Http\RedirectResponse">RedirectResponse</abbr>
+    <strong>handleUnauthenticated</strong>(<abbr title="Illuminate\Http\Request">Request</abbr> $request, <abbr title="Illuminate\Auth\AuthenticationException">AuthenticationException</abbr> $exception)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Illuminate\Http\Request">Request</abbr></td>
+                <td>$request</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Illuminate\Auth\AuthenticationException">AuthenticationException</abbr></td>
+                <td>$exception</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Illuminate\Http\JsonResponse">JsonResponse</abbr>|<abbr title="Illuminate\Http\RedirectResponse">RedirectResponse</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_invalidJson">
+        <div class="location"><a href="https://github.com/area17/twill/blob/1.2/src/Exceptions/Handler.php#L255">at line 255</a></div>
+        <code>            protected        <abbr title="Illuminate\Http\JsonResponse">JsonResponse</abbr>
+    <strong>invalidJson</strong>(<abbr title="Illuminate\Http\Request">Request</abbr> $request, <abbr title="Illuminate\Validation\ValidationException">ValidationException</abbr> $exception)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Illuminate\Http\Request">Request</abbr></td>
+                <td>$request</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="Illuminate\Validation\ValidationException">ValidationException</abbr></td>
+                <td>$exception</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Illuminate\Http\JsonResponse">JsonResponse</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

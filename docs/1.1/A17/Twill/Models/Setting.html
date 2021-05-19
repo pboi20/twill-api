@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>A17\Twill\Models\Setting | Twill API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../fonts/doctum-font.css">
+        <script src="../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../doctum.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:A17_Twill_Models_Setting" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                    <form action="#">
+                <select  class="form-control" id="version-switcher" name="version">
+                                            <option value="../../../../1.1/index.html" data-version="1.1">1.1 branch</option>
+                                            <option value="../../../../1.2/index.html" data-version="1.2">1.2 branch</option>
+                                            <option value="../../../../2.x/index.html" data-version="2.x">2.x branch</option>
+                                            <option value="../../../../master/index.html" data-version="master">master branch</option>
+                                    </select>
+            </form>
+                <form id="search-form" action="../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">Twill API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                    <li><a href="../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../A17.html">A17</a></li><li class="backslash">\</li><li><a href="../../../A17/Twill.html">Twill</a></li><li class="backslash">\</li><li><a href="../../../A17/Twill/Models.html">Models</a></li><li class="backslash">\</li><li>Setting</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>Setting    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>Setting</strong>        extends <a href="../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a>        (<a href="https://github.com/area17/twill/blob/1.1/src/Models/Setting.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            
+                <h2>Traits</h2>
+
+        
+    <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-6">
+                    <a href="../../../A17/Twill/Models/Behaviors/HasTranslation.html"><abbr title="A17\Twill\Models\Behaviors\HasTranslation">HasTranslation</abbr></a>    </div>
+                <div class="col-md-6"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                    <abbr title="Dimsav\Translatable\Translatable">Translatable</abbr>    </div>
+                <div class="col-md-6"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                    <a href="../../../A17/Twill/Models/Behaviors/HasPresenter.html"><abbr title="A17\Twill\Models\Behaviors\HasPresenter">HasPresenter</abbr></a>    </div>
+                <div class="col-md-6"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                    <abbr title="Illuminate\Database\Eloquent\SoftDeletes">SoftDeletes</abbr>    </div>
+                <div class="col-md-6"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                    <abbr title="Cartalyst\Tags\TaggableTrait">TaggableTrait</abbr>    </div>
+                <div class="col-md-6"></div>
+            </div>
+            </div>
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_presenterInstance">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$presenterInstance</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../A17/Twill/Models/Behaviors/HasPresenter.html#property_presenterInstance">
+<abbr title="A17\Twill\Models\Behaviors\HasPresenter">HasPresenter</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_timestamps">
+                                                                                
+                                                                                
+                                    </td>
+                <td>$timestamps</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../A17/Twill/Models/Model.html#property_timestamps">
+<abbr title="A17\Twill\Models\Model">Model</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_useTranslationFallback">
+                                                                                
+                                                                                
+                                    </td>
+                <td>$useTranslationFallback</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_fillable">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$fillable</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_translatedAttributes">
+                                                                                
+                                                                                
+                                    </td>
+                <td>$translatedAttributes</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_present">present</a>($presenter = &#039;presenter&#039;)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Models/Behaviors/HasPresenter.html#method_present">
+<abbr title="A17\Twill\Models\Behaviors\HasPresenter">HasPresenter</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_presentAdmin">presentAdmin</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Models/Behaviors/HasPresenter.html#method_presentAdmin">
+<abbr title="A17\Twill\Models\Behaviors\HasPresenter">HasPresenter</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_scopePublished">scopePublished</a>($query)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Models/Model.html#method_scopePublished">
+<abbr title="A17\Twill\Models\Model">Model</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_scopePublishedInListings">scopePublishedInListings</a>($query)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Models/Model.html#method_scopePublishedInListings">
+<abbr title="A17\Twill\Models\Model">Model</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_scopeVisible">scopeVisible</a>($query)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Models/Model.html#method_scopeVisible">
+<abbr title="A17\Twill\Models\Model">Model</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setPublishStartDateAttribute">setPublishStartDateAttribute</a>($value)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Models/Model.html#method_setPublishStartDateAttribute">
+<abbr title="A17\Twill\Models\Model">Model</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_scopeDraft">scopeDraft</a>($query)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Models/Model.html#method_scopeDraft">
+<abbr title="A17\Twill\Models\Model">Model</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_scopeOnlyTrashed">scopeOnlyTrashed</a>($query)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Models/Model.html#method_scopeOnlyTrashed">
+<abbr title="A17\Twill\Models\Model">Model</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getTranslationModelNameDefault">getTranslationModelNameDefault</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_scopeWithActiveTranslations">scopeWithActiveTranslations</a>($query, $locale = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Models/Behaviors/HasTranslation.html#method_scopeWithActiveTranslations">
+<abbr title="A17\Twill\Models\Behaviors\HasTranslation">HasTranslation</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_scopeOrderByTranslation">scopeOrderByTranslation</a>($query, $orderField, $orderType = &#039;ASC&#039;, $locale = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Models/Behaviors/HasTranslation.html#method_scopeOrderByTranslation">
+<abbr title="A17\Twill\Models\Behaviors\HasTranslation">HasTranslation</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_scopeOrderByRawByTranslation">scopeOrderByRawByTranslation</a>($query, $orderRawString, $groupByField, $locale = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Models/Behaviors/HasTranslation.html#method_scopeOrderByRawByTranslation">
+<abbr title="A17\Twill\Models\Behaviors\HasTranslation">HasTranslation</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_hasActiveTranslation">hasActiveTranslation</a>($locale = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Models/Behaviors/HasTranslation.html#method_hasActiveTranslation">
+<abbr title="A17\Twill\Models\Behaviors\HasTranslation">HasTranslation</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getActiveLanguages">getActiveLanguages</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Models/Behaviors/HasTranslation.html#method_getActiveLanguages">
+<abbr title="A17\Twill\Models\Behaviors\HasTranslation">HasTranslation</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_translatedAttribute">translatedAttribute</a>($key)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Models/Behaviors/HasTranslation.html#method_translatedAttribute">
+<abbr title="A17\Twill\Models\Behaviors\HasTranslation">HasTranslation</abbr></a></small></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_present">
+        <div class="location">in <a href="../../../A17/Twill/Models/Behaviors/HasPresenter.html#method_present">
+<abbr title="A17\Twill\Models\Behaviors\HasPresenter">HasPresenter</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Models/Behaviors/HasPresenter.php#L9">at line 9</a></div>
+        <code>                    
+    <strong>present</strong>($presenter = &#039;presenter&#039;)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$presenter</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_presentAdmin">
+        <div class="location">in <a href="../../../A17/Twill/Models/Behaviors/HasPresenter.html#method_presentAdmin">
+<abbr title="A17\Twill\Models\Behaviors\HasPresenter">HasPresenter</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Models/Behaviors/HasPresenter.php#L22">at line 22</a></div>
+        <code>                    
+    <strong>presentAdmin</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_scopePublished">
+        <div class="location">in <a href="../../../A17/Twill/Models/Model.html#method_scopePublished">
+<abbr title="A17\Twill\Models\Model">Model</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Models/Model.php#L18">at line 18</a></div>
+        <code>                    
+    <strong>scopePublished</strong>($query)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$query</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_scopePublishedInListings">
+        <div class="location">in <a href="../../../A17/Twill/Models/Model.html#method_scopePublishedInListings">
+<abbr title="A17\Twill\Models\Model">Model</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Models/Model.php#L23">at line 23</a></div>
+        <code>                    
+    <strong>scopePublishedInListings</strong>($query)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$query</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_scopeVisible">
+        <div class="location">in <a href="../../../A17/Twill/Models/Model.html#method_scopeVisible">
+<abbr title="A17\Twill\Models\Model">Model</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Models/Model.php#L32">at line 32</a></div>
+        <code>                    
+    <strong>scopeVisible</strong>($query)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$query</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setPublishStartDateAttribute">
+        <div class="location">in <a href="../../../A17/Twill/Models/Model.html#method_setPublishStartDateAttribute">
+<abbr title="A17\Twill\Models\Model">Model</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Models/Model.php#L49">at line 49</a></div>
+        <code>                    
+    <strong>setPublishStartDateAttribute</strong>($value)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_scopeDraft">
+        <div class="location">in <a href="../../../A17/Twill/Models/Model.html#method_scopeDraft">
+<abbr title="A17\Twill\Models\Model">Model</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Models/Model.php#L54">at line 54</a></div>
+        <code>                    
+    <strong>scopeDraft</strong>($query)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$query</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_scopeOnlyTrashed">
+        <div class="location">in <a href="../../../A17/Twill/Models/Model.html#method_scopeOnlyTrashed">
+<abbr title="A17\Twill\Models\Model">Model</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Models/Model.php#L59">at line 59</a></div>
+        <code>                    
+    <strong>scopeOnlyTrashed</strong>($query)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$query</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getTranslationModelNameDefault">
+        <div class="location"><a href="https://github.com/area17/twill/blob/1.1/src/Models/Setting.php#L25">at line 25</a></div>
+        <code>                    
+    <strong>getTranslationModelNameDefault</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_scopeWithActiveTranslations">
+        <div class="location">in <a href="../../../A17/Twill/Models/Behaviors/HasTranslation.html#method_scopeWithActiveTranslations">
+<abbr title="A17\Twill\Models\Behaviors\HasTranslation">HasTranslation</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Models/Behaviors/HasTranslation.php#L16">at line 16</a></div>
+        <code>                    
+    <strong>scopeWithActiveTranslations</strong>($query, $locale = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$query</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$locale</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_scopeOrderByTranslation">
+        <div class="location">in <a href="../../../A17/Twill/Models/Behaviors/HasTranslation.html#method_scopeOrderByTranslation">
+<abbr title="A17\Twill\Models\Behaviors\HasTranslation">HasTranslation</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Models/Behaviors/HasTranslation.php#L33">at line 33</a></div>
+        <code>                    
+    <strong>scopeOrderByTranslation</strong>($query, $orderField, $orderType = &#039;ASC&#039;, $locale = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$query</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$orderField</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$orderType</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$locale</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_scopeOrderByRawByTranslation">
+        <div class="location">in <a href="../../../A17/Twill/Models/Behaviors/HasTranslation.html#method_scopeOrderByRawByTranslation">
+<abbr title="A17\Twill\Models\Behaviors\HasTranslation">HasTranslation</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Models/Behaviors/HasTranslation.php#L48">at line 48</a></div>
+        <code>                    
+    <strong>scopeOrderByRawByTranslation</strong>($query, $orderRawString, $groupByField, $locale = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$query</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$orderRawString</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$groupByField</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$locale</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasActiveTranslation">
+        <div class="location">in <a href="../../../A17/Twill/Models/Behaviors/HasTranslation.html#method_hasActiveTranslation">
+<abbr title="A17\Twill\Models\Behaviors\HasTranslation">HasTranslation</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Models/Behaviors/HasTranslation.php#L63">at line 63</a></div>
+        <code>                    
+    <strong>hasActiveTranslation</strong>($locale = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$locale</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getActiveLanguages">
+        <div class="location">in <a href="../../../A17/Twill/Models/Behaviors/HasTranslation.html#method_getActiveLanguages">
+<abbr title="A17\Twill\Models\Behaviors\HasTranslation">HasTranslation</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Models/Behaviors/HasTranslation.php#L76">at line 76</a></div>
+        <code>                    
+    <strong>getActiveLanguages</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_translatedAttribute">
+        <div class="location">in <a href="../../../A17/Twill/Models/Behaviors/HasTranslation.html#method_translatedAttribute">
+<abbr title="A17\Twill\Models\Behaviors\HasTranslation">HasTranslation</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Models/Behaviors/HasTranslation.php#L91">at line 91</a></div>
+        <code>                    
+    <strong>translatedAttribute</strong>($key)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

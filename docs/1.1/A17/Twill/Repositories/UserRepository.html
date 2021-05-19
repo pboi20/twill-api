@@ -1,0 +1,2795 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>A17\Twill\Repositories\UserRepository | Twill API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../fonts/doctum-font.css">
+        <script src="../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../doctum.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:A17_Twill_Repositories_UserRepository" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                    <form action="#">
+                <select  class="form-control" id="version-switcher" name="version">
+                                            <option value="../../../../1.1/index.html" data-version="1.1">1.1 branch</option>
+                                            <option value="../../../../1.2/index.html" data-version="1.2">1.2 branch</option>
+                                            <option value="../../../../2.x/index.html" data-version="2.x">2.x branch</option>
+                                            <option value="../../../../master/index.html" data-version="master">master branch</option>
+                                    </select>
+            </form>
+                <form id="search-form" action="../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">Twill API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                    <li><a href="../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../A17.html">A17</a></li><li class="backslash">\</li><li><a href="../../../A17/Twill.html">Twill</a></li><li class="backslash">\</li><li><a href="../../../A17/Twill/Repositories.html">Repositories</a></li><li class="backslash">\</li><li>UserRepository</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>UserRepository    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>UserRepository</strong>        extends <a href="../../../A17/Twill/Repositories/ModuleRepository.html"><abbr title="A17\Twill\Repositories\ModuleRepository">ModuleRepository</abbr></a>        (<a href="https://github.com/area17/twill/blob/1.1/src/Repositories/UserRepository.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            
+                <h2>Traits</h2>
+
+        
+    <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-6">
+                    <a href="../../../A17/Twill/Repositories/Behaviors/HandleMedias.html"><abbr title="A17\Twill\Repositories\Behaviors\HandleMedias">HandleMedias</abbr></a>    </div>
+                <div class="col-md-6"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                    <a href="../../../A17/Twill/Repositories/Behaviors/HandleDates.html"><abbr title="A17\Twill\Repositories\Behaviors\HandleDates">HandleDates</abbr></a>    </div>
+                <div class="col-md-6"></div>
+            </div>
+            </div>
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_model">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$model</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../A17/Twill/Repositories/ModuleRepository.html#property_model">
+<abbr title="A17\Twill\Repositories\ModuleRepository">ModuleRepository</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_ignoreFieldsBeforeSave">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$ignoreFieldsBeforeSave</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../A17/Twill/Repositories/ModuleRepository.html#property_ignoreFieldsBeforeSave">
+<abbr title="A17\Twill\Repositories\ModuleRepository">ModuleRepository</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_countScope">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$countScope</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../A17/Twill/Repositories/ModuleRepository.html#property_countScope">
+<abbr title="A17\Twill\Repositories\ModuleRepository">ModuleRepository</abbr></a></small></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_prepareFieldsBeforeCreateHandleDates">prepareFieldsBeforeCreateHandleDates</a>($fields)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Repositories/Behaviors/HandleDates.html#method_prepareFieldsBeforeCreateHandleDates">
+<abbr title="A17\Twill\Repositories\Behaviors\HandleDates">HandleDates</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_prepareFieldsBeforeSaveHandleDates">prepareFieldsBeforeSaveHandleDates</a>($object, $fields)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Repositories/Behaviors/HandleDates.html#method_prepareFieldsBeforeSaveHandleDates">
+<abbr title="A17\Twill\Repositories\Behaviors\HandleDates">HandleDates</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_prepareDatesField">prepareDatesField</a>($fields, $f)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Repositories/Behaviors/HandleDates.html#method_prepareDatesField">
+<abbr title="A17\Twill\Repositories\Behaviors\HandleDates">HandleDates</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_get">get</a>($with = [], $scopes = [], $orders = [], $perPage = 20, $forcePagination = false)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Repositories/ModuleRepository.html#method_get">
+<abbr title="A17\Twill\Repositories\ModuleRepository">ModuleRepository</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getCountByStatusSlug">getCountByStatusSlug</a>($slug, $scope = [])
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Repositories/ModuleRepository.html#method_getCountByStatusSlug">
+<abbr title="A17\Twill\Repositories\ModuleRepository">ModuleRepository</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getCountForAll">getCountForAll</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Repositories/ModuleRepository.html#method_getCountForAll">
+<abbr title="A17\Twill\Repositories\ModuleRepository">ModuleRepository</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getCountForPublished">getCountForPublished</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getCountForDraft">getCountForDraft</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getCountForTrash">getCountForTrash</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Repositories/ModuleRepository.html#method_getCountForTrash">
+<abbr title="A17\Twill\Repositories\ModuleRepository">ModuleRepository</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getById">getById</a>($id, $with = [], $withCount = [])
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Repositories/ModuleRepository.html#method_getById">
+<abbr title="A17\Twill\Repositories\ModuleRepository">ModuleRepository</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_listAll">listAll</a>($column = &#039;name&#039;, $orders = [], $exceptId = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Repositories/ModuleRepository.html#method_listAll">
+<abbr title="A17\Twill\Repositories\ModuleRepository">ModuleRepository</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_firstOrCreate">firstOrCreate</a>($attributes, $fields)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Repositories/ModuleRepository.html#method_firstOrCreate">
+<abbr title="A17\Twill\Repositories\ModuleRepository">ModuleRepository</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_create">create</a>($fields)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Repositories/ModuleRepository.html#method_create">
+<abbr title="A17\Twill\Repositories\ModuleRepository">ModuleRepository</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_createForPreview">createForPreview</a>($fields)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Repositories/ModuleRepository.html#method_createForPreview">
+<abbr title="A17\Twill\Repositories\ModuleRepository">ModuleRepository</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_update">update</a>($id, $fields)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Repositories/ModuleRepository.html#method_update">
+<abbr title="A17\Twill\Repositories\ModuleRepository">ModuleRepository</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_updateBasic">updateBasic</a>($id, $values, $scopes = [])
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Repositories/ModuleRepository.html#method_updateBasic">
+<abbr title="A17\Twill\Repositories\ModuleRepository">ModuleRepository</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setNewOrder">setNewOrder</a>($ids)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Repositories/ModuleRepository.html#method_setNewOrder">
+<abbr title="A17\Twill\Repositories\ModuleRepository">ModuleRepository</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_delete">delete</a>($id)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Repositories/ModuleRepository.html#method_delete">
+<abbr title="A17\Twill\Repositories\ModuleRepository">ModuleRepository</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_bulkDelete">bulkDelete</a>($ids)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Repositories/ModuleRepository.html#method_bulkDelete">
+<abbr title="A17\Twill\Repositories\ModuleRepository">ModuleRepository</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_restore">restore</a>($id)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Repositories/ModuleRepository.html#method_restore">
+<abbr title="A17\Twill\Repositories\ModuleRepository">ModuleRepository</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_bulkRestore">bulkRestore</a>($ids)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Repositories/ModuleRepository.html#method_bulkRestore">
+<abbr title="A17\Twill\Repositories\ModuleRepository">ModuleRepository</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_cleanupFields">cleanupFields</a>($object, $fields)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Repositories/ModuleRepository.html#method_cleanupFields">
+<abbr title="A17\Twill\Repositories\ModuleRepository">ModuleRepository</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_prepareFieldsBeforeCreate">prepareFieldsBeforeCreate</a>($fields)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Repositories/ModuleRepository.html#method_prepareFieldsBeforeCreate">
+<abbr title="A17\Twill\Repositories\ModuleRepository">ModuleRepository</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_prepareFieldsBeforeSave">prepareFieldsBeforeSave</a>($object, $fields)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Repositories/ModuleRepository.html#method_prepareFieldsBeforeSave">
+<abbr title="A17\Twill\Repositories\ModuleRepository">ModuleRepository</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_afterUpdateBasic">afterUpdateBasic</a>($user, $fields)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_beforeSave">beforeSave</a>($object, $fields)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Repositories/ModuleRepository.html#method_beforeSave">
+<abbr title="A17\Twill\Repositories\ModuleRepository">ModuleRepository</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_afterSave">afterSave</a>($user, $fields)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_afterDelete">afterDelete</a>($object)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Repositories/ModuleRepository.html#method_afterDelete">
+<abbr title="A17\Twill\Repositories\ModuleRepository">ModuleRepository</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_afterRestore">afterRestore</a>($object)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Repositories/ModuleRepository.html#method_afterRestore">
+<abbr title="A17\Twill\Repositories\ModuleRepository">ModuleRepository</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_hydrate">hydrate</a>($object, $fields)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Repositories/ModuleRepository.html#method_hydrate">
+<abbr title="A17\Twill\Repositories\ModuleRepository">ModuleRepository</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getFormFields">getFormFields</a>($object)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Repositories/ModuleRepository.html#method_getFormFields">
+<abbr title="A17\Twill\Repositories\ModuleRepository">ModuleRepository</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_filter">filter</a>($query, array $scopes = [])
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_order">order</a>($query, array $orders = [])
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Repositories/ModuleRepository.html#method_order">
+<abbr title="A17\Twill\Repositories\ModuleRepository">ModuleRepository</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getFormFieldsForBrowser">getFormFieldsForBrowser</a>($object, $relation, $routePrefix = null, $titleKey = &#039;title&#039;, $moduleName = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Repositories/ModuleRepository.html#method_getFormFieldsForBrowser">
+<abbr title="A17\Twill\Repositories\ModuleRepository">ModuleRepository</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_updateOneToMany">updateOneToMany</a>($object, $fields, $relationship, $formField, $attribute)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Repositories/ModuleRepository.html#method_updateOneToMany">
+<abbr title="A17\Twill\Repositories\ModuleRepository">ModuleRepository</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_updateOrderedBelongsTomany">updateOrderedBelongsTomany</a>($object, $fields, $relationship, $positionAttribute = &#039;position&#039;)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Repositories/ModuleRepository.html#method_updateOrderedBelongsTomany">
+<abbr title="A17\Twill\Repositories\ModuleRepository">ModuleRepository</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_updateBrowser">updateBrowser</a>($object, $fields, $relationship, $positionAttribute = &#039;position&#039;)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Repositories/ModuleRepository.html#method_updateBrowser">
+<abbr title="A17\Twill\Repositories\ModuleRepository">ModuleRepository</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_updateMultiSelect">updateMultiSelect</a>($object, $fields, $relationship)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Repositories/ModuleRepository.html#method_updateMultiSelect">
+<abbr title="A17\Twill\Repositories\ModuleRepository">ModuleRepository</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_addRelationFilterScope">addRelationFilterScope</a>($query, $scopes, $scopeField, $scopeRelation)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Repositories/ModuleRepository.html#method_addRelationFilterScope">
+<abbr title="A17\Twill\Repositories\ModuleRepository">ModuleRepository</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_addLikeFilterScope">addLikeFilterScope</a>($query, $scopes, $scopeField)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Repositories/ModuleRepository.html#method_addLikeFilterScope">
+<abbr title="A17\Twill\Repositories\ModuleRepository">ModuleRepository</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_searchIn">searchIn</a>($query, $scopes, $scopeField, $orFields = [])
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Repositories/ModuleRepository.html#method_searchIn">
+<abbr title="A17\Twill\Repositories\ModuleRepository">ModuleRepository</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_isUniqueFeature">isUniqueFeature</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Repositories/ModuleRepository.html#method_isUniqueFeature">
+<abbr title="A17\Twill\Repositories\ModuleRepository">ModuleRepository</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_addIgnoreFieldsBeforeSave">addIgnoreFieldsBeforeSave</a>($ignore = [])
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Repositories/ModuleRepository.html#method_addIgnoreFieldsBeforeSave">
+<abbr title="A17\Twill\Repositories\ModuleRepository">ModuleRepository</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_shouldIgnoreFieldBeforeSave">shouldIgnoreFieldBeforeSave</a>($ignore)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Repositories/ModuleRepository.html#method_shouldIgnoreFieldBeforeSave">
+<abbr title="A17\Twill\Repositories\ModuleRepository">ModuleRepository</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getReservedFields">getReservedFields</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Repositories/ModuleRepository.html#method_getReservedFields">
+<abbr title="A17\Twill\Repositories\ModuleRepository">ModuleRepository</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getModelRepository">getModelRepository</a>($relation, $model = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Repositories/ModuleRepository.html#method_getModelRepository">
+<abbr title="A17\Twill\Repositories\ModuleRepository">ModuleRepository</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method___call">__call</a>($method, $parameters)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Repositories/ModuleRepository.html#method___call">
+<abbr title="A17\Twill\Repositories\ModuleRepository">ModuleRepository</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_hydrateHandleMedias">hydrateHandleMedias</a>($object, $fields)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Repositories/Behaviors/HandleMedias.html#method_hydrateHandleMedias">
+<abbr title="A17\Twill\Repositories\Behaviors\HandleMedias">HandleMedias</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_afterSaveHandleMedias">afterSaveHandleMedias</a>($object, $fields)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Repositories/Behaviors/HandleMedias.html#method_afterSaveHandleMedias">
+<abbr title="A17\Twill\Repositories\Behaviors\HandleMedias">HandleMedias</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getFormFieldsHandleMedias">getFormFieldsHandleMedias</a>($object, $fields)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Repositories/Behaviors/HandleMedias.html#method_getFormFieldsHandleMedias">
+<abbr title="A17\Twill\Repositories\Behaviors\HandleMedias">HandleMedias</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getCrops">getCrops</a>($role)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Repositories/Behaviors/HandleMedias.html#method_getCrops">
+<abbr title="A17\Twill\Repositories\Behaviors\HandleMedias">HandleMedias</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method___construct">__construct</a>(<a href="../../../A17/Twill/Models/User.html"><abbr title="A17\Twill\Models\User">User</abbr></a> $model)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_prepareFieldsBeforeCreateHandleDates">
+        <div class="location">in <a href="../../../A17/Twill/Repositories/Behaviors/HandleDates.html#method_prepareFieldsBeforeCreateHandleDates">
+<abbr title="A17\Twill\Repositories\Behaviors\HandleDates">HandleDates</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Repositories/Behaviors/HandleDates.php#L9">at line 9</a></div>
+        <code>                    
+    <strong>prepareFieldsBeforeCreateHandleDates</strong>($fields)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$fields</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_prepareFieldsBeforeSaveHandleDates">
+        <div class="location">in <a href="../../../A17/Twill/Repositories/Behaviors/HandleDates.html#method_prepareFieldsBeforeSaveHandleDates">
+<abbr title="A17\Twill\Repositories\Behaviors\HandleDates">HandleDates</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Repositories/Behaviors/HandleDates.php#L14">at line 14</a></div>
+        <code>                    
+    <strong>prepareFieldsBeforeSaveHandleDates</strong>($object, $fields)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$object</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$fields</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_prepareDatesField">
+        <div class="location">in <a href="../../../A17/Twill/Repositories/Behaviors/HandleDates.html#method_prepareDatesField">
+<abbr title="A17\Twill\Repositories\Behaviors\HandleDates">HandleDates</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Repositories/Behaviors/HandleDates.php#L28">at line 28</a></div>
+        <code>                    
+    <strong>prepareDatesField</strong>($fields, $f)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$fields</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$f</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location">in <a href="../../../A17/Twill/Repositories/ModuleRepository.html#method_get">
+<abbr title="A17\Twill\Repositories\ModuleRepository">ModuleRepository</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Repositories/ModuleRepository.php#L22">at line 22</a></div>
+        <code>                    
+    <strong>get</strong>($with = [], $scopes = [], $orders = [], $perPage = 20, $forcePagination = false)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$with</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$scopes</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$orders</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$perPage</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$forcePagination</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCountByStatusSlug">
+        <div class="location">in <a href="../../../A17/Twill/Repositories/ModuleRepository.html#method_getCountByStatusSlug">
+<abbr title="A17\Twill\Repositories\ModuleRepository">ModuleRepository</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Repositories/ModuleRepository.php#L40">at line 40</a></div>
+        <code>                    
+    <strong>getCountByStatusSlug</strong>($slug, $scope = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$slug</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$scope</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCountForAll">
+        <div class="location">in <a href="../../../A17/Twill/Repositories/ModuleRepository.html#method_getCountForAll">
+<abbr title="A17\Twill\Repositories\ModuleRepository">ModuleRepository</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Repositories/ModuleRepository.php#L66">at line 66</a></div>
+        <code>                    
+    <strong>getCountForAll</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCountForPublished">
+        <div class="location"><a href="https://github.com/area17/twill/blob/1.1/src/Repositories/UserRepository.php#L35">at line 35</a></div>
+        <code>                    
+    <strong>getCountForPublished</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCountForDraft">
+        <div class="location"><a href="https://github.com/area17/twill/blob/1.1/src/Repositories/UserRepository.php#L40">at line 40</a></div>
+        <code>                    
+    <strong>getCountForDraft</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCountForTrash">
+        <div class="location">in <a href="../../../A17/Twill/Repositories/ModuleRepository.html#method_getCountForTrash">
+<abbr title="A17\Twill\Repositories\ModuleRepository">ModuleRepository</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Repositories/ModuleRepository.php#L81">at line 81</a></div>
+        <code>                    
+    <strong>getCountForTrash</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getById">
+        <div class="location">in <a href="../../../A17/Twill/Repositories/ModuleRepository.html#method_getById">
+<abbr title="A17\Twill\Repositories\ModuleRepository">ModuleRepository</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Repositories/ModuleRepository.php#L86">at line 86</a></div>
+        <code>                    
+    <strong>getById</strong>($id, $with = [], $withCount = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$id</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$with</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$withCount</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listAll">
+        <div class="location">in <a href="../../../A17/Twill/Repositories/ModuleRepository.html#method_listAll">
+<abbr title="A17\Twill\Repositories\ModuleRepository">ModuleRepository</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Repositories/ModuleRepository.php#L91">at line 91</a></div>
+        <code>                    
+    <strong>listAll</strong>($column = &#039;name&#039;, $orders = [], $exceptId = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$column</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$orders</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$exceptId</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_firstOrCreate">
+        <div class="location">in <a href="../../../A17/Twill/Repositories/ModuleRepository.html#method_firstOrCreate">
+<abbr title="A17\Twill\Repositories\ModuleRepository">ModuleRepository</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Repositories/ModuleRepository.php#L112">at line 112</a></div>
+        <code>                    
+    <strong>firstOrCreate</strong>($attributes, $fields)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$attributes</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$fields</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_create">
+        <div class="location">in <a href="../../../A17/Twill/Repositories/ModuleRepository.html#method_create">
+<abbr title="A17\Twill\Repositories\ModuleRepository">ModuleRepository</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Repositories/ModuleRepository.php#L117">at line 117</a></div>
+        <code>                    
+    <strong>create</strong>($fields)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$fields</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_createForPreview">
+        <div class="location">in <a href="../../../A17/Twill/Repositories/ModuleRepository.html#method_createForPreview">
+<abbr title="A17\Twill\Repositories\ModuleRepository">ModuleRepository</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Repositories/ModuleRepository.php#L138">at line 138</a></div>
+        <code>                    
+    <strong>createForPreview</strong>($fields)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$fields</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_update">
+        <div class="location">in <a href="../../../A17/Twill/Repositories/ModuleRepository.html#method_update">
+<abbr title="A17\Twill\Repositories\ModuleRepository">ModuleRepository</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Repositories/ModuleRepository.php#L147">at line 147</a></div>
+        <code>                    
+    <strong>update</strong>($id, $fields)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$id</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$fields</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_updateBasic">
+        <div class="location">in <a href="../../../A17/Twill/Repositories/ModuleRepository.html#method_updateBasic">
+<abbr title="A17\Twill\Repositories\ModuleRepository">ModuleRepository</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Repositories/ModuleRepository.php#L164">at line 164</a></div>
+        <code>                    
+    <strong>updateBasic</strong>($id, $values, $scopes = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$id</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$values</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$scopes</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setNewOrder">
+        <div class="location">in <a href="../../../A17/Twill/Repositories/ModuleRepository.html#method_setNewOrder">
+<abbr title="A17\Twill\Repositories\ModuleRepository">ModuleRepository</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Repositories/ModuleRepository.php#L206">at line 206</a></div>
+        <code>                    
+    <strong>setNewOrder</strong>($ids)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$ids</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_delete">
+        <div class="location">in <a href="../../../A17/Twill/Repositories/ModuleRepository.html#method_delete">
+<abbr title="A17\Twill\Repositories\ModuleRepository">ModuleRepository</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Repositories/ModuleRepository.php#L213">at line 213</a></div>
+        <code>                    
+    <strong>delete</strong>($id)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_bulkDelete">
+        <div class="location">in <a href="../../../A17/Twill/Repositories/ModuleRepository.html#method_bulkDelete">
+<abbr title="A17\Twill\Repositories\ModuleRepository">ModuleRepository</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Repositories/ModuleRepository.php#L226">at line 226</a></div>
+        <code>                    
+    <strong>bulkDelete</strong>($ids)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$ids</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_restore">
+        <div class="location">in <a href="../../../A17/Twill/Repositories/ModuleRepository.html#method_restore">
+<abbr title="A17\Twill\Repositories\ModuleRepository">ModuleRepository</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Repositories/ModuleRepository.php#L247">at line 247</a></div>
+        <code>                    
+    <strong>restore</strong>($id)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_bulkRestore">
+        <div class="location">in <a href="../../../A17/Twill/Repositories/ModuleRepository.html#method_bulkRestore">
+<abbr title="A17\Twill\Repositories\ModuleRepository">ModuleRepository</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Repositories/ModuleRepository.php#L260">at line 260</a></div>
+        <code>                    
+    <strong>bulkRestore</strong>($ids)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$ids</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_cleanupFields">
+        <div class="location">in <a href="../../../A17/Twill/Repositories/ModuleRepository.html#method_cleanupFields">
+<abbr title="A17\Twill\Repositories\ModuleRepository">ModuleRepository</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Repositories/ModuleRepository.php#L281">at line 281</a></div>
+        <code>                    
+    <strong>cleanupFields</strong>($object, $fields)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$object</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$fields</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_prepareFieldsBeforeCreate">
+        <div class="location">in <a href="../../../A17/Twill/Repositories/ModuleRepository.html#method_prepareFieldsBeforeCreate">
+<abbr title="A17\Twill\Repositories\ModuleRepository">ModuleRepository</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Repositories/ModuleRepository.php#L317">at line 317</a></div>
+        <code>                    
+    <strong>prepareFieldsBeforeCreate</strong>($fields)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$fields</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_prepareFieldsBeforeSave">
+        <div class="location">in <a href="../../../A17/Twill/Repositories/ModuleRepository.html#method_prepareFieldsBeforeSave">
+<abbr title="A17\Twill\Repositories\ModuleRepository">ModuleRepository</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Repositories/ModuleRepository.php#L330">at line 330</a></div>
+        <code>                    
+    <strong>prepareFieldsBeforeSave</strong>($object, $fields)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$object</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$fields</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_afterUpdateBasic">
+        <div class="location"><a href="https://github.com/area17/twill/blob/1.1/src/Repositories/UserRepository.php#L29">at line 29</a></div>
+        <code>                    
+    <strong>afterUpdateBasic</strong>($user, $fields)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$user</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$fields</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_beforeSave">
+        <div class="location">in <a href="../../../A17/Twill/Repositories/ModuleRepository.html#method_beforeSave">
+<abbr title="A17\Twill\Repositories\ModuleRepository">ModuleRepository</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Repositories/ModuleRepository.php#L352">at line 352</a></div>
+        <code>                    
+    <strong>beforeSave</strong>($object, $fields)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$object</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$fields</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_afterSave">
+        <div class="location"><a href="https://github.com/area17/twill/blob/1.1/src/Repositories/UserRepository.php#L45">at line 45</a></div>
+        <code>                    
+    <strong>afterSave</strong>($user, $fields)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$user</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$fields</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_afterDelete">
+        <div class="location">in <a href="../../../A17/Twill/Repositories/ModuleRepository.html#method_afterDelete">
+<abbr title="A17\Twill\Repositories\ModuleRepository">ModuleRepository</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Repositories/ModuleRepository.php#L370">at line 370</a></div>
+        <code>                    
+    <strong>afterDelete</strong>($object)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$object</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_afterRestore">
+        <div class="location">in <a href="../../../A17/Twill/Repositories/ModuleRepository.html#method_afterRestore">
+<abbr title="A17\Twill\Repositories\ModuleRepository">ModuleRepository</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Repositories/ModuleRepository.php#L379">at line 379</a></div>
+        <code>                    
+    <strong>afterRestore</strong>($object)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$object</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hydrate">
+        <div class="location">in <a href="../../../A17/Twill/Repositories/ModuleRepository.html#method_hydrate">
+<abbr title="A17\Twill\Repositories\ModuleRepository">ModuleRepository</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Repositories/ModuleRepository.php#L388">at line 388</a></div>
+        <code>                    
+    <strong>hydrate</strong>($object, $fields)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$object</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$fields</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFormFields">
+        <div class="location">in <a href="../../../A17/Twill/Repositories/ModuleRepository.html#method_getFormFields">
+<abbr title="A17\Twill\Repositories\ModuleRepository">ModuleRepository</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Repositories/ModuleRepository.php#L399">at line 399</a></div>
+        <code>                    
+    <strong>getFormFields</strong>($object)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$object</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_filter">
+        <div class="location"><a href="https://github.com/area17/twill/blob/1.1/src/Repositories/UserRepository.php#L19">at line 19</a></div>
+        <code>                    
+    <strong>filter</strong>($query, array $scopes = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$query</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$scopes</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_order">
+        <div class="location">in <a href="../../../A17/Twill/Repositories/ModuleRepository.html#method_order">
+<abbr title="A17\Twill\Repositories\ModuleRepository">ModuleRepository</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Repositories/ModuleRepository.php#L448">at line 448</a></div>
+        <code>                    
+    <strong>order</strong>($query, array $orders = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$query</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$orders</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFormFieldsForBrowser">
+        <div class="location">in <a href="../../../A17/Twill/Repositories/ModuleRepository.html#method_getFormFieldsForBrowser">
+<abbr title="A17\Twill\Repositories\ModuleRepository">ModuleRepository</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Repositories/ModuleRepository.php#L463">at line 463</a></div>
+        <code>                    
+    <strong>getFormFieldsForBrowser</strong>($object, $relation, $routePrefix = null, $titleKey = &#039;title&#039;, $moduleName = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$object</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$relation</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$routePrefix</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$titleKey</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$moduleName</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_updateOneToMany">
+        <div class="location">in <a href="../../../A17/Twill/Repositories/ModuleRepository.html#method_updateOneToMany">
+<abbr title="A17\Twill\Repositories\ModuleRepository">ModuleRepository</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Repositories/ModuleRepository.php#L476">at line 476</a></div>
+        <code>                    
+    <strong>updateOneToMany</strong>($object, $fields, $relationship, $formField, $attribute)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$object</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$fields</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$relationship</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$formField</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$attribute</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_updateOrderedBelongsTomany">
+        <div class="location">in <a href="../../../A17/Twill/Repositories/ModuleRepository.html#method_updateOrderedBelongsTomany">
+<abbr title="A17\Twill\Repositories\ModuleRepository">ModuleRepository</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Repositories/ModuleRepository.php#L493">at line 493</a></div>
+        <code>                    
+    <strong>updateOrderedBelongsTomany</strong>($object, $fields, $relationship, $positionAttribute = &#039;position&#039;)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$object</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$fields</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$relationship</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$positionAttribute</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_updateBrowser">
+        <div class="location">in <a href="../../../A17/Twill/Repositories/ModuleRepository.html#method_updateBrowser">
+<abbr title="A17\Twill\Repositories\ModuleRepository">ModuleRepository</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Repositories/ModuleRepository.php#L506">at line 506</a></div>
+        <code>                    
+    <strong>updateBrowser</strong>($object, $fields, $relationship, $positionAttribute = &#039;position&#039;)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$object</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$fields</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$relationship</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$positionAttribute</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_updateMultiSelect">
+        <div class="location">in <a href="../../../A17/Twill/Repositories/ModuleRepository.html#method_updateMultiSelect">
+<abbr title="A17\Twill\Repositories\ModuleRepository">ModuleRepository</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Repositories/ModuleRepository.php#L511">at line 511</a></div>
+        <code>                    
+    <strong>updateMultiSelect</strong>($object, $fields, $relationship)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$object</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$fields</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$relationship</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addRelationFilterScope">
+        <div class="location">in <a href="../../../A17/Twill/Repositories/ModuleRepository.html#method_addRelationFilterScope">
+<abbr title="A17\Twill\Repositories\ModuleRepository">ModuleRepository</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Repositories/ModuleRepository.php#L516">at line 516</a></div>
+        <code>                    
+    <strong>addRelationFilterScope</strong>($query, $scopes, $scopeField, $scopeRelation)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$query</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$scopes</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$scopeField</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$scopeRelation</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addLikeFilterScope">
+        <div class="location">in <a href="../../../A17/Twill/Repositories/ModuleRepository.html#method_addLikeFilterScope">
+<abbr title="A17\Twill\Repositories\ModuleRepository">ModuleRepository</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Repositories/ModuleRepository.php#L527">at line 527</a></div>
+        <code>                    
+    <strong>addLikeFilterScope</strong>($query, $scopes, $scopeField)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$query</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$scopes</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$scopeField</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_searchIn">
+        <div class="location">in <a href="../../../A17/Twill/Repositories/ModuleRepository.html#method_searchIn">
+<abbr title="A17\Twill\Repositories\ModuleRepository">ModuleRepository</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Repositories/ModuleRepository.php#L535">at line 535</a></div>
+        <code>                    
+    <strong>searchIn</strong>($query, $scopes, $scopeField, $orFields = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$query</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$scopes</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$scopeField</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$orFields</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isUniqueFeature">
+        <div class="location">in <a href="../../../A17/Twill/Repositories/ModuleRepository.html#method_isUniqueFeature">
+<abbr title="A17\Twill\Repositories\ModuleRepository">ModuleRepository</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Repositories/ModuleRepository.php#L548">at line 548</a></div>
+        <code>                    
+    <strong>isUniqueFeature</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addIgnoreFieldsBeforeSave">
+        <div class="location">in <a href="../../../A17/Twill/Repositories/ModuleRepository.html#method_addIgnoreFieldsBeforeSave">
+<abbr title="A17\Twill\Repositories\ModuleRepository">ModuleRepository</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Repositories/ModuleRepository.php#L553">at line 553</a></div>
+        <code>                    
+    <strong>addIgnoreFieldsBeforeSave</strong>($ignore = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$ignore</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_shouldIgnoreFieldBeforeSave">
+        <div class="location">in <a href="../../../A17/Twill/Repositories/ModuleRepository.html#method_shouldIgnoreFieldBeforeSave">
+<abbr title="A17\Twill\Repositories\ModuleRepository">ModuleRepository</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Repositories/ModuleRepository.php#L560">at line 560</a></div>
+        <code>                    
+    <strong>shouldIgnoreFieldBeforeSave</strong>($ignore)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$ignore</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getReservedFields">
+        <div class="location">in <a href="../../../A17/Twill/Repositories/ModuleRepository.html#method_getReservedFields">
+<abbr title="A17\Twill\Repositories\ModuleRepository">ModuleRepository</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Repositories/ModuleRepository.php#L565">at line 565</a></div>
+        <code>                    
+    <strong>getReservedFields</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getModelRepository">
+        <div class="location">in <a href="../../../A17/Twill/Repositories/ModuleRepository.html#method_getModelRepository">
+<abbr title="A17\Twill\Repositories\ModuleRepository">ModuleRepository</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Repositories/ModuleRepository.php#L575">at line 575</a></div>
+        <code>            protected        
+    <strong>getModelRepository</strong>($relation, $model = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$relation</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$model</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___call">
+        <div class="location">in <a href="../../../A17/Twill/Repositories/ModuleRepository.html#method___call">
+<abbr title="A17\Twill\Repositories\ModuleRepository">ModuleRepository</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Repositories/ModuleRepository.php#L593">at line 593</a></div>
+        <code>                    
+    <strong>__call</strong>($method, $parameters)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$method</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$parameters</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hydrateHandleMedias">
+        <div class="location">in <a href="../../../A17/Twill/Repositories/Behaviors/HandleMedias.html#method_hydrateHandleMedias">
+<abbr title="A17\Twill\Repositories\Behaviors\HandleMedias">HandleMedias</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Repositories/Behaviors/HandleMedias.php#L9">at line 9</a></div>
+        <code>                    
+    <strong>hydrateHandleMedias</strong>($object, $fields)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$object</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$fields</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_afterSaveHandleMedias">
+        <div class="location">in <a href="../../../A17/Twill/Repositories/Behaviors/HandleMedias.html#method_afterSaveHandleMedias">
+<abbr title="A17\Twill\Repositories\Behaviors\HandleMedias">HandleMedias</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Repositories/Behaviors/HandleMedias.php#L30">at line 30</a></div>
+        <code>                    
+    <strong>afterSaveHandleMedias</strong>($object, $fields)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$object</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$fields</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFormFieldsHandleMedias">
+        <div class="location">in <a href="../../../A17/Twill/Repositories/Behaviors/HandleMedias.html#method_getFormFieldsHandleMedias">
+<abbr title="A17\Twill\Repositories\Behaviors\HandleMedias">HandleMedias</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Repositories/Behaviors/HandleMedias.php#L90">at line 90</a></div>
+        <code>                    
+    <strong>getFormFieldsHandleMedias</strong>($object, $fields)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$object</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$fields</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCrops">
+        <div class="location">in <a href="../../../A17/Twill/Repositories/Behaviors/HandleMedias.html#method_getCrops">
+<abbr title="A17\Twill\Repositories\Behaviors\HandleMedias">HandleMedias</abbr></a> <a href="https://github.com/area17/twill/blob/1.1/src/Repositories/Behaviors/HandleMedias.php#L138">at line 138</a></div>
+        <code>                    
+    <strong>getCrops</strong>($role)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$role</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location"><a href="https://github.com/area17/twill/blob/1.1/src/Repositories/UserRepository.php#L14">at line 14</a></div>
+        <code>                    
+    <strong>__construct</strong>(<a href="../../../A17/Twill/Models/User.html"><abbr title="A17\Twill\Models\User">User</abbr></a> $model)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../A17/Twill/Models/User.html"><abbr title="A17\Twill\Models\User">User</abbr></a></td>
+                <td>$model</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>
