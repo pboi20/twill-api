@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>A17\Twill\Repositories\Behaviors\HandleRepeaters | Twill API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../../fonts/doctum-font.css">
+        <script src="../../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../../js/bootstrap.min.js"></script>
+        <script src="../../../../js/typeahead.min.js"></script>
+        <script src="../../../../doctum.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:A17_Twill_Repositories_Behaviors_HandleRepeaters" data-root-path="../../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Twill API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                    <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">trait</span></li>
+                        <li><a href="../../../../A17.html">A17</a></li><li class="backslash">\</li><li><a href="../../../../A17/Twill.html">Twill</a></li><li class="backslash">\</li><li><a href="../../../../A17/Twill/Repositories.html">Repositories</a></li><li class="backslash">\</li><li><a href="../../../../A17/Twill/Repositories/Behaviors.html">Behaviors</a></li><li class="backslash">\</li><li>HandleRepeaters</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>HandleRepeaters    
+            </h1>
+    </div>
+
+    
+    <p>        trait
+    <strong>HandleRepeaters</strong>        (<a href="https://github.com/area17/twill/blob/main/src/Repositories/Behaviors/HandleRepeaters.php">View source</a>)
+</p>
+
+        
+    
+        
+
+            
+        
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_repeaters">
+                                        protected                                        string|array|<abbr title="A17\Twill\Repositories\Behaviors\(array)">(array)</abbr>|<abbr title="A17\Twill\Repositories\Behaviors\(\A17\Twill\Repositories\Behaviors\mix">mix</abbr>|<abbr title="A17\Twill\Repositories\Behaviors\(string">(string</abbr>|<abbr title="A17\Twill\Repositories\Behaviors\array))">array))</abbr>
+                                                                                
+                                    </td>
+                <td>$repeaters</td>
+                <td class="last"><p>All repeaters used in the model, as an array of repeater names:
+[
+'article_repeater',
+'page_repeater'
+].</p></td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_afterSaveHandleRepeaters">afterSaveHandleRepeaters</a>(<a href="../../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a> $object, array $fields)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getFormFieldsHandleRepeaters">getFormFieldsHandleRepeaters</a>(<a href="../../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a> $object, array $fields)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_updateRepeaterMany">updateRepeaterMany</a>($object, $fields, $relation, $keepExisting = true, $model = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_updateRepeaterMorphMany">updateRepeaterMorphMany</a>($object, $fields, $relation, $morph = null, $model = null, $repeaterName = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_updateRepeater">updateRepeater</a>(object $object, array $fields, string $relation, $modelOrRepository = null, string $repeaterName = null)
+        
+                                            <p><p>Given relation, model and repeaterName, retrieve the repeater data from request and update the database record.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getFormFieldsForRepeater">getFormFieldsForRepeater</a>(object $object, array $fields, string $relation, string $modelOrRepository = null, string $repeaterName = null)
+        
+                                            <p><p>Given relation, model and repeaterName, get the necessary fields for rendering a repeater</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="A17\Twill\Repositories\Behaviors\Illuminate\Support\Collection">Collection</abbr>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getRepeaters">getRepeaters</a>()
+        
+                                            <p><p>Get all repeaters' model and relation from the $repeaters attribute.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_inferRelationFromRepeaterName">inferRelationFromRepeaterName</a>(string $repeaterName)
+        
+                                            <p><p>The relation name shoud be lower camel case, ex. userGroup, contactOffice</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_inferModelFromRepeaterName">inferModelFromRepeaterName</a>(string $repeaterName)
+        
+                                            <p><p>The model name should be singular upper camel case, ex. User, ArticleType</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_afterSaveHandleRepeaters">
+        <div class="location"><a href="https://github.com/area17/twill/blob/main/src/Repositories/Behaviors/HandleRepeaters.php#L39">at line 39</a></div>
+        <code>                    void
+    <strong>afterSaveHandleRepeaters</strong>(<a href="../../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a> $object, array $fields)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a></td>
+                <td>$object</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$fields</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFormFieldsHandleRepeaters">
+        <div class="location"><a href="https://github.com/area17/twill/blob/main/src/Repositories/Behaviors/HandleRepeaters.php#L51">at line 51</a></div>
+        <code>                    array
+    <strong>getFormFieldsHandleRepeaters</strong>(<a href="../../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a> $object, array $fields)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a></td>
+                <td>$object</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$fields</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_updateRepeaterMany">
+        <div class="location"><a href="https://github.com/area17/twill/blob/main/src/Repositories/Behaviors/HandleRepeaters.php#L60">at line 60</a></div>
+        <code>                    
+    <strong>updateRepeaterMany</strong>($object, $fields, $relation, $keepExisting = true, $model = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$object</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$fields</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$relation</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$keepExisting</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$model</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_updateRepeaterMorphMany">
+        <div class="location"><a href="https://github.com/area17/twill/blob/main/src/Repositories/Behaviors/HandleRepeaters.php#L77">at line 77</a></div>
+        <code>                    
+    <strong>updateRepeaterMorphMany</strong>($object, $fields, $relation, $morph = null, $model = null, $repeaterName = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$object</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$fields</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$relation</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$morph</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$model</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$repeaterName</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_updateRepeater">
+        <div class="location"><a href="https://github.com/area17/twill/blob/main/src/Repositories/Behaviors/HandleRepeaters.php#L142">at line 142</a></div>
+        <code>                    void
+    <strong>updateRepeater</strong>(object $object, array $fields, string $relation, $modelOrRepository = null, string $repeaterName = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Given relation, model and repeaterName, retrieve the repeater data from request and update the database record.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>object</td>
+                <td>$object</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$fields</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$relation</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$modelOrRepository</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$repeaterName</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFormFieldsForRepeater">
+        <div class="location"><a href="https://github.com/area17/twill/blob/main/src/Repositories/Behaviors/HandleRepeaters.php#L202">at line 202</a></div>
+        <code>                    array
+    <strong>getFormFieldsForRepeater</strong>(object $object, array $fields, string $relation, string $modelOrRepository = null, string $repeaterName = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Given relation, model and repeaterName, get the necessary fields for rendering a repeater</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>object</td>
+                <td>$object</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$fields</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$relation</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$modelOrRepository</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$repeaterName</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRepeaters">
+        <div class="location"><a href="https://github.com/area17/twill/blob/main/src/Repositories/Behaviors/HandleRepeaters.php#L312">at line 312</a></div>
+        <code>            protected        <abbr title="A17\Twill\Repositories\Behaviors\Illuminate\Support\Collection">Collection</abbr>
+    <strong>getRepeaters</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Get all repeaters' model and relation from the $repeaters attribute.</p></p>                <p><p>The missing information will be inferred by convention of Twill.</p></p>        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="A17\Twill\Repositories\Behaviors\Illuminate\Support\Collection">Collection</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_inferRelationFromRepeaterName">
+        <div class="location"><a href="https://github.com/area17/twill/blob/main/src/Repositories/Behaviors/HandleRepeaters.php#L331">at line 331</a></div>
+        <code>            protected        string
+    <strong>inferRelationFromRepeaterName</strong>(string $repeaterName)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>The relation name shoud be lower camel case, ex. userGroup, contactOffice</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$repeaterName</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_inferModelFromRepeaterName">
+        <div class="location"><a href="https://github.com/area17/twill/blob/main/src/Repositories/Behaviors/HandleRepeaters.php#L343">at line 343</a></div>
+        <code>            protected        string
+    <strong>inferModelFromRepeaterName</strong>(string $repeaterName)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>The model name should be singular upper camel case, ex. User, ArticleType</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$repeaterName</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>
