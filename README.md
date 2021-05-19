@@ -1,6 +1,11 @@
-# Twill API browser
+# API browser for [Twill](https://github.com/area17/twill)
 
-[pboi20.github.io/twill-api](https://pboi20.github.io/twill-api/)
+Branches:
+
+[1.1](https://pboi20.github.io/twill-api/1.1/) |
+[1.2](https://pboi20.github.io/twill-api/1.2/) |
+[2.x](https://pboi20.github.io/twill-api/2.x/) |
+[master](https://pboi20.github.io/twill-api/master/)
 
 
 ### Initial setup
