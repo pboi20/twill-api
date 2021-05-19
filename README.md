@@ -26,7 +26,7 @@ php vendor/bin/doctum.php update config.php
 ### Access the documentation locally
 
 ```
-php -S 0.0.0.0:8000 -t docs
+php -S 0.0.0.0:8000 -t docs/2.x/
 ```
 
 Visit [localhost:8000](http://localhost:8000/) in your Web browser.
