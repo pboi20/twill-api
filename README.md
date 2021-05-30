@@ -20,6 +20,7 @@ composer install
 
 ```
 php vendor/bin/doctum.php update config.php
+git -C twill checkout 2.x
 ```
 
 ### Access the documentation locally
