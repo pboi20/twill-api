@@ -25,10 +25,10 @@
                 <div id="control-panel">
                     <form action="#">
                 <select  class="form-control" id="version-switcher" name="version">
+                                            <option value="../../../../../master/index.html" data-version="master">master branch</option>
                                             <option value="../../../../../1.1/index.html" data-version="1.1">1.1 branch</option>
                                             <option value="../../../../../1.2/index.html" data-version="1.2">1.2 branch</option>
                                             <option value="../../../../../2.x/index.html" data-version="2.x">2.x branch</option>
-                                            <option value="../../../../../master/index.html" data-version="master">master branch</option>
                                     </select>
             </form>
                 <form id="search-form" action="../../../../search.html">
@@ -185,7 +185,7 @@
                     array
                 </div>
                 <div class="col-md-8">
-                    <a href="#method_getFormFieldsForRelatedBrowser">getFormFieldsForRelatedBrowser</a>(<a href="../../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a> $object, string $relation)
+                    <a href="#method_getFormFieldsForRelatedBrowser">getFormFieldsForRelatedBrowser</a>(<a href="../../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a> $object, string $relation, $titleKey = &#039;title&#039;)
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -579,7 +579,7 @@
                     <h3 id="method_getFormFieldsForRelatedBrowser">
         <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/Behaviors/HandleBrowsers.php#L148">at line 148</a></div>
         <code>                    array
-    <strong>getFormFieldsForRelatedBrowser</strong>(<a href="../../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a> $object, string $relation)
+    <strong>getFormFieldsForRelatedBrowser</strong>(<a href="../../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a> $object, string $relation, $titleKey = &#039;title&#039;)
         </code>
     </h3>
     <div class="details">    
@@ -602,6 +602,11 @@
                     <tr>
                 <td>string</td>
                 <td>$relation</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$titleKey</td>
                 <td></td>
             </tr>
             </table>
