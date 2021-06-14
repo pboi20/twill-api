@@ -1,3 +1,8 @@
+<p align='center'>
+Twill API docs are now accessible at <a href="https://twill.io/docs/api/2.x/">twill.io/docs/api</a> — this repository just for testing.
+</p>
+<hr>
+
 # API browser for [Twill](https://github.com/area17/twill)
 
 Branches:
