@@ -25,10 +25,10 @@
                 <div id="control-panel">
                     <form action="#">
                 <select  class="form-control" id="version-switcher" name="version">
+                                            <option value="../../../../master/index.html" data-version="master">master branch</option>
                                             <option value="../../../../1.1/index.html" data-version="1.1">1.1 branch</option>
                                             <option value="../../../../1.2/index.html" data-version="1.2">1.2 branch</option>
                                             <option value="../../../../2.x/index.html" data-version="2.x">2.x branch</option>
-                                            <option value="../../../../master/index.html" data-version="master">master branch</option>
                                     </select>
             </form>
                 <form id="search-form" action="../../../search.html">
@@ -308,7 +308,7 @@
                     array
                 </div>
                 <div class="col-md-8">
-                    <a href="#method_getFormFieldsForRelatedBrowser">getFormFieldsForRelatedBrowser</a>(<a href="../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a> $object, string $relation)
+                    <a href="#method_getFormFieldsForRelatedBrowser">getFormFieldsForRelatedBrowser</a>(<a href="../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a> $object, string $relation, $titleKey = &#039;title&#039;)
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -772,6 +772,54 @@
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_capsuleExists">
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_capsule">capsule</a>($string)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_capsule">
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getCapsuleByPath">getCapsuleByPath</a>($path)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_getCapsuleByPath">
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getCapsuleByClass">getCapsuleByClass</a>($class)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_getCapsuleByClass">
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_loadCapsuleConfig">loadCapsuleConfig</a>($capsule)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_loadCapsuleConfig">
 <abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a></small></div>
             </div>
                     <div class="row">
@@ -1464,7 +1512,7 @@
                     <div class="method-item">
                     <h3 id="method_afterSaveHandleBrowsers">
         <div class="location">in <a href="../../../A17/Twill/Repositories/Behaviors/HandleBrowsers.html#method_afterSaveHandleBrowsers">
-<abbr title="A17\Twill\Repositories\Behaviors\HandleBrowsers">HandleBrowsers</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Repositories/Behaviors/HandleBrowsers.php#L36">at line 36</a></div>
+<abbr title="A17\Twill\Repositories\Behaviors\HandleBrowsers">HandleBrowsers</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Repositories/Behaviors/HandleBrowsers.php#L38">at line 38</a></div>
         <code>                    void
     <strong>afterSaveHandleBrowsers</strong>(<a href="../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a> $object, array $fields)
         </code>
@@ -1513,7 +1561,7 @@
                     <div class="method-item">
                     <h3 id="method_getFormFieldsHandleBrowsers">
         <div class="location">in <a href="../../../A17/Twill/Repositories/Behaviors/HandleBrowsers.html#method_getFormFieldsHandleBrowsers">
-<abbr title="A17\Twill\Repositories\Behaviors\HandleBrowsers">HandleBrowsers</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Repositories/Behaviors/HandleBrowsers.php#L48">at line 48</a></div>
+<abbr title="A17\Twill\Repositories\Behaviors\HandleBrowsers">HandleBrowsers</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Repositories/Behaviors/HandleBrowsers.php#L50">at line 50</a></div>
         <code>                    array
     <strong>getFormFieldsHandleBrowsers</strong>(<a href="../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a> $object, array $fields)
         </code>
@@ -1562,7 +1610,7 @@
                     <div class="method-item">
                     <h3 id="method_updateBrowser">
         <div class="location">in <a href="../../../A17/Twill/Repositories/Behaviors/HandleBrowsers.html#method_updateBrowser">
-<abbr title="A17\Twill\Repositories\Behaviors\HandleBrowsers">HandleBrowsers</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Repositories/Behaviors/HandleBrowsers.php#L66">at line 66</a></div>
+<abbr title="A17\Twill\Repositories\Behaviors\HandleBrowsers">HandleBrowsers</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Repositories/Behaviors/HandleBrowsers.php#L71">at line 71</a></div>
         <code>                    void
     <strong>updateBrowser</strong>(<a href="../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a> $object, array $fields, string $relationship, string $positionAttribute = &#039;position&#039;, string|null $browserName = null, array $pivotAttributes = [])
         </code>
@@ -1631,7 +1679,7 @@
                     <div class="method-item">
                     <h3 id="method_updateOrderedBelongsTomany">
         <div class="location">in <a href="../../../A17/Twill/Repositories/Behaviors/HandleBrowsers.html#method_updateOrderedBelongsTomany">
-<abbr title="A17\Twill\Repositories\Behaviors\HandleBrowsers">HandleBrowsers</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Repositories/Behaviors/HandleBrowsers.php#L87">at line 87</a></div>
+<abbr title="A17\Twill\Repositories\Behaviors\HandleBrowsers">HandleBrowsers</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Repositories/Behaviors/HandleBrowsers.php#L100">at line 100</a></div>
         <code>                    void
     <strong>updateOrderedBelongsTomany</strong>(<a href="../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a> $object, array $fields, string $relationship, string $positionAttribute = &#039;position&#039;)
         </code>
@@ -1690,7 +1738,7 @@
                     <div class="method-item">
                     <h3 id="method_updateRelatedBrowser">
         <div class="location">in <a href="../../../A17/Twill/Repositories/Behaviors/HandleBrowsers.html#method_updateRelatedBrowser">
-<abbr title="A17\Twill\Repositories\Behaviors\HandleBrowsers">HandleBrowsers</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Repositories/Behaviors/HandleBrowsers.php#L98">at line 98</a></div>
+<abbr title="A17\Twill\Repositories\Behaviors\HandleBrowsers">HandleBrowsers</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Repositories/Behaviors/HandleBrowsers.php#L111">at line 111</a></div>
         <code>                    void
     <strong>updateRelatedBrowser</strong>(mixed $object, array $fields, string $browserName)
         </code>
@@ -1744,7 +1792,7 @@
                     <div class="method-item">
                     <h3 id="method_getFormFieldsForBrowser">
         <div class="location">in <a href="../../../A17/Twill/Repositories/Behaviors/HandleBrowsers.html#method_getFormFieldsForBrowser">
-<abbr title="A17\Twill\Repositories\Behaviors\HandleBrowsers">HandleBrowsers</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Repositories/Behaviors/HandleBrowsers.php#L111">at line 111</a></div>
+<abbr title="A17\Twill\Repositories\Behaviors\HandleBrowsers">HandleBrowsers</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Repositories/Behaviors/HandleBrowsers.php#L124">at line 124</a></div>
         <code>                    array
     <strong>getFormFieldsForBrowser</strong>(<a href="../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a> $object, string $relation, string|null $routePrefix = null, string $titleKey = &#039;title&#039;, string|null $moduleName = null)
         </code>
@@ -1808,9 +1856,9 @@
                     <div class="method-item">
                     <h3 id="method_getFormFieldsForRelatedBrowser">
         <div class="location">in <a href="../../../A17/Twill/Repositories/Behaviors/HandleBrowsers.html#method_getFormFieldsForRelatedBrowser">
-<abbr title="A17\Twill\Repositories\Behaviors\HandleBrowsers">HandleBrowsers</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Repositories/Behaviors/HandleBrowsers.php#L130">at line 130</a></div>
+<abbr title="A17\Twill\Repositories\Behaviors\HandleBrowsers">HandleBrowsers</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Repositories/Behaviors/HandleBrowsers.php#L148">at line 148</a></div>
         <code>                    array
-    <strong>getFormFieldsForRelatedBrowser</strong>(<a href="../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a> $object, string $relation)
+    <strong>getFormFieldsForRelatedBrowser</strong>(<a href="../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a> $object, string $relation, $titleKey = &#039;title&#039;)
         </code>
     </h3>
     <div class="details">    
@@ -1835,6 +1883,11 @@
                 <td>$relation</td>
                 <td></td>
             </tr>
+                    <tr>
+                <td></td>
+                <td>$titleKey</td>
+                <td></td>
+            </tr>
             </table>
 
             
@@ -1857,7 +1910,7 @@
                     <div class="method-item">
                     <h3 id="method_getBrowsers">
         <div class="location">in <a href="../../../A17/Twill/Repositories/Behaviors/HandleBrowsers.html#method_getBrowsers">
-<abbr title="A17\Twill\Repositories\Behaviors\HandleBrowsers">HandleBrowsers</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Repositories/Behaviors/HandleBrowsers.php#L153">at line 153</a></div>
+<abbr title="A17\Twill\Repositories\Behaviors\HandleBrowsers">HandleBrowsers</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Repositories/Behaviors/HandleBrowsers.php#L171">at line 171</a></div>
         <code>            protected        <abbr title="A17\Twill\Repositories\Behaviors\Illuminate\Support\Collection">Collection</abbr>
     <strong>getBrowsers</strong>()
         </code>
@@ -1890,7 +1943,7 @@
                     <div class="method-item">
                     <h3 id="method_inferRelationFromBrowserName">
         <div class="location">in <a href="../../../A17/Twill/Repositories/Behaviors/HandleBrowsers.html#method_inferRelationFromBrowserName">
-<abbr title="A17\Twill\Repositories\Behaviors\HandleBrowsers">HandleBrowsers</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Repositories/Behaviors/HandleBrowsers.php#L178">at line 178</a></div>
+<abbr title="A17\Twill\Repositories\Behaviors\HandleBrowsers">HandleBrowsers</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Repositories/Behaviors/HandleBrowsers.php#L196">at line 196</a></div>
         <code>            protected        string
     <strong>inferRelationFromBrowserName</strong>(string $browserName)
         </code>
@@ -1933,7 +1986,7 @@
                     <div class="method-item">
                     <h3 id="method_inferModelFromModuleName">
         <div class="location">in <a href="../../../A17/Twill/Repositories/Behaviors/HandleBrowsers.html#method_inferModelFromModuleName">
-<abbr title="A17\Twill\Repositories\Behaviors\HandleBrowsers">HandleBrowsers</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Repositories/Behaviors/HandleBrowsers.php#L190">at line 190</a></div>
+<abbr title="A17\Twill\Repositories\Behaviors\HandleBrowsers">HandleBrowsers</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Repositories/Behaviors/HandleBrowsers.php#L208">at line 208</a></div>
         <code>            protected        string
     <strong>inferModelFromModuleName</strong>(string $moduleName)
         </code>
@@ -1976,7 +2029,7 @@
                     <div class="method-item">
                     <h3 id="method_inferModuleNameFromBrowserName">
         <div class="location">in <a href="../../../A17/Twill/Repositories/Behaviors/HandleBrowsers.html#method_inferModuleNameFromBrowserName">
-<abbr title="A17\Twill\Repositories\Behaviors\HandleBrowsers">HandleBrowsers</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Repositories/Behaviors/HandleBrowsers.php#L203">at line 203</a></div>
+<abbr title="A17\Twill\Repositories\Behaviors\HandleBrowsers">HandleBrowsers</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Repositories/Behaviors/HandleBrowsers.php#L221">at line 221</a></div>
         <code>            protected        string
     <strong>inferModuleNameFromBrowserName</strong>(string $browserName)
         </code>
@@ -2931,7 +2984,7 @@
                     <div class="method-item">
                     <h3 id="method_registerPsr4Autoloader">
         <div class="location">in <a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_registerPsr4Autoloader">
-<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L162">at line 162</a></div>
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L168">at line 168</a></div>
         <code>                    
     <strong>registerPsr4Autoloader</strong>($capsule)
         </code>
@@ -2966,7 +3019,7 @@
                     <div class="method-item">
                     <h3 id="method_capsuleRootPath">
         <div class="location">in <a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_capsuleRootPath">
-<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L180">at line 180</a></div>
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L186">at line 186</a></div>
         <code>                    
     <strong>capsuleRootPath</strong>($capsule)
         </code>
@@ -3001,7 +3054,7 @@
                     <div class="method-item">
                     <h3 id="method_getCapsuleRepositoryClass">
         <div class="location">in <a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_getCapsuleRepositoryClass">
-<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L185">at line 185</a></div>
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L191">at line 191</a></div>
         <code>                    
     <strong>getCapsuleRepositoryClass</strong>($model)
         </code>
@@ -3036,7 +3089,7 @@
                     <div class="method-item">
                     <h3 id="method_getCapsuleTranslationClass">
         <div class="location">in <a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_getCapsuleTranslationClass">
-<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L190">at line 190</a></div>
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L196">at line 196</a></div>
         <code>                    
     <strong>getCapsuleTranslationClass</strong>($model)
         </code>
@@ -3071,7 +3124,7 @@
                     <div class="method-item">
                     <h3 id="method_getCapsuleSlugClass">
         <div class="location">in <a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_getCapsuleSlugClass">
-<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L195">at line 195</a></div>
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L201">at line 201</a></div>
         <code>                    
     <strong>getCapsuleSlugClass</strong>($model)
         </code>
@@ -3106,7 +3159,7 @@
                     <div class="method-item">
                     <h3 id="method_getCapsuleRevisionClass">
         <div class="location">in <a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_getCapsuleRevisionClass">
-<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L200">at line 200</a></div>
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L206">at line 206</a></div>
         <code>                    
     <strong>getCapsuleRevisionClass</strong>($model)
         </code>
@@ -3141,7 +3194,7 @@
                     <div class="method-item">
                     <h3 id="method_getCapsuleFormRequestClass">
         <div class="location">in <a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_getCapsuleFormRequestClass">
-<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L205">at line 205</a></div>
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L211">at line 211</a></div>
         <code>                    
     <strong>getCapsuleFormRequestClass</strong>($model)
         </code>
@@ -3176,7 +3229,7 @@
                     <div class="method-item">
                     <h3 id="method_getCapsuleViewPrefix">
         <div class="location">in <a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_getCapsuleViewPrefix">
-<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L210">at line 210</a></div>
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L216">at line 216</a></div>
         <code>                    
     <strong>getCapsuleViewPrefix</strong>($capsule)
         </code>
@@ -3211,7 +3264,7 @@
                     <div class="method-item">
                     <h3 id="method_namespaceToPath">
         <div class="location">in <a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_namespaceToPath">
-<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L217">at line 217</a></div>
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L223">at line 223</a></div>
         <code>                    
     <strong>namespaceToPath</strong>($capsule, $namespace)
         </code>
@@ -3251,7 +3304,7 @@
                     <div class="method-item">
                     <h3 id="method_capsuleNamespaceToPath">
         <div class="location">in <a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_capsuleNamespaceToPath">
-<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L226">at line 226</a></div>
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L232">at line 232</a></div>
         <code>                    
     <strong>capsuleNamespaceToPath</strong>($namespace, $capsuleNamespace, $rootPath)
         </code>
@@ -3296,7 +3349,7 @@
                     <div class="method-item">
                     <h3 id="method_getManager">
         <div class="location">in <a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_getManager">
-<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L240">at line 240</a></div>
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L246">at line 246</a></div>
         <code>                    
     <strong>getManager</strong>()
         </code>
@@ -3321,7 +3374,7 @@
                     <div class="method-item">
                     <h3 id="method_seedCapsules">
         <div class="location">in <a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_seedCapsules">
-<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L245">at line 245</a></div>
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L251">at line 251</a></div>
         <code>                    
     <strong>seedCapsules</strong>($illuminateSeeder)
         </code>
@@ -3356,7 +3409,7 @@
                     <div class="method-item">
                     <h3 id="method_makeCapsuleSeeder">
         <div class="location">in <a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_makeCapsuleSeeder">
-<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L258">at line 258</a></div>
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L267">at line 267</a></div>
         <code>                    
     <strong>makeCapsuleSeeder</strong>($capsule)
         </code>
@@ -3391,7 +3444,7 @@
                     <div class="method-item">
                     <h3 id="method_capsuleExists">
         <div class="location">in <a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_capsuleExists">
-<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L269">at line 269</a></div>
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L278">at line 278</a></div>
         <code>                    
     <strong>capsuleExists</strong>($module)
         </code>
@@ -3411,6 +3464,146 @@
                     <tr>
                 <td></td>
                 <td>$module</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_capsule">
+        <div class="location">in <a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_capsule">
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L283">at line 283</a></div>
+        <code>                    
+    <strong>capsule</strong>($string)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$string</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCapsuleByPath">
+        <div class="location">in <a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_getCapsuleByPath">
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L296">at line 296</a></div>
+        <code>                    
+    <strong>getCapsuleByPath</strong>($path)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$path</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCapsuleByClass">
+        <div class="location">in <a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_getCapsuleByClass">
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L316">at line 316</a></div>
+        <code>                    
+    <strong>getCapsuleByClass</strong>($class)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$class</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_loadCapsuleConfig">
+        <div class="location">in <a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_loadCapsuleConfig">
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L338">at line 338</a></div>
+        <code>                    
+    <strong>loadCapsuleConfig</strong>($capsule)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$capsule</td>
                 <td></td>
             </tr>
             </table>
