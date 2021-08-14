@@ -98,10 +98,10 @@
             <div class="container-fluid underlined">
                     <div class="row">
                 <div class="col-md-2 type">
-                    
+                    void
                 </div>
                 <div class="col-md-8">
-                    <a href="#method_afterSaveHandleTags">afterSaveHandleTags</a>($object, $fields)
+                    <a href="#method_afterSaveHandleTags">afterSaveHandleTags</a>(<a href="../../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a> $object, array $fields)
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -120,10 +120,10 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    
+                    <abbr title="Illuminate\Database\Eloquent\Collection">Collection</abbr>
                 </div>
                 <div class="col-md-8">
-                    <a href="#method_getTags">getTags</a>($query = &#039;&#039;, $ids = [])
+                    <a href="#method_getTags">getTags</a>(string $query = &#039;&#039;, array $ids = [])
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -131,7 +131,7 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    
+                    <abbr title="Illuminate\Support\Collection">Collection</abbr>
                 </div>
                 <div class="col-md-8">
                     <a href="#method_getTagsList">getTagsList</a>()
@@ -148,9 +148,9 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method_afterSaveHandleTags">
-        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/Behaviors/HandleTags.php#L7">at line 7</a></div>
-        <code>                    
-    <strong>afterSaveHandleTags</strong>($object, $fields)
+        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/Behaviors/HandleTags.php#L12">at line 12</a></div>
+        <code>                    void
+    <strong>afterSaveHandleTags</strong>(<a href="../../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a> $object, array $fields)
         </code>
     </h3>
     <div class="details">    
@@ -166,18 +166,27 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td></td>
+                <td><a href="../../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a></td>
                 <td>$object</td>
                 <td></td>
             </tr>
                     <tr>
-                <td></td>
+                <td>array</td>
                 <td>$fields</td>
                 <td></td>
             </tr>
             </table>
 
             
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
             
             
             
@@ -187,7 +196,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_filterHandleTags">
-        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/Behaviors/HandleTags.php#L29">at line 29</a></div>
+        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/Behaviors/HandleTags.php#L34">at line 34</a></div>
         <code>            protected        
     <strong>filterHandleTags</strong>($query, $scopes)
         </code>
@@ -226,9 +235,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getTags">
-        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/Behaviors/HandleTags.php#L39">at line 39</a></div>
-        <code>                    
-    <strong>getTags</strong>($query = &#039;&#039;, $ids = [])
+        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/Behaviors/HandleTags.php#L49">at line 49</a></div>
+        <code>                    <abbr title="Illuminate\Database\Eloquent\Collection">Collection</abbr>
+    <strong>getTags</strong>(string $query = &#039;&#039;, array $ids = [])
         </code>
     </h3>
     <div class="details">    
@@ -244,18 +253,27 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td></td>
+                <td>string</td>
                 <td>$query</td>
                 <td></td>
             </tr>
                     <tr>
-                <td></td>
+                <td>array</td>
                 <td>$ids</td>
                 <td></td>
             </tr>
             </table>
 
             
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Illuminate\Database\Eloquent\Collection">Collection</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
             
             
             
@@ -265,8 +283,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getTagsList">
-        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/Behaviors/HandleTags.php#L58">at line 58</a></div>
-        <code>                    
+        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/Behaviors/HandleTags.php#L71">at line 71</a></div>
+        <code>                    <abbr title="Illuminate\Support\Collection">Collection</abbr>
     <strong>getTagsList</strong>()
         </code>
     </h3>
@@ -280,6 +298,15 @@
         </div>
         <div class="tags">
             
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Illuminate\Support\Collection">Collection</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
             
             
             

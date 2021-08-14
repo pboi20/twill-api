@@ -106,6 +106,12 @@
             </div>
                     <div class="row">
                 <div class="col-md-6">
+                    <a href="../../../A17/Twill/Repositories/Behaviors/HandleRelatedBrowsers.html"><abbr title="A17\Twill\Repositories\Behaviors\HandleRelatedBrowsers">HandleRelatedBrowsers</abbr></a>    </div>
+                <div class="col-md-6"><p>Mimic HandleBrowsers, but when the relation uses
+HasRelated instead of being a proper model relation.</p></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
                     <a href="../../../A17/Twill/Repositories/Behaviors/HandleRepeaters.html"><abbr title="A17\Twill\Repositories\Behaviors\HandleRepeaters">HandleRepeaters</abbr></a>    </div>
                 <div class="col-md-6"></div>
             </div>
@@ -127,7 +133,7 @@
             <table class="table table-condensed">
                     <tr>
                 <td class="type" id="property_browsers">
-                                        protected                                        string|array|<abbr title="A17\Twill\Repositories\Behaviors\(array)">(array)</abbr>|<abbr title="A17\Twill\Repositories\Behaviors\(\A17\Twill\Repositories\Behaviors\mix">mix</abbr>|<abbr title="A17\Twill\Repositories\Behaviors\(string">(string</abbr>|<abbr title="A17\Twill\Repositories\Behaviors\array))">array))</abbr>
+                                        protected                                        array
                                                                                 
                                     </td>
                 <td>$browsers</td>
@@ -135,13 +141,27 @@
 [
 'books',
 'publications'
-].</p></td>
+]</p></td>
                 <td><small>from&nbsp;<a href="../../../A17/Twill/Repositories/Behaviors/HandleBrowsers.html#property_browsers">
 <abbr title="A17\Twill\Repositories\Behaviors\HandleBrowsers">HandleBrowsers</abbr></a></small></td>
             </tr>
                     <tr>
-                <td class="type" id="property_repeaters">
+                <td class="type" id="property_relatedBrowsers">
                                         protected                                        string|array|<abbr title="A17\Twill\Repositories\Behaviors\(array)">(array)</abbr>|<abbr title="A17\Twill\Repositories\Behaviors\(\A17\Twill\Repositories\Behaviors\mix">mix</abbr>|<abbr title="A17\Twill\Repositories\Behaviors\(string">(string</abbr>|<abbr title="A17\Twill\Repositories\Behaviors\array))">array))</abbr>
+                                                                                
+                                    </td>
+                <td>$relatedBrowsers</td>
+                <td class="last"><p>All related browsers used in the model, as an array of browser names:
+[
+'books',
+'publications'
+].</p></td>
+                <td><small>from&nbsp;<a href="../../../A17/Twill/Repositories/Behaviors/HandleRelatedBrowsers.html#property_relatedBrowsers">
+<abbr title="A17\Twill\Repositories\Behaviors\HandleRelatedBrowsers">HandleRelatedBrowsers</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_repeaters">
+                                        protected                                        array
                                                                                 
                                     </td>
                 <td>$repeaters</td>
@@ -284,7 +304,7 @@
                     void
                 </div>
                 <div class="col-md-8">
-                    <a href="#method_updateRelatedBrowser">updateRelatedBrowser</a>(mixed $object, array $fields, string $browserName)
+                    <a href="#method_updateRelatedBrowser">updateRelatedBrowser</a>(<a href="../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a> $object, array $fields, string $browserName)
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -317,7 +337,7 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <abbr title="A17\Twill\Repositories\Behaviors\Illuminate\Support\Collection">Collection</abbr>
+                    <abbr title="Illuminate\Support\Collection">Collection</abbr>
                 </div>
                 <div class="col-md-8">
                     <a href="#method_getBrowsers">getBrowsers</a>()
@@ -333,7 +353,7 @@
                 <div class="col-md-8">
                     <a href="#method_inferRelationFromBrowserName">inferRelationFromBrowserName</a>(string $browserName)
         
-                                            <p><p>The relation name shoud be lower camel case, ex. userGroup, contactOffice</p></p>                </div>
+                                            <p><p>Guess the browser's relation name (shoud be lower camel case, ex. userGroup, contactOffice).</p></p>                </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Repositories/Behaviors/HandleBrowsers.html#method_inferRelationFromBrowserName">
 <abbr title="A17\Twill\Repositories\Behaviors\HandleBrowsers">HandleBrowsers</abbr></a></small></div>
             </div>
@@ -344,7 +364,7 @@
                 <div class="col-md-8">
                     <a href="#method_inferModelFromModuleName">inferModelFromModuleName</a>(string $moduleName)
         
-                                            <p><p>The model name should be singular upper camel case, ex. User, ArticleType</p></p>                </div>
+                                            <p><p>Guess the module's model name (should be singular upper camel case, ex. User, ArticleType).</p></p>                </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Repositories/Behaviors/HandleBrowsers.html#method_inferModelFromModuleName">
 <abbr title="A17\Twill\Repositories\Behaviors\HandleBrowsers">HandleBrowsers</abbr></a></small></div>
             </div>
@@ -355,9 +375,44 @@
                 <div class="col-md-8">
                     <a href="#method_inferModuleNameFromBrowserName">inferModuleNameFromBrowserName</a>(string $browserName)
         
-                                            <p><p>The module name should be plural lower camel case</p></p>                </div>
+                                            <p><p>Guess the browser's module name (should be plural lower camel case, ex. userGroups, contactOffices).</p></p>                </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Repositories/Behaviors/HandleBrowsers.html#method_inferModuleNameFromBrowserName">
 <abbr title="A17\Twill\Repositories\Behaviors\HandleBrowsers">HandleBrowsers</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_afterSaveHandleRelatedBrowsers">afterSaveHandleRelatedBrowsers</a>(<a href="../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a> $object, array $fields)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Repositories/Behaviors/HandleRelatedBrowsers.html#method_afterSaveHandleRelatedBrowsers">
+<abbr title="A17\Twill\Repositories\Behaviors\HandleRelatedBrowsers">HandleRelatedBrowsers</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getFormFieldsHandleRelatedBrowsers">getFormFieldsHandleRelatedBrowsers</a>(<a href="../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a> $object, array $fields)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Repositories/Behaviors/HandleRelatedBrowsers.html#method_getFormFieldsHandleRelatedBrowsers">
+<abbr title="A17\Twill\Repositories\Behaviors\HandleRelatedBrowsers">HandleRelatedBrowsers</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="A17\Twill\Repositories\Behaviors\Illuminate\Support\Collection">Collection</abbr>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getRelatedBrowsers">getRelatedBrowsers</a>()
+        
+                                            <p><p>Get all related browser' detail info from the $relatedBrowsers attribute.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Repositories/Behaviors/HandleRelatedBrowsers.html#method_getRelatedBrowsers">
+<abbr title="A17\Twill\Repositories\Behaviors\HandleRelatedBrowsers">HandleRelatedBrowsers</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -385,10 +440,10 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    
+                    void
                 </div>
                 <div class="col-md-8">
-                    <a href="#method_updateRepeaterMany">updateRepeaterMany</a>($object, $fields, $relation, $keepExisting = true, $model = null)
+                    <a href="#method_updateRepeaterMany">updateRepeaterMany</a>(<a href="../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a> $object, array $fields, string $relation, bool $keepExisting = true, <a href="../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a>|null $model = null)
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -397,10 +452,10 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    
+                    void
                 </div>
                 <div class="col-md-8">
-                    <a href="#method_updateRepeaterMorphMany">updateRepeaterMorphMany</a>($object, $fields, $relation, $morph = null, $model = null, $repeaterName = null)
+                    <a href="#method_updateRepeaterMorphMany">updateRepeaterMorphMany</a>(<a href="../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a> $object, array $fields, string $relation, string|null $morph = null, <a href="../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a>|null $model = null, string|null $repeaterName = null)
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -412,7 +467,7 @@
                     void
                 </div>
                 <div class="col-md-8">
-                    <a href="#method_updateRepeater">updateRepeater</a>(object $object, array $fields, string $relation, $modelOrRepository = null, string $repeaterName = null)
+                    <a href="#method_updateRepeater">updateRepeater</a>(<a href="../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a> $object, array $fields, string $relation, <a href="../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a>|<a href="../../../A17/Twill/Repositories/ModuleRepository.html"><abbr title="A17\Twill\Repositories\ModuleRepository">ModuleRepository</abbr></a>|null $modelOrRepository = null, string|null $repeaterName = null)
         
                                             <p><p>Given relation, model and repeaterName, retrieve the repeater data from request and update the database record.</p></p>                </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Repositories/Behaviors/HandleRepeaters.html#method_updateRepeater">
@@ -423,7 +478,7 @@
                     array
                 </div>
                 <div class="col-md-8">
-                    <a href="#method_getFormFieldsForRepeater">getFormFieldsForRepeater</a>(object $object, array $fields, string $relation, string $modelOrRepository = null, string $repeaterName = null)
+                    <a href="#method_getFormFieldsForRepeater">getFormFieldsForRepeater</a>(<a href="../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a> $object, array $fields, string $relation, <a href="../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a>|<a href="../../../A17/Twill/Repositories/ModuleRepository.html"><abbr title="A17\Twill\Repositories\ModuleRepository">ModuleRepository</abbr></a>|null $modelOrRepository = null, string|null $repeaterName = null)
         
                                             <p><p>Given relation, model and repeaterName, get the necessary fields for rendering a repeater</p></p>                </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Repositories/Behaviors/HandleRepeaters.html#method_getFormFieldsForRepeater">
@@ -431,7 +486,7 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <abbr title="A17\Twill\Repositories\Behaviors\Illuminate\Support\Collection">Collection</abbr>
+                    <abbr title="Illuminate\Support\Collection">Collection</abbr>
                 </div>
                 <div class="col-md-8">
                     <a href="#method_getRepeaters">getRepeaters</a>()
@@ -447,7 +502,7 @@
                 <div class="col-md-8">
                     <a href="#method_inferRelationFromRepeaterName">inferRelationFromRepeaterName</a>(string $repeaterName)
         
-                                            <p><p>The relation name shoud be lower camel case, ex. userGroup, contactOffice</p></p>                </div>
+                                            <p><p>Guess the relation name (shoud be lower camel case, ex. userGroup, contactOffice).</p></p>                </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Repositories/Behaviors/HandleRepeaters.html#method_inferRelationFromRepeaterName">
 <abbr title="A17\Twill\Repositories\Behaviors\HandleRepeaters">HandleRepeaters</abbr></a></small></div>
             </div>
@@ -458,7 +513,7 @@
                 <div class="col-md-8">
                     <a href="#method_inferModelFromRepeaterName">inferModelFromRepeaterName</a>(string $repeaterName)
         
-                                            <p><p>The model name should be singular upper camel case, ex. User, ArticleType</p></p>                </div>
+                                            <p><p>Guess the model name (should be singular upper camel case, ex. User, ArticleType).</p></p>                </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Repositories/Behaviors/HandleRepeaters.html#method_inferModelFromRepeaterName">
 <abbr title="A17\Twill\Repositories\Behaviors\HandleRepeaters">HandleRepeaters</abbr></a></small></div>
             </div>
@@ -467,7 +522,7 @@
                     <a href="../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a>
                 </div>
                 <div class="col-md-8">
-                    <a href="#method_hydrateHandleFieldsGroups">hydrateHandleFieldsGroups</a>(<a href="../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a> $object, array $fields)
+                    <a href="#method_hydrateHandleFieldsGroups">hydrateHandleFieldsGroups</a>(<a href="../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a> $object, array|null $fields)
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -820,6 +875,18 @@
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_loadCapsuleConfig">
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_autoloadConfigFiles">autoloadConfigFiles</a>($capsule)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_autoloadConfigFiles">
 <abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a></small></div>
             </div>
                     <div class="row">
@@ -1740,7 +1807,7 @@
         <div class="location">in <a href="../../../A17/Twill/Repositories/Behaviors/HandleBrowsers.html#method_updateRelatedBrowser">
 <abbr title="A17\Twill\Repositories\Behaviors\HandleBrowsers">HandleBrowsers</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Repositories/Behaviors/HandleBrowsers.php#L111">at line 111</a></div>
         <code>                    void
-    <strong>updateRelatedBrowser</strong>(mixed $object, array $fields, string $browserName)
+    <strong>updateRelatedBrowser</strong>(<a href="../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a> $object, array $fields, string $browserName)
         </code>
     </h3>
     <div class="details">    
@@ -1756,7 +1823,7 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>mixed</td>
+                <td><a href="../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a></td>
                 <td>$object</td>
                 <td></td>
             </tr>
@@ -1911,7 +1978,7 @@
                     <h3 id="method_getBrowsers">
         <div class="location">in <a href="../../../A17/Twill/Repositories/Behaviors/HandleBrowsers.html#method_getBrowsers">
 <abbr title="A17\Twill\Repositories\Behaviors\HandleBrowsers">HandleBrowsers</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Repositories/Behaviors/HandleBrowsers.php#L171">at line 171</a></div>
-        <code>            protected        <abbr title="A17\Twill\Repositories\Behaviors\Illuminate\Support\Collection">Collection</abbr>
+        <code>            protected        <abbr title="Illuminate\Support\Collection">Collection</abbr>
     <strong>getBrowsers</strong>()
         </code>
     </h3>
@@ -1928,7 +1995,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td><abbr title="A17\Twill\Repositories\Behaviors\Illuminate\Support\Collection">Collection</abbr></td>
+            <td><abbr title="Illuminate\Support\Collection">Collection</abbr></td>
             <td></td>
         </tr>
     </table>
@@ -1943,7 +2010,7 @@
                     <div class="method-item">
                     <h3 id="method_inferRelationFromBrowserName">
         <div class="location">in <a href="../../../A17/Twill/Repositories/Behaviors/HandleBrowsers.html#method_inferRelationFromBrowserName">
-<abbr title="A17\Twill\Repositories\Behaviors\HandleBrowsers">HandleBrowsers</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Repositories/Behaviors/HandleBrowsers.php#L196">at line 196</a></div>
+<abbr title="A17\Twill\Repositories\Behaviors\HandleBrowsers">HandleBrowsers</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Repositories/Behaviors/HandleBrowsers.php#L195">at line 195</a></div>
         <code>            protected        string
     <strong>inferRelationFromBrowserName</strong>(string $browserName)
         </code>
@@ -1953,7 +2020,7 @@
             
 
         <div class="method-description">
-                            <p><p>The relation name shoud be lower camel case, ex. userGroup, contactOffice</p></p>                        
+                            <p><p>Guess the browser's relation name (shoud be lower camel case, ex. userGroup, contactOffice).</p></p>                        
         </div>
         <div class="tags">
                             <h4>Parameters</h4>
@@ -1986,7 +2053,7 @@
                     <div class="method-item">
                     <h3 id="method_inferModelFromModuleName">
         <div class="location">in <a href="../../../A17/Twill/Repositories/Behaviors/HandleBrowsers.html#method_inferModelFromModuleName">
-<abbr title="A17\Twill\Repositories\Behaviors\HandleBrowsers">HandleBrowsers</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Repositories/Behaviors/HandleBrowsers.php#L208">at line 208</a></div>
+<abbr title="A17\Twill\Repositories\Behaviors\HandleBrowsers">HandleBrowsers</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Repositories/Behaviors/HandleBrowsers.php#L206">at line 206</a></div>
         <code>            protected        string
     <strong>inferModelFromModuleName</strong>(string $moduleName)
         </code>
@@ -1996,7 +2063,7 @@
             
 
         <div class="method-description">
-                            <p><p>The model name should be singular upper camel case, ex. User, ArticleType</p></p>                        
+                            <p><p>Guess the module's model name (should be singular upper camel case, ex. User, ArticleType).</p></p>                        
         </div>
         <div class="tags">
                             <h4>Parameters</h4>
@@ -2029,7 +2096,7 @@
                     <div class="method-item">
                     <h3 id="method_inferModuleNameFromBrowserName">
         <div class="location">in <a href="../../../A17/Twill/Repositories/Behaviors/HandleBrowsers.html#method_inferModuleNameFromBrowserName">
-<abbr title="A17\Twill\Repositories\Behaviors\HandleBrowsers">HandleBrowsers</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Repositories/Behaviors/HandleBrowsers.php#L221">at line 221</a></div>
+<abbr title="A17\Twill\Repositories\Behaviors\HandleBrowsers">HandleBrowsers</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Repositories/Behaviors/HandleBrowsers.php#L217">at line 217</a></div>
         <code>            protected        string
     <strong>inferModuleNameFromBrowserName</strong>(string $browserName)
         </code>
@@ -2039,7 +2106,7 @@
             
 
         <div class="method-description">
-                            <p><p>The module name should be plural lower camel case</p></p>                        
+                            <p><p>Guess the browser's module name (should be plural lower camel case, ex. userGroups, contactOffices).</p></p>                        
         </div>
         <div class="tags">
                             <h4>Parameters</h4>
@@ -2058,6 +2125,137 @@
                     <table class="table table-condensed">
         <tr>
             <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_afterSaveHandleRelatedBrowsers">
+        <div class="location">in <a href="../../../A17/Twill/Repositories/Behaviors/HandleRelatedBrowsers.html#method_afterSaveHandleRelatedBrowsers">
+<abbr title="A17\Twill\Repositories\Behaviors\HandleRelatedBrowsers">HandleRelatedBrowsers</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Repositories/Behaviors/HandleRelatedBrowsers.php#L40">at line 40</a></div>
+        <code>                    void
+    <strong>afterSaveHandleRelatedBrowsers</strong>(<a href="../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a> $object, array $fields)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a></td>
+                <td>$object</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$fields</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFormFieldsHandleRelatedBrowsers">
+        <div class="location">in <a href="../../../A17/Twill/Repositories/Behaviors/HandleRelatedBrowsers.html#method_getFormFieldsHandleRelatedBrowsers">
+<abbr title="A17\Twill\Repositories\Behaviors\HandleRelatedBrowsers">HandleRelatedBrowsers</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Repositories/Behaviors/HandleRelatedBrowsers.php#L52">at line 52</a></div>
+        <code>                    array
+    <strong>getFormFieldsHandleRelatedBrowsers</strong>(<a href="../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a> $object, array $fields)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a></td>
+                <td>$object</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$fields</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRelatedBrowsers">
+        <div class="location">in <a href="../../../A17/Twill/Repositories/Behaviors/HandleRelatedBrowsers.html#method_getRelatedBrowsers">
+<abbr title="A17\Twill\Repositories\Behaviors\HandleRelatedBrowsers">HandleRelatedBrowsers</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Repositories/Behaviors/HandleRelatedBrowsers.php#L67">at line 67</a></div>
+        <code>            protected        <abbr title="A17\Twill\Repositories\Behaviors\Illuminate\Support\Collection">Collection</abbr>
+    <strong>getRelatedBrowsers</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Get all related browser' detail info from the $relatedBrowsers attribute.</p></p>                <p><p>The missing information will be inferred by convention of Twill.</p></p>        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="A17\Twill\Repositories\Behaviors\Illuminate\Support\Collection">Collection</abbr></td>
             <td></td>
         </tr>
     </table>
@@ -2170,124 +2368,9 @@
                     <div class="method-item">
                     <h3 id="method_updateRepeaterMany">
         <div class="location">in <a href="../../../A17/Twill/Repositories/Behaviors/HandleRepeaters.html#method_updateRepeaterMany">
-<abbr title="A17\Twill\Repositories\Behaviors\HandleRepeaters">HandleRepeaters</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Repositories/Behaviors/HandleRepeaters.php#L60">at line 60</a></div>
-        <code>                    
-    <strong>updateRepeaterMany</strong>($object, $fields, $relation, $keepExisting = true, $model = null)
-        </code>
-    </h3>
-    <div class="details">    
-    
-            
-
-        <div class="method-description">
-                            <p class="no-description">No description</p>
-                    
-        </div>
-        <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td></td>
-                <td>$object</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td></td>
-                <td>$fields</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td></td>
-                <td>$relation</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td></td>
-                <td>$keepExisting</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td></td>
-                <td>$model</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_updateRepeaterMorphMany">
-        <div class="location">in <a href="../../../A17/Twill/Repositories/Behaviors/HandleRepeaters.html#method_updateRepeaterMorphMany">
-<abbr title="A17\Twill\Repositories\Behaviors\HandleRepeaters">HandleRepeaters</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Repositories/Behaviors/HandleRepeaters.php#L77">at line 77</a></div>
-        <code>                    
-    <strong>updateRepeaterMorphMany</strong>($object, $fields, $relation, $morph = null, $model = null, $repeaterName = null)
-        </code>
-    </h3>
-    <div class="details">    
-    
-            
-
-        <div class="method-description">
-                            <p class="no-description">No description</p>
-                    
-        </div>
-        <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td></td>
-                <td>$object</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td></td>
-                <td>$fields</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td></td>
-                <td>$relation</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td></td>
-                <td>$morph</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td></td>
-                <td>$model</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td></td>
-                <td>$repeaterName</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_updateRepeater">
-        <div class="location">in <a href="../../../A17/Twill/Repositories/Behaviors/HandleRepeaters.html#method_updateRepeater">
-<abbr title="A17\Twill\Repositories\Behaviors\HandleRepeaters">HandleRepeaters</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Repositories/Behaviors/HandleRepeaters.php#L142">at line 142</a></div>
+<abbr title="A17\Twill\Repositories\Behaviors\HandleRepeaters">HandleRepeaters</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Repositories/Behaviors/HandleRepeaters.php#L68">at line 68</a></div>
         <code>                    void
-    <strong>updateRepeater</strong>(object $object, array $fields, string $relation, $modelOrRepository = null, string $repeaterName = null)
+    <strong>updateRepeaterMany</strong>(<a href="../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a> $object, array $fields, string $relation, bool $keepExisting = true, <a href="../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a>|null $model = null)
         </code>
     </h3>
     <div class="details">    
@@ -2295,14 +2378,15 @@
             
 
         <div class="method-description">
-                            <p><p>Given relation, model and repeaterName, retrieve the repeater data from request and update the database record.</p></p>                        
+                            <p class="no-description">No description</p>
+                    
         </div>
         <div class="tags">
                             <h4>Parameters</h4>
 
                     <table class="table table-condensed">
                     <tr>
-                <td>object</td>
+                <td><a href="../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a></td>
                 <td>$object</td>
                 <td></td>
             </tr>
@@ -2317,12 +2401,144 @@
                 <td></td>
             </tr>
                     <tr>
+                <td>bool</td>
+                <td>$keepExisting</td>
                 <td></td>
-                <td>$modelOrRepository</td>
+            </tr>
+                    <tr>
+                <td><a href="../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a>|null</td>
+                <td>$model</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_updateRepeaterMorphMany">
+        <div class="location">in <a href="../../../A17/Twill/Repositories/Behaviors/HandleRepeaters.html#method_updateRepeaterMorphMany">
+<abbr title="A17\Twill\Repositories\Behaviors\HandleRepeaters">HandleRepeaters</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Repositories/Behaviors/HandleRepeaters.php#L94">at line 94</a></div>
+        <code>                    void
+    <strong>updateRepeaterMorphMany</strong>(<a href="../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a> $object, array $fields, string $relation, string|null $morph = null, <a href="../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a>|null $model = null, string|null $repeaterName = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a></td>
+                <td>$object</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$fields</td>
                 <td></td>
             </tr>
                     <tr>
                 <td>string</td>
+                <td>$relation</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$morph</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a>|null</td>
+                <td>$model</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$repeaterName</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_updateRepeater">
+        <div class="location">in <a href="../../../A17/Twill/Repositories/Behaviors/HandleRepeaters.html#method_updateRepeater">
+<abbr title="A17\Twill\Repositories\Behaviors\HandleRepeaters">HandleRepeaters</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Repositories/Behaviors/HandleRepeaters.php#L158">at line 158</a></div>
+        <code>                    void
+    <strong>updateRepeater</strong>(<a href="../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a> $object, array $fields, string $relation, <a href="../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a>|<a href="../../../A17/Twill/Repositories/ModuleRepository.html"><abbr title="A17\Twill\Repositories\ModuleRepository">ModuleRepository</abbr></a>|null $modelOrRepository = null, string|null $repeaterName = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Given relation, model and repeaterName, retrieve the repeater data from request and update the database record.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a></td>
+                <td>$object</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$fields</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$relation</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a>|<a href="../../../A17/Twill/Repositories/ModuleRepository.html"><abbr title="A17\Twill\Repositories\ModuleRepository">ModuleRepository</abbr></a>|null</td>
+                <td>$modelOrRepository</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
                 <td>$repeaterName</td>
                 <td></td>
             </tr>
@@ -2348,9 +2564,9 @@
                     <div class="method-item">
                     <h3 id="method_getFormFieldsForRepeater">
         <div class="location">in <a href="../../../A17/Twill/Repositories/Behaviors/HandleRepeaters.html#method_getFormFieldsForRepeater">
-<abbr title="A17\Twill\Repositories\Behaviors\HandleRepeaters">HandleRepeaters</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Repositories/Behaviors/HandleRepeaters.php#L202">at line 202</a></div>
+<abbr title="A17\Twill\Repositories\Behaviors\HandleRepeaters">HandleRepeaters</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Repositories/Behaviors/HandleRepeaters.php#L217">at line 217</a></div>
         <code>                    array
-    <strong>getFormFieldsForRepeater</strong>(object $object, array $fields, string $relation, string $modelOrRepository = null, string $repeaterName = null)
+    <strong>getFormFieldsForRepeater</strong>(<a href="../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a> $object, array $fields, string $relation, <a href="../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a>|<a href="../../../A17/Twill/Repositories/ModuleRepository.html"><abbr title="A17\Twill\Repositories\ModuleRepository">ModuleRepository</abbr></a>|null $modelOrRepository = null, string|null $repeaterName = null)
         </code>
     </h3>
     <div class="details">    
@@ -2365,7 +2581,7 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>object</td>
+                <td><a href="../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a></td>
                 <td>$object</td>
                 <td></td>
             </tr>
@@ -2380,12 +2596,12 @@
                 <td></td>
             </tr>
                     <tr>
-                <td>string</td>
+                <td><a href="../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a>|<a href="../../../A17/Twill/Repositories/ModuleRepository.html"><abbr title="A17\Twill\Repositories\ModuleRepository">ModuleRepository</abbr></a>|null</td>
                 <td>$modelOrRepository</td>
                 <td></td>
             </tr>
                     <tr>
-                <td>string</td>
+                <td>string|null</td>
                 <td>$repeaterName</td>
                 <td></td>
             </tr>
@@ -2411,8 +2627,8 @@
                     <div class="method-item">
                     <h3 id="method_getRepeaters">
         <div class="location">in <a href="../../../A17/Twill/Repositories/Behaviors/HandleRepeaters.html#method_getRepeaters">
-<abbr title="A17\Twill\Repositories\Behaviors\HandleRepeaters">HandleRepeaters</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Repositories/Behaviors/HandleRepeaters.php#L312">at line 312</a></div>
-        <code>            protected        <abbr title="A17\Twill\Repositories\Behaviors\Illuminate\Support\Collection">Collection</abbr>
+<abbr title="A17\Twill\Repositories\Behaviors\HandleRepeaters">HandleRepeaters</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Repositories/Behaviors/HandleRepeaters.php#L327">at line 327</a></div>
+        <code>            protected        <abbr title="Illuminate\Support\Collection">Collection</abbr>
     <strong>getRepeaters</strong>()
         </code>
     </h3>
@@ -2429,7 +2645,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td><abbr title="A17\Twill\Repositories\Behaviors\Illuminate\Support\Collection">Collection</abbr></td>
+            <td><abbr title="Illuminate\Support\Collection">Collection</abbr></td>
             <td></td>
         </tr>
     </table>
@@ -2444,7 +2660,7 @@
                     <div class="method-item">
                     <h3 id="method_inferRelationFromRepeaterName">
         <div class="location">in <a href="../../../A17/Twill/Repositories/Behaviors/HandleRepeaters.html#method_inferRelationFromRepeaterName">
-<abbr title="A17\Twill\Repositories\Behaviors\HandleRepeaters">HandleRepeaters</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Repositories/Behaviors/HandleRepeaters.php#L331">at line 331</a></div>
+<abbr title="A17\Twill\Repositories\Behaviors\HandleRepeaters">HandleRepeaters</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Repositories/Behaviors/HandleRepeaters.php#L345">at line 345</a></div>
         <code>            protected        string
     <strong>inferRelationFromRepeaterName</strong>(string $repeaterName)
         </code>
@@ -2454,7 +2670,7 @@
             
 
         <div class="method-description">
-                            <p><p>The relation name shoud be lower camel case, ex. userGroup, contactOffice</p></p>                        
+                            <p><p>Guess the relation name (shoud be lower camel case, ex. userGroup, contactOffice).</p></p>                        
         </div>
         <div class="tags">
                             <h4>Parameters</h4>
@@ -2487,7 +2703,7 @@
                     <div class="method-item">
                     <h3 id="method_inferModelFromRepeaterName">
         <div class="location">in <a href="../../../A17/Twill/Repositories/Behaviors/HandleRepeaters.html#method_inferModelFromRepeaterName">
-<abbr title="A17\Twill\Repositories\Behaviors\HandleRepeaters">HandleRepeaters</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Repositories/Behaviors/HandleRepeaters.php#L343">at line 343</a></div>
+<abbr title="A17\Twill\Repositories\Behaviors\HandleRepeaters">HandleRepeaters</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Repositories/Behaviors/HandleRepeaters.php#L356">at line 356</a></div>
         <code>            protected        string
     <strong>inferModelFromRepeaterName</strong>(string $repeaterName)
         </code>
@@ -2497,7 +2713,7 @@
             
 
         <div class="method-description">
-                            <p><p>The model name should be singular upper camel case, ex. User, ArticleType</p></p>                        
+                            <p><p>Guess the model name (should be singular upper camel case, ex. User, ArticleType).</p></p>                        
         </div>
         <div class="tags">
                             <h4>Parameters</h4>
@@ -2532,7 +2748,7 @@
         <div class="location">in <a href="../../../A17/Twill/Repositories/Behaviors/HandleFieldsGroups.html#method_hydrateHandleFieldsGroups">
 <abbr title="A17\Twill\Repositories\Behaviors\HandleFieldsGroups">HandleFieldsGroups</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Repositories/Behaviors/HandleFieldsGroups.php#L15">at line 15</a></div>
         <code>                    <a href="../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a>
-    <strong>hydrateHandleFieldsGroups</strong>(<a href="../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a> $object, array $fields)
+    <strong>hydrateHandleFieldsGroups</strong>(<a href="../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a> $object, array|null $fields)
         </code>
     </h3>
     <div class="details">    
@@ -2553,7 +2769,7 @@
                 <td></td>
             </tr>
                     <tr>
-                <td>array</td>
+                <td>array|null</td>
                 <td>$fields</td>
                 <td></td>
             </tr>
@@ -2628,7 +2844,7 @@
                     <div class="method-item">
                     <h3 id="method_prepareFieldsBeforeCreateHandleFieldsGroups">
         <div class="location">in <a href="../../../A17/Twill/Repositories/Behaviors/HandleFieldsGroups.html#method_prepareFieldsBeforeCreateHandleFieldsGroups">
-<abbr title="A17\Twill\Repositories\Behaviors\HandleFieldsGroups">HandleFieldsGroups</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Repositories/Behaviors/HandleFieldsGroups.php#L41">at line 41</a></div>
+<abbr title="A17\Twill\Repositories\Behaviors\HandleFieldsGroups">HandleFieldsGroups</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Repositories/Behaviors/HandleFieldsGroups.php#L40">at line 40</a></div>
         <code>                    array
     <strong>prepareFieldsBeforeCreateHandleFieldsGroups</strong>(array $fields)
         </code>
@@ -2672,7 +2888,7 @@
                     <div class="method-item">
                     <h3 id="method_getFormFieldsHandleFieldsGroups">
         <div class="location">in <a href="../../../A17/Twill/Repositories/Behaviors/HandleFieldsGroups.html#method_getFormFieldsHandleFieldsGroups">
-<abbr title="A17\Twill\Repositories\Behaviors\HandleFieldsGroups">HandleFieldsGroups</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Repositories/Behaviors/HandleFieldsGroups.php#L51">at line 51</a></div>
+<abbr title="A17\Twill\Repositories\Behaviors\HandleFieldsGroups">HandleFieldsGroups</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Repositories/Behaviors/HandleFieldsGroups.php#L50">at line 50</a></div>
         <code>                    array
     <strong>getFormFieldsHandleFieldsGroups</strong>(<a href="../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a> $object, array $fields)
         </code>
@@ -2721,7 +2937,7 @@
                     <div class="method-item">
                     <h3 id="method_handleFieldsGroups">
         <div class="location">in <a href="../../../A17/Twill/Repositories/Behaviors/HandleFieldsGroups.html#method_handleFieldsGroups">
-<abbr title="A17\Twill\Repositories\Behaviors\HandleFieldsGroups">HandleFieldsGroups</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Repositories/Behaviors/HandleFieldsGroups.php#L67">at line 67</a></div>
+<abbr title="A17\Twill\Repositories\Behaviors\HandleFieldsGroups">HandleFieldsGroups</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Repositories/Behaviors/HandleFieldsGroups.php#L66">at line 66</a></div>
         <code>            protected        
     <strong>handleFieldsGroups</strong>($fields)
         </code>
@@ -2984,7 +3200,7 @@
                     <div class="method-item">
                     <h3 id="method_registerPsr4Autoloader">
         <div class="location">in <a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_registerPsr4Autoloader">
-<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L168">at line 168</a></div>
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L172">at line 172</a></div>
         <code>                    
     <strong>registerPsr4Autoloader</strong>($capsule)
         </code>
@@ -3019,7 +3235,7 @@
                     <div class="method-item">
                     <h3 id="method_capsuleRootPath">
         <div class="location">in <a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_capsuleRootPath">
-<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L186">at line 186</a></div>
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L190">at line 190</a></div>
         <code>                    
     <strong>capsuleRootPath</strong>($capsule)
         </code>
@@ -3054,7 +3270,7 @@
                     <div class="method-item">
                     <h3 id="method_getCapsuleRepositoryClass">
         <div class="location">in <a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_getCapsuleRepositoryClass">
-<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L191">at line 191</a></div>
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L195">at line 195</a></div>
         <code>                    
     <strong>getCapsuleRepositoryClass</strong>($model)
         </code>
@@ -3089,7 +3305,7 @@
                     <div class="method-item">
                     <h3 id="method_getCapsuleTranslationClass">
         <div class="location">in <a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_getCapsuleTranslationClass">
-<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L196">at line 196</a></div>
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L200">at line 200</a></div>
         <code>                    
     <strong>getCapsuleTranslationClass</strong>($model)
         </code>
@@ -3124,7 +3340,7 @@
                     <div class="method-item">
                     <h3 id="method_getCapsuleSlugClass">
         <div class="location">in <a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_getCapsuleSlugClass">
-<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L201">at line 201</a></div>
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L205">at line 205</a></div>
         <code>                    
     <strong>getCapsuleSlugClass</strong>($model)
         </code>
@@ -3159,7 +3375,7 @@
                     <div class="method-item">
                     <h3 id="method_getCapsuleRevisionClass">
         <div class="location">in <a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_getCapsuleRevisionClass">
-<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L206">at line 206</a></div>
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L210">at line 210</a></div>
         <code>                    
     <strong>getCapsuleRevisionClass</strong>($model)
         </code>
@@ -3194,7 +3410,7 @@
                     <div class="method-item">
                     <h3 id="method_getCapsuleFormRequestClass">
         <div class="location">in <a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_getCapsuleFormRequestClass">
-<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L211">at line 211</a></div>
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L215">at line 215</a></div>
         <code>                    
     <strong>getCapsuleFormRequestClass</strong>($model)
         </code>
@@ -3229,7 +3445,7 @@
                     <div class="method-item">
                     <h3 id="method_getCapsuleViewPrefix">
         <div class="location">in <a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_getCapsuleViewPrefix">
-<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L216">at line 216</a></div>
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L220">at line 220</a></div>
         <code>                    
     <strong>getCapsuleViewPrefix</strong>($capsule)
         </code>
@@ -3264,7 +3480,7 @@
                     <div class="method-item">
                     <h3 id="method_namespaceToPath">
         <div class="location">in <a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_namespaceToPath">
-<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L223">at line 223</a></div>
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L227">at line 227</a></div>
         <code>                    
     <strong>namespaceToPath</strong>($capsule, $namespace)
         </code>
@@ -3304,7 +3520,7 @@
                     <div class="method-item">
                     <h3 id="method_capsuleNamespaceToPath">
         <div class="location">in <a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_capsuleNamespaceToPath">
-<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L232">at line 232</a></div>
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L236">at line 236</a></div>
         <code>                    
     <strong>capsuleNamespaceToPath</strong>($namespace, $capsuleNamespace, $rootPath)
         </code>
@@ -3349,7 +3565,7 @@
                     <div class="method-item">
                     <h3 id="method_getManager">
         <div class="location">in <a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_getManager">
-<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L246">at line 246</a></div>
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L250">at line 250</a></div>
         <code>                    
     <strong>getManager</strong>()
         </code>
@@ -3374,7 +3590,7 @@
                     <div class="method-item">
                     <h3 id="method_seedCapsules">
         <div class="location">in <a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_seedCapsules">
-<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L251">at line 251</a></div>
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L255">at line 255</a></div>
         <code>                    
     <strong>seedCapsules</strong>($illuminateSeeder)
         </code>
@@ -3409,7 +3625,7 @@
                     <div class="method-item">
                     <h3 id="method_makeCapsuleSeeder">
         <div class="location">in <a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_makeCapsuleSeeder">
-<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L267">at line 267</a></div>
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L271">at line 271</a></div>
         <code>                    
     <strong>makeCapsuleSeeder</strong>($capsule)
         </code>
@@ -3444,7 +3660,7 @@
                     <div class="method-item">
                     <h3 id="method_capsuleExists">
         <div class="location">in <a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_capsuleExists">
-<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L278">at line 278</a></div>
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L282">at line 282</a></div>
         <code>                    
     <strong>capsuleExists</strong>($module)
         </code>
@@ -3479,7 +3695,7 @@
                     <div class="method-item">
                     <h3 id="method_capsule">
         <div class="location">in <a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_capsule">
-<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L283">at line 283</a></div>
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L287">at line 287</a></div>
         <code>                    
     <strong>capsule</strong>($string)
         </code>
@@ -3514,7 +3730,7 @@
                     <div class="method-item">
                     <h3 id="method_getCapsuleByPath">
         <div class="location">in <a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_getCapsuleByPath">
-<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L296">at line 296</a></div>
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L300">at line 300</a></div>
         <code>                    
     <strong>getCapsuleByPath</strong>($path)
         </code>
@@ -3549,7 +3765,7 @@
                     <div class="method-item">
                     <h3 id="method_getCapsuleByClass">
         <div class="location">in <a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_getCapsuleByClass">
-<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L316">at line 316</a></div>
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L320">at line 320</a></div>
         <code>                    
     <strong>getCapsuleByClass</strong>($class)
         </code>
@@ -3584,7 +3800,7 @@
                     <div class="method-item">
                     <h3 id="method_loadCapsuleConfig">
         <div class="location">in <a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_loadCapsuleConfig">
-<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L338">at line 338</a></div>
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L342">at line 342</a></div>
         <code>                    
     <strong>loadCapsuleConfig</strong>($capsule)
         </code>
@@ -3617,8 +3833,43 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_autoloadConfigFiles">
+        <div class="location">in <a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_autoloadConfigFiles">
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L362">at line 362</a></div>
+        <code>                    
+    <strong>autoloadConfigFiles</strong>($capsule)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$capsule</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_get">
-        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L54">at line 54</a></div>
+        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L55">at line 55</a></div>
         <code>                    <abbr title="Illuminate\Database\Eloquent\Collection">Collection</abbr>
     <strong>get</strong>(array $with = [], array $scopes = [], array $orders = [], int $perPage = 20, bool $forcePagination = false)
         </code>
@@ -3681,7 +3932,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getCountByStatusSlug">
-        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L77">at line 77</a></div>
+        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L78">at line 78</a></div>
         <code>                    int
     <strong>getCountByStatusSlug</strong>(string $slug, array $scope = [])
         </code>
@@ -3729,7 +3980,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getCountForAll">
-        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L104">at line 104</a></div>
+        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L105">at line 105</a></div>
         <code>                    int
     <strong>getCountForAll</strong>()
         </code>
@@ -3762,7 +4013,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getCountForPublished">
-        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L113">at line 113</a></div>
+        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L114">at line 114</a></div>
         <code>                    int
     <strong>getCountForPublished</strong>()
         </code>
@@ -3795,7 +4046,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getCountForDraft">
-        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L122">at line 122</a></div>
+        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L123">at line 123</a></div>
         <code>                    int
     <strong>getCountForDraft</strong>()
         </code>
@@ -3828,7 +4079,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getCountForTrash">
-        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L131">at line 131</a></div>
+        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L132">at line 132</a></div>
         <code>                    int
     <strong>getCountForTrash</strong>()
         </code>
@@ -3861,7 +4112,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getById">
-        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L144">at line 144</a></div>
+        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L145">at line 145</a></div>
         <code>                    <a href="../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a>
     <strong>getById</strong>($id, array $with = [], array $withCount = [])
         </code>
@@ -3923,7 +4174,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_listAll">
-        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L155">at line 155</a></div>
+        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L156">at line 156</a></div>
         <code>                    <abbr title="Illuminate\Support\Collection">Collection</abbr>
     <strong>listAll</strong>(string $column = &#039;title&#039;, array $orders = [], null $exceptId = null)
         </code>
@@ -3976,7 +4227,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_cmsSearch">
-        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L181">at line 181</a></div>
+        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L182">at line 182</a></div>
         <code>                    <abbr title="Illuminate\Database\Eloquent\Collection">Collection</abbr>
     <strong>cmsSearch</strong>($search, array $fields = [])
         </code>
@@ -4024,7 +4275,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_firstOrCreate">
-        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L205">at line 205</a></div>
+        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L206">at line 206</a></div>
         <code>                    <a href="../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a>
     <strong>firstOrCreate</strong>($attributes, $fields = [])
         </code>
@@ -4072,7 +4323,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_create">
-        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L214">at line 214</a></div>
+        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L215">at line 215</a></div>
         <code>                    <a href="../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a>
     <strong>create</strong>(string[] $fields)
         </code>
@@ -4115,7 +4366,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_createForPreview">
-        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L239">at line 239</a></div>
+        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L240">at line 240</a></div>
         <code>                    <a href="../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a>
     <strong>createForPreview</strong>(array $fields)
         </code>
@@ -4158,7 +4409,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_updateOrCreate">
-        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L253">at line 253</a></div>
+        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L254">at line 254</a></div>
         <code>                    <a href="../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a>
     <strong>updateOrCreate</strong>(array $attributes, array $fields)
         </code>
@@ -4206,7 +4457,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_update">
-        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L269">at line 269</a></div>
+        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L270">at line 270</a></div>
         <code>                    void
     <strong>update</strong>(mixed $id, array $fields)
         </code>
@@ -4254,7 +4505,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_updateBasic">
-        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L292">at line 292</a></div>
+        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L293">at line 293</a></div>
         <code>                    mixed
     <strong>updateBasic</strong>(mixed $id, array $values, array $scopes = [])
         </code>
@@ -4307,7 +4558,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setNewOrder">
-        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L338">at line 338</a></div>
+        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L339">at line 339</a></div>
         <code>                    void
     <strong>setNewOrder</strong>(array $ids)
         </code>
@@ -4350,7 +4601,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_duplicate">
-        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L349">at line 349</a></div>
+        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L350">at line 350</a></div>
         <code>                    mixed
     <strong>duplicate</strong>(mixed $id, $titleColumnKey = &#039;title&#039;)
         </code>
@@ -4398,7 +4649,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_delete">
-        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L378">at line 378</a></div>
+        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L379">at line 379</a></div>
         <code>                    mixed
     <strong>delete</strong>(mixed $id)
         </code>
@@ -4441,7 +4692,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_bulkDelete">
-        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L398">at line 398</a></div>
+        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L399">at line 399</a></div>
         <code>                    mixed
     <strong>bulkDelete</strong>(array $ids)
         </code>
@@ -4484,7 +4735,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_forceDelete">
-        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L418">at line 418</a></div>
+        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L419">at line 419</a></div>
         <code>                    mixed
     <strong>forceDelete</strong>(mixed $id)
         </code>
@@ -4527,7 +4778,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_bulkForceDelete">
-        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L435">at line 435</a></div>
+        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L436">at line 436</a></div>
         <code>                    mixed
     <strong>bulkForceDelete</strong>($ids)
         </code>
@@ -4570,7 +4821,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_restore">
-        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L460">at line 460</a></div>
+        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L461">at line 461</a></div>
         <code>                    mixed
     <strong>restore</strong>(mixed $id)
         </code>
@@ -4613,7 +4864,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_bulkRestore">
-        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L477">at line 477</a></div>
+        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L478">at line 478</a></div>
         <code>                    mixed
     <strong>bulkRestore</strong>(array $ids)
         </code>
@@ -4656,7 +4907,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_cleanupFields">
-        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L503">at line 503</a></div>
+        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L504">at line 504</a></div>
         <code>                    array
     <strong>cleanupFields</strong>(<a href="../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a> $object, array $fields)
         </code>
@@ -4704,7 +4955,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_prepareFieldsBeforeCreate">
-        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L543">at line 543</a></div>
+        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L544">at line 544</a></div>
         <code>                    array
     <strong>prepareFieldsBeforeCreate</strong>(array $fields)
         </code>
@@ -4747,7 +4998,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_prepareFieldsBeforeSave">
-        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L559">at line 559</a></div>
+        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L560">at line 560</a></div>
         <code>                    string[]
     <strong>prepareFieldsBeforeSave</strong>(<a href="../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a> $object, array $fields)
         </code>
@@ -4795,7 +5046,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_afterUpdateBasic">
-        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L575">at line 575</a></div>
+        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L576">at line 576</a></div>
         <code>                    void
     <strong>afterUpdateBasic</strong>(<a href="../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a> $object, array $fields)
         </code>
@@ -4843,7 +5094,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_beforeSave">
-        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L587">at line 587</a></div>
+        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L588">at line 588</a></div>
         <code>                    void
     <strong>beforeSave</strong>(<a href="../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a> $object, array $fields)
         </code>
@@ -4891,7 +5142,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_afterSave">
-        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L599">at line 599</a></div>
+        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L600">at line 600</a></div>
         <code>                    void
     <strong>afterSave</strong>(<a href="../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a> $object, array $fields)
         </code>
@@ -4939,7 +5190,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_afterDelete">
-        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L610">at line 610</a></div>
+        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L611">at line 611</a></div>
         <code>                    void
     <strong>afterDelete</strong>(<a href="../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a> $object)
         </code>
@@ -4982,7 +5233,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_afterRestore">
-        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L621">at line 621</a></div>
+        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L622">at line 622</a></div>
         <code>                    void
     <strong>afterRestore</strong>(<a href="../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a> $object)
         </code>
@@ -5025,7 +5276,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_hydrate">
-        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L633">at line 633</a></div>
+        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L634">at line 634</a></div>
         <code>                    <a href="../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a>
     <strong>hydrate</strong>(<a href="../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a> $object, array $fields)
         </code>
@@ -5073,7 +5324,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getFormFields">
-        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L646">at line 646</a></div>
+        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L647">at line 647</a></div>
         <code>                    array
     <strong>getFormFields</strong>(<a href="../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a> $object)
         </code>
@@ -5116,7 +5367,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_filter">
-        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L662">at line 662</a></div>
+        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L663">at line 663</a></div>
         <code>                    <abbr title="Illuminate\Database\Query\Builder">Builder</abbr>
     <strong>filter</strong>(<abbr title="Illuminate\Database\Query\Builder">Builder</abbr> $query, array $scopes = [])
         </code>
@@ -5164,7 +5415,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_order">
-        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L701">at line 701</a></div>
+        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L702">at line 702</a></div>
         <code>                    <abbr title="Illuminate\Database\Query\Builder">Builder</abbr>
     <strong>order</strong>(<abbr title="Illuminate\Database\Query\Builder">Builder</abbr> $query, array $orders = [])
         </code>
@@ -5212,7 +5463,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_updateOneToMany">
-        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L722">at line 722</a></div>
+        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L723">at line 723</a></div>
         <code>                    void
     <strong>updateOneToMany</strong>(<a href="../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a> $object, array $fields, string $relationship, string $formField, string $attribute)
         </code>
@@ -5275,7 +5526,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_updateMultiSelect">
-        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L745">at line 745</a></div>
+        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L746">at line 746</a></div>
         <code>                    void
     <strong>updateMultiSelect</strong>(<a href="../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a> $object, array $fields, string $relationship)
         </code>
@@ -5328,7 +5579,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_addRelationFilterScope">
-        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L757">at line 757</a></div>
+        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L758">at line 758</a></div>
         <code>                    void
     <strong>addRelationFilterScope</strong>(<abbr title="Illuminate\Database\Query\Builder">Builder</abbr> $query, array $scopes, string $scopeField, string $scopeRelation)
         </code>
@@ -5386,7 +5637,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_addLikeFilterScope">
-        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L774">at line 774</a></div>
+        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L775">at line 775</a></div>
         <code>                    void
     <strong>addLikeFilterScope</strong>(<abbr title="Illuminate\Database\Query\Builder">Builder</abbr> $query, array $scopes, string $scopeField)
         </code>
@@ -5439,7 +5690,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_searchIn">
-        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L788">at line 788</a></div>
+        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L789">at line 789</a></div>
         <code>                    
     <strong>searchIn</strong>(<abbr title="Illuminate\Database\Query\Builder">Builder</abbr> $query, array $scopes, string $scopeField, string[] $orFields = [])
         </code>
@@ -5488,7 +5739,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_isUniqueFeature">
-        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L804">at line 804</a></div>
+        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L805">at line 805</a></div>
         <code>                    bool
     <strong>isUniqueFeature</strong>()
         </code>
@@ -5521,7 +5772,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_addIgnoreFieldsBeforeSave">
-        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L813">at line 813</a></div>
+        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L814">at line 814</a></div>
         <code>                    void
     <strong>addIgnoreFieldsBeforeSave</strong>(array $ignore = [])
         </code>
@@ -5564,7 +5815,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_shouldIgnoreFieldBeforeSave">
-        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L824">at line 824</a></div>
+        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L825">at line 825</a></div>
         <code>                    bool
     <strong>shouldIgnoreFieldBeforeSave</strong>(string $ignore)
         </code>
@@ -5607,7 +5858,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getReservedFields">
-        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L832">at line 832</a></div>
+        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L833">at line 833</a></div>
         <code>                    string[]
     <strong>getReservedFields</strong>()
         </code>
@@ -5640,7 +5891,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getModelRepository">
-        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L847">at line 847</a></div>
+        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L848">at line 848</a></div>
         <code>            protected        mixed
     <strong>getModelRepository</strong>(string $relation, <a href="../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a>|<a href="../../../A17/Twill/Repositories/ModuleRepository.html"><abbr title="A17\Twill\Repositories\ModuleRepository">ModuleRepository</abbr></a>|null $modelOrRepository = null)
         </code>
@@ -5688,7 +5939,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_traitsMethods">
-        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L889">at line 889</a></div>
+        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L890">at line 890</a></div>
         <code>            protected        array
     <strong>traitsMethods</strong>(string $method = null)
         </code>
@@ -5731,7 +5982,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method___call">
-        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L923">at line 923</a></div>
+        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L924">at line 924</a></div>
         <code>                    mixed
     <strong>__call</strong>(string $method, array $parameters)
         </code>
@@ -5779,7 +6030,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_hasBehavior">
-        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L932">at line 932</a></div>
+        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L933">at line 933</a></div>
         <code>                    bool
     <strong>hasBehavior</strong>(string $behavior)
         </code>
@@ -5822,7 +6073,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_isTranslatable">
-        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L946">at line 946</a></div>
+        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/ModuleRepository.php#L947">at line 947</a></div>
         <code>                    bool
     <strong>isTranslatable</strong>($column)
         </code>

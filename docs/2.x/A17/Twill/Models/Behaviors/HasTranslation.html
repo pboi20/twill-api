@@ -108,21 +108,20 @@
             <div class="container-fluid underlined">
                     <div class="row">
                 <div class="col-md-2 type">
-                    
+                    string|null
                 </div>
                 <div class="col-md-8">
                     <a href="#method_getTranslationModelNameDefault">getTranslationModelNameDefault</a>()
         
-                                            <p class="no-description">No description</p>
-                                    </div>
+                                            <p><p>Returns the fully qualified translation class name for this model.</p></p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    
+                    <abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr>|null
                 </div>
                 <div class="col-md-8">
-                    <a href="#method_scopeWithActiveTranslations">scopeWithActiveTranslations</a>($query, $locale = null)
+                    <a href="#method_scopeWithActiveTranslations">scopeWithActiveTranslations</a>(<abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr> $query, string|null $locale = null)
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -130,10 +129,10 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    
+                    <abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr>
                 </div>
                 <div class="col-md-8">
-                    <a href="#method_scopeOrderByTranslation">scopeOrderByTranslation</a>($query, $orderField, $orderType = &#039;ASC&#039;, $locale = null)
+                    <a href="#method_scopeOrderByTranslation">scopeOrderByTranslation</a>(<abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr> $query, string $orderField, string $orderType = &#039;ASC&#039;, string|null $locale = null)
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -141,10 +140,10 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    
+                    <abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr>
                 </div>
                 <div class="col-md-8">
-                    <a href="#method_scopeOrderByRawByTranslation">scopeOrderByRawByTranslation</a>($query, $orderRawString, $groupByField, $locale = null)
+                    <a href="#method_scopeOrderByRawByTranslation">scopeOrderByRawByTranslation</a>(<abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr> $query, string $orderRawString, string $groupByField, string|null $locale = null)
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -152,18 +151,17 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    
+                    bool
                 </div>
                 <div class="col-md-8">
-                    <a href="#method_hasActiveTranslation">hasActiveTranslation</a>($locale = null)
+                    <a href="#method_hasActiveTranslation">hasActiveTranslation</a>(string|null $locale = null)
         
-                                            <p class="no-description">No description</p>
-                                    </div>
+                                            <p><p>Checks if this model has active translations.</p></p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    
+                    <abbr title="A17\Twill\Models\Behaviors\Illuminate\Support\Collection">Collection</abbr>
                 </div>
                 <div class="col-md-8">
                     <a href="#method_getActiveLanguages">getActiveLanguages</a>()
@@ -174,13 +172,12 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    
+                    <abbr title="A17\Twill\Models\Behaviors\Illuminate\Support\Collection">Collection</abbr>
                 </div>
                 <div class="col-md-8">
-                    <a href="#method_translatedAttribute">translatedAttribute</a>($key)
+                    <a href="#method_translatedAttribute">translatedAttribute</a>(string $key)
         
-                                            <p class="no-description">No description</p>
-                                    </div>
+                                            <p><p>Returns all translations for a given attribute.</p></p>                </div>
                 <div class="col-md-2"></div>
             </div>
             </div>
@@ -191,8 +188,8 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method_getTranslationModelNameDefault">
-        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Models/Behaviors/HasTranslation.php#L12">at line 12</a></div>
-        <code>                    
+        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Models/Behaviors/HasTranslation.php#L17">at line 17</a></div>
+        <code>                    string|null
     <strong>getTranslationModelNameDefault</strong>()
         </code>
     </h3>
@@ -201,11 +198,19 @@
             
 
         <div class="method-description">
-                            <p class="no-description">No description</p>
-                    
+                            <p><p>Returns the fully qualified translation class name for this model.</p></p>                        
         </div>
         <div class="tags">
             
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|null</td>
+            <td></td>
+        </tr>
+    </table>
+
             
             
             
@@ -215,9 +220,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_scopeWithActiveTranslations">
-        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Models/Behaviors/HasTranslation.php#L23">at line 23</a></div>
-        <code>                    
-    <strong>scopeWithActiveTranslations</strong>($query, $locale = null)
+        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Models/Behaviors/HasTranslation.php#L33">at line 33</a></div>
+        <code>                    <abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr>|null
+    <strong>scopeWithActiveTranslations</strong>(<abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr> $query, string|null $locale = null)
         </code>
     </h3>
     <div class="details">    
@@ -233,18 +238,27 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td></td>
+                <td><abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr></td>
                 <td>$query</td>
                 <td></td>
             </tr>
                     <tr>
-                <td></td>
+                <td>string|null</td>
                 <td>$locale</td>
                 <td></td>
             </tr>
             </table>
 
             
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr>|null</td>
+            <td></td>
+        </tr>
+    </table>
+
             
             
             
@@ -254,9 +268,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_scopeOrderByTranslation">
-        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Models/Behaviors/HasTranslation.php#L48">at line 48</a></div>
-        <code>                    
-    <strong>scopeOrderByTranslation</strong>($query, $orderField, $orderType = &#039;ASC&#039;, $locale = null)
+        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Models/Behaviors/HasTranslation.php#L65">at line 65</a></div>
+        <code>                    <abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr>
+    <strong>scopeOrderByTranslation</strong>(<abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr> $query, string $orderField, string $orderType = &#039;ASC&#039;, string|null $locale = null)
         </code>
     </h3>
     <div class="details">    
@@ -272,28 +286,37 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td></td>
+                <td><abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr></td>
                 <td>$query</td>
                 <td></td>
             </tr>
                     <tr>
-                <td></td>
+                <td>string</td>
                 <td>$orderField</td>
                 <td></td>
             </tr>
                     <tr>
-                <td></td>
+                <td>string</td>
                 <td>$orderType</td>
                 <td></td>
             </tr>
                     <tr>
-                <td></td>
+                <td>string|null</td>
                 <td>$locale</td>
                 <td></td>
             </tr>
             </table>
 
             
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
             
             
             
@@ -303,9 +326,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_scopeOrderByRawByTranslation">
-        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Models/Behaviors/HasTranslation.php#L68">at line 68</a></div>
-        <code>                    
-    <strong>scopeOrderByRawByTranslation</strong>($query, $orderRawString, $groupByField, $locale = null)
+        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Models/Behaviors/HasTranslation.php#L92">at line 92</a></div>
+        <code>                    <abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr>
+    <strong>scopeOrderByRawByTranslation</strong>(<abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr> $query, string $orderRawString, string $groupByField, string|null $locale = null)
         </code>
     </h3>
     <div class="details">    
@@ -321,28 +344,37 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td></td>
+                <td><abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr></td>
                 <td>$query</td>
                 <td></td>
             </tr>
                     <tr>
-                <td></td>
+                <td>string</td>
                 <td>$orderRawString</td>
                 <td></td>
             </tr>
                     <tr>
-                <td></td>
+                <td>string</td>
                 <td>$groupByField</td>
                 <td></td>
             </tr>
                     <tr>
-                <td></td>
+                <td>string|null</td>
                 <td>$locale</td>
                 <td></td>
             </tr>
             </table>
 
             
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
             
             
             
@@ -352,9 +384,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_hasActiveTranslation">
-        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Models/Behaviors/HasTranslation.php#L83">at line 83</a></div>
-        <code>                    
-    <strong>hasActiveTranslation</strong>($locale = null)
+        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Models/Behaviors/HasTranslation.php#L113">at line 113</a></div>
+        <code>                    bool
+    <strong>hasActiveTranslation</strong>(string|null $locale = null)
         </code>
     </h3>
     <div class="details">    
@@ -362,21 +394,29 @@
             
 
         <div class="method-description">
-                            <p class="no-description">No description</p>
-                    
+                            <p><p>Checks if this model has active translations.</p></p>                        
         </div>
         <div class="tags">
                             <h4>Parameters</h4>
 
                     <table class="table table-condensed">
                     <tr>
-                <td></td>
+                <td>string|null</td>
                 <td>$locale</td>
                 <td></td>
             </tr>
             </table>
 
             
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
             
             
             
@@ -386,8 +426,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getActiveLanguages">
-        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Models/Behaviors/HasTranslation.php#L98">at line 98</a></div>
-        <code>                    
+        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Models/Behaviors/HasTranslation.php#L131">at line 131</a></div>
+        <code>                    <abbr title="A17\Twill\Models\Behaviors\Illuminate\Support\Collection">Collection</abbr>
     <strong>getActiveLanguages</strong>()
         </code>
     </h3>
@@ -401,6 +441,15 @@
         </div>
         <div class="tags">
             
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="A17\Twill\Models\Behaviors\Illuminate\Support\Collection">Collection</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
             
             
             
@@ -410,9 +459,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_translatedAttribute">
-        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Models/Behaviors/HasTranslation.php#L113">at line 113</a></div>
-        <code>                    
-    <strong>translatedAttribute</strong>($key)
+        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Models/Behaviors/HasTranslation.php#L152">at line 152</a></div>
+        <code>                    <abbr title="A17\Twill\Models\Behaviors\Illuminate\Support\Collection">Collection</abbr>
+    <strong>translatedAttribute</strong>(string $key)
         </code>
     </h3>
     <div class="details">    
@@ -420,21 +469,29 @@
             
 
         <div class="method-description">
-                            <p class="no-description">No description</p>
-                    
+                            <p><p>Returns all translations for a given attribute.</p></p>                        
         </div>
         <div class="tags">
                             <h4>Parameters</h4>
 
                     <table class="table table-condensed">
                     <tr>
-                <td></td>
+                <td>string</td>
                 <td>$key</td>
                 <td></td>
             </tr>
             </table>
 
             
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="A17\Twill\Models\Behaviors\Illuminate\Support\Collection">Collection</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
             
             
             

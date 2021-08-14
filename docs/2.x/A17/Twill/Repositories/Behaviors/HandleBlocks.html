@@ -98,10 +98,10 @@
             <div class="container-fluid underlined">
                     <div class="row">
                 <div class="col-md-2 type">
-                    <a href="../../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a>|void
+                    <a href="../../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a>
                 </div>
                 <div class="col-md-8">
-                    <a href="#method_hydrateHandleBlocks">hydrateHandleBlocks</a>(<a href="../../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a> $object, array $fields, $fakeBlockId = 0, $parentId = null, $blocksFromFields = null, $mainCollection = null)
+                    <a href="#method_hydrateHandleBlocks">hydrateHandleBlocks</a>(<a href="../../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a> $object, array $fields, int $fakeBlockId = 0, int|null $parentId = null, <abbr title="Illuminate\Support\Collection">Collection</abbr>|null $blocksFromFields = null, <abbr title="Illuminate\Support\Collection">Collection</abbr>|null $mainCollection = null)
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -159,9 +159,9 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method_hydrateHandleBlocks">
-        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/Behaviors/HandleBlocks.php#L20">at line 20</a></div>
-        <code>                    <a href="../../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a>|void
-    <strong>hydrateHandleBlocks</strong>(<a href="../../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a> $object, array $fields, $fakeBlockId = 0, $parentId = null, $blocksFromFields = null, $mainCollection = null)
+        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/Behaviors/HandleBlocks.php#L25">at line 25</a></div>
+        <code>                    <a href="../../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a>
+    <strong>hydrateHandleBlocks</strong>(<a href="../../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a> $object, array $fields, int $fakeBlockId = 0, int|null $parentId = null, <abbr title="Illuminate\Support\Collection">Collection</abbr>|null $blocksFromFields = null, <abbr title="Illuminate\Support\Collection">Collection</abbr>|null $mainCollection = null)
         </code>
     </h3>
     <div class="details">    
@@ -187,22 +187,22 @@
                 <td></td>
             </tr>
                     <tr>
-                <td></td>
+                <td>int</td>
                 <td>$fakeBlockId</td>
                 <td></td>
             </tr>
                     <tr>
-                <td></td>
+                <td>int|null</td>
                 <td>$parentId</td>
                 <td></td>
             </tr>
                     <tr>
-                <td></td>
+                <td><abbr title="Illuminate\Support\Collection">Collection</abbr>|null</td>
                 <td>$blocksFromFields</td>
                 <td></td>
             </tr>
                     <tr>
-                <td></td>
+                <td><abbr title="Illuminate\Support\Collection">Collection</abbr>|null</td>
                 <td>$mainCollection</td>
                 <td></td>
             </tr>
@@ -213,7 +213,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td><a href="../../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a>|void</td>
+            <td><a href="../../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a></td>
             <td></td>
         </tr>
     </table>
@@ -227,7 +227,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getChildrenBlocks">
-        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/Behaviors/HandleBlocks.php#L42">at line 42</a></div>
+        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/Behaviors/HandleBlocks.php#L47">at line 47</a></div>
         <code>            protected        
     <strong>getChildrenBlocks</strong>($blocks, $blockRepository, $parentId, $fakeBlockId, $mainCollection)
         </code>
@@ -281,7 +281,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_afterSaveHandleBlocks">
-        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/Behaviors/HandleBlocks.php#L70">at line 70</a></div>
+        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/Behaviors/HandleBlocks.php#L75">at line 75</a></div>
         <code>                    void
     <strong>afterSaveHandleBlocks</strong>(<a href="../../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a> $object, array $fields)
         </code>
@@ -329,7 +329,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getFormFieldsHandleBlocks">
-        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/Behaviors/HandleBlocks.php#L171">at line 171</a></div>
+        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/Behaviors/HandleBlocks.php#L174">at line 174</a></div>
         <code>                    array
     <strong>getFormFieldsHandleBlocks</strong>(<a href="../../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a> $object, array $fields)
         </code>
@@ -377,7 +377,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getBlockBrowsers">
-        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/Behaviors/HandleBlocks.php#L280">at line 280</a></div>
+        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/Behaviors/HandleBlocks.php#L283">at line 283</a></div>
         <code>            protected        array
     <strong>getBlockBrowsers</strong>(<a href="../../../../A17/Twill/Models/Block.html"><abbr title="A17\Twill\Models\Block">Block</abbr></a> $block)
         </code>

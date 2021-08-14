@@ -97,7 +97,7 @@
             <table class="table table-condensed">
                     <tr>
                 <td class="type" id="property_repeaters">
-                                        protected                                        string|array|<abbr title="A17\Twill\Repositories\Behaviors\(array)">(array)</abbr>|<abbr title="A17\Twill\Repositories\Behaviors\(\A17\Twill\Repositories\Behaviors\mix">mix</abbr>|<abbr title="A17\Twill\Repositories\Behaviors\(string">(string</abbr>|<abbr title="A17\Twill\Repositories\Behaviors\array))">array))</abbr>
+                                        protected                                        array
                                                                                 
                                     </td>
                 <td>$repeaters</td>
@@ -138,21 +138,10 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    
+                    void
                 </div>
                 <div class="col-md-8">
-                    <a href="#method_updateRepeaterMany">updateRepeaterMany</a>($object, $fields, $relation, $keepExisting = true, $model = null)
-        
-                                            <p class="no-description">No description</p>
-                                    </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    
-                </div>
-                <div class="col-md-8">
-                    <a href="#method_updateRepeaterMorphMany">updateRepeaterMorphMany</a>($object, $fields, $relation, $morph = null, $model = null, $repeaterName = null)
+                    <a href="#method_updateRepeaterMany">updateRepeaterMany</a>(<a href="../../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a> $object, array $fields, string $relation, bool $keepExisting = true, <a href="../../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a>|null $model = null)
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -163,7 +152,18 @@
                     void
                 </div>
                 <div class="col-md-8">
-                    <a href="#method_updateRepeater">updateRepeater</a>(object $object, array $fields, string $relation, $modelOrRepository = null, string $repeaterName = null)
+                    <a href="#method_updateRepeaterMorphMany">updateRepeaterMorphMany</a>(<a href="../../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a> $object, array $fields, string $relation, string|null $morph = null, <a href="../../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a>|null $model = null, string|null $repeaterName = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_updateRepeater">updateRepeater</a>(<a href="../../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a> $object, array $fields, string $relation, <a href="../../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a>|<a href="../../../../A17/Twill/Repositories/ModuleRepository.html"><abbr title="A17\Twill\Repositories\ModuleRepository">ModuleRepository</abbr></a>|null $modelOrRepository = null, string|null $repeaterName = null)
         
                                             <p><p>Given relation, model and repeaterName, retrieve the repeater data from request and update the database record.</p></p>                </div>
                 <div class="col-md-2"></div>
@@ -173,14 +173,14 @@
                     array
                 </div>
                 <div class="col-md-8">
-                    <a href="#method_getFormFieldsForRepeater">getFormFieldsForRepeater</a>(object $object, array $fields, string $relation, string $modelOrRepository = null, string $repeaterName = null)
+                    <a href="#method_getFormFieldsForRepeater">getFormFieldsForRepeater</a>(<a href="../../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a> $object, array $fields, string $relation, <a href="../../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a>|<a href="../../../../A17/Twill/Repositories/ModuleRepository.html"><abbr title="A17\Twill\Repositories\ModuleRepository">ModuleRepository</abbr></a>|null $modelOrRepository = null, string|null $repeaterName = null)
         
                                             <p><p>Given relation, model and repeaterName, get the necessary fields for rendering a repeater</p></p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <abbr title="A17\Twill\Repositories\Behaviors\Illuminate\Support\Collection">Collection</abbr>
+                    <abbr title="Illuminate\Support\Collection">Collection</abbr>
                 </div>
                 <div class="col-md-8">
                     <a href="#method_getRepeaters">getRepeaters</a>()
@@ -195,7 +195,7 @@
                 <div class="col-md-8">
                     <a href="#method_inferRelationFromRepeaterName">inferRelationFromRepeaterName</a>(string $repeaterName)
         
-                                            <p><p>The relation name shoud be lower camel case, ex. userGroup, contactOffice</p></p>                </div>
+                                            <p><p>Guess the relation name (shoud be lower camel case, ex. userGroup, contactOffice).</p></p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -205,7 +205,7 @@
                 <div class="col-md-8">
                     <a href="#method_inferModelFromRepeaterName">inferModelFromRepeaterName</a>(string $repeaterName)
         
-                                            <p><p>The model name should be singular upper camel case, ex. User, ArticleType</p></p>                </div>
+                                            <p><p>Guess the model name (should be singular upper camel case, ex. User, ArticleType).</p></p>                </div>
                 <div class="col-md-2"></div>
             </div>
             </div>
@@ -312,122 +312,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_updateRepeaterMany">
-        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/Behaviors/HandleRepeaters.php#L60">at line 60</a></div>
-        <code>                    
-    <strong>updateRepeaterMany</strong>($object, $fields, $relation, $keepExisting = true, $model = null)
-        </code>
-    </h3>
-    <div class="details">    
-    
-            
-
-        <div class="method-description">
-                            <p class="no-description">No description</p>
-                    
-        </div>
-        <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td></td>
-                <td>$object</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td></td>
-                <td>$fields</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td></td>
-                <td>$relation</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td></td>
-                <td>$keepExisting</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td></td>
-                <td>$model</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_updateRepeaterMorphMany">
-        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/Behaviors/HandleRepeaters.php#L77">at line 77</a></div>
-        <code>                    
-    <strong>updateRepeaterMorphMany</strong>($object, $fields, $relation, $morph = null, $model = null, $repeaterName = null)
-        </code>
-    </h3>
-    <div class="details">    
-    
-            
-
-        <div class="method-description">
-                            <p class="no-description">No description</p>
-                    
-        </div>
-        <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td></td>
-                <td>$object</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td></td>
-                <td>$fields</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td></td>
-                <td>$relation</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td></td>
-                <td>$morph</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td></td>
-                <td>$model</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td></td>
-                <td>$repeaterName</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_updateRepeater">
-        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/Behaviors/HandleRepeaters.php#L142">at line 142</a></div>
+        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/Behaviors/HandleRepeaters.php#L68">at line 68</a></div>
         <code>                    void
-    <strong>updateRepeater</strong>(object $object, array $fields, string $relation, $modelOrRepository = null, string $repeaterName = null)
+    <strong>updateRepeaterMany</strong>(<a href="../../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a> $object, array $fields, string $relation, bool $keepExisting = true, <a href="../../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a>|null $model = null)
         </code>
     </h3>
     <div class="details">    
@@ -435,14 +322,15 @@
             
 
         <div class="method-description">
-                            <p><p>Given relation, model and repeaterName, retrieve the repeater data from request and update the database record.</p></p>                        
+                            <p class="no-description">No description</p>
+                    
         </div>
         <div class="tags">
                             <h4>Parameters</h4>
 
                     <table class="table table-condensed">
                     <tr>
-                <td>object</td>
+                <td><a href="../../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a></td>
                 <td>$object</td>
                 <td></td>
             </tr>
@@ -457,12 +345,142 @@
                 <td></td>
             </tr>
                     <tr>
+                <td>bool</td>
+                <td>$keepExisting</td>
                 <td></td>
-                <td>$modelOrRepository</td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a>|null</td>
+                <td>$model</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_updateRepeaterMorphMany">
+        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/Behaviors/HandleRepeaters.php#L94">at line 94</a></div>
+        <code>                    void
+    <strong>updateRepeaterMorphMany</strong>(<a href="../../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a> $object, array $fields, string $relation, string|null $morph = null, <a href="../../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a>|null $model = null, string|null $repeaterName = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a></td>
+                <td>$object</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$fields</td>
                 <td></td>
             </tr>
                     <tr>
                 <td>string</td>
+                <td>$relation</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$morph</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a>|null</td>
+                <td>$model</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$repeaterName</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_updateRepeater">
+        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/Behaviors/HandleRepeaters.php#L158">at line 158</a></div>
+        <code>                    void
+    <strong>updateRepeater</strong>(<a href="../../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a> $object, array $fields, string $relation, <a href="../../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a>|<a href="../../../../A17/Twill/Repositories/ModuleRepository.html"><abbr title="A17\Twill\Repositories\ModuleRepository">ModuleRepository</abbr></a>|null $modelOrRepository = null, string|null $repeaterName = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Given relation, model and repeaterName, retrieve the repeater data from request and update the database record.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a></td>
+                <td>$object</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$fields</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$relation</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a>|<a href="../../../../A17/Twill/Repositories/ModuleRepository.html"><abbr title="A17\Twill\Repositories\ModuleRepository">ModuleRepository</abbr></a>|null</td>
+                <td>$modelOrRepository</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
                 <td>$repeaterName</td>
                 <td></td>
             </tr>
@@ -487,9 +505,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getFormFieldsForRepeater">
-        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/Behaviors/HandleRepeaters.php#L202">at line 202</a></div>
+        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/Behaviors/HandleRepeaters.php#L217">at line 217</a></div>
         <code>                    array
-    <strong>getFormFieldsForRepeater</strong>(object $object, array $fields, string $relation, string $modelOrRepository = null, string $repeaterName = null)
+    <strong>getFormFieldsForRepeater</strong>(<a href="../../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a> $object, array $fields, string $relation, <a href="../../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a>|<a href="../../../../A17/Twill/Repositories/ModuleRepository.html"><abbr title="A17\Twill\Repositories\ModuleRepository">ModuleRepository</abbr></a>|null $modelOrRepository = null, string|null $repeaterName = null)
         </code>
     </h3>
     <div class="details">    
@@ -504,7 +522,7 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td>object</td>
+                <td><a href="../../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a></td>
                 <td>$object</td>
                 <td></td>
             </tr>
@@ -519,12 +537,12 @@
                 <td></td>
             </tr>
                     <tr>
-                <td>string</td>
+                <td><a href="../../../../A17/Twill/Models/Model.html"><abbr title="A17\Twill\Models\Model">Model</abbr></a>|<a href="../../../../A17/Twill/Repositories/ModuleRepository.html"><abbr title="A17\Twill\Repositories\ModuleRepository">ModuleRepository</abbr></a>|null</td>
                 <td>$modelOrRepository</td>
                 <td></td>
             </tr>
                     <tr>
-                <td>string</td>
+                <td>string|null</td>
                 <td>$repeaterName</td>
                 <td></td>
             </tr>
@@ -549,8 +567,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getRepeaters">
-        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/Behaviors/HandleRepeaters.php#L312">at line 312</a></div>
-        <code>            protected        <abbr title="A17\Twill\Repositories\Behaviors\Illuminate\Support\Collection">Collection</abbr>
+        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/Behaviors/HandleRepeaters.php#L327">at line 327</a></div>
+        <code>            protected        <abbr title="Illuminate\Support\Collection">Collection</abbr>
     <strong>getRepeaters</strong>()
         </code>
     </h3>
@@ -567,7 +585,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td><abbr title="A17\Twill\Repositories\Behaviors\Illuminate\Support\Collection">Collection</abbr></td>
+            <td><abbr title="Illuminate\Support\Collection">Collection</abbr></td>
             <td></td>
         </tr>
     </table>
@@ -581,7 +599,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_inferRelationFromRepeaterName">
-        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/Behaviors/HandleRepeaters.php#L331">at line 331</a></div>
+        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/Behaviors/HandleRepeaters.php#L345">at line 345</a></div>
         <code>            protected        string
     <strong>inferRelationFromRepeaterName</strong>(string $repeaterName)
         </code>
@@ -591,7 +609,7 @@
             
 
         <div class="method-description">
-                            <p><p>The relation name shoud be lower camel case, ex. userGroup, contactOffice</p></p>                        
+                            <p><p>Guess the relation name (shoud be lower camel case, ex. userGroup, contactOffice).</p></p>                        
         </div>
         <div class="tags">
                             <h4>Parameters</h4>
@@ -623,7 +641,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_inferModelFromRepeaterName">
-        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/Behaviors/HandleRepeaters.php#L343">at line 343</a></div>
+        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Repositories/Behaviors/HandleRepeaters.php#L356">at line 356</a></div>
         <code>            protected        string
     <strong>inferModelFromRepeaterName</strong>(string $repeaterName)
         </code>
@@ -633,7 +651,7 @@
             
 
         <div class="method-description">
-                            <p><p>The model name should be singular upper camel case, ex. User, ArticleType</p></p>                        
+                            <p><p>Guess the model name (should be singular upper camel case, ex. User, ArticleType).</p></p>                        
         </div>
         <div class="tags">
                             <h4>Parameters</h4>

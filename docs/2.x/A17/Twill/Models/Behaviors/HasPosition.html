@@ -131,10 +131,10 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    
+                    <abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr>
                 </div>
                 <div class="col-md-8">
-                    <a href="#method_scopeOrdered">scopeOrdered</a>($query)
+                    <a href="#method_scopeOrdered">scopeOrdered</a>(<abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr> $query)
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -142,10 +142,10 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    static&nbsp;
+                    static&nbsp;void
                 </div>
                 <div class="col-md-8">
-                    <a href="#method_setNewOrder">setNewOrder</a>($ids, $startOrder = 1)
+                    <a href="#method_setNewOrder">setNewOrder</a>(array $ids, int $startOrder = 1)
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -231,9 +231,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_scopeOrdered">
-        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Models/Behaviors/HasPosition.php#L25">at line 25</a></div>
-        <code>                    
-    <strong>scopeOrdered</strong>($query)
+        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Models/Behaviors/HasPosition.php#L29">at line 29</a></div>
+        <code>                    <abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr>
+    <strong>scopeOrdered</strong>(<abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr> $query)
         </code>
     </h3>
     <div class="details">    
@@ -249,13 +249,22 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td></td>
+                <td><abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr></td>
                 <td>$query</td>
                 <td></td>
             </tr>
             </table>
 
             
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Illuminate\Database\Eloquent\Builder">Builder</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
             
             
             
@@ -265,9 +274,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setNewOrder">
-        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Models/Behaviors/HasPosition.php#L30">at line 30</a></div>
-        <code>        static            
-    <strong>setNewOrder</strong>($ids, $startOrder = 1)
+        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Models/Behaviors/HasPosition.php#L39">at line 39</a></div>
+        <code>        static            void
+    <strong>setNewOrder</strong>(array $ids, int $startOrder = 1)
         </code>
     </h3>
     <div class="details">    
@@ -283,18 +292,27 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td></td>
+                <td>array</td>
                 <td>$ids</td>
                 <td></td>
             </tr>
                     <tr>
-                <td></td>
+                <td>int</td>
                 <td>$startOrder</td>
                 <td></td>
             </tr>
             </table>
 
             
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
             
             
             

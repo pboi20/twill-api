@@ -153,10 +153,10 @@
             <div class="container-fluid underlined">
                     <div class="row">
                 <div class="col-md-2 type">
-                    
+                    object
                 </div>
                 <div class="col-md-8">
-                    <a href="#method_present">present</a>($presenter = &#039;presenter&#039;)
+                    <a href="#method_present">present</a>(string $presenter = &#039;presenter&#039;)
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -165,7 +165,7 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    
+                    object
                 </div>
                 <div class="col-md-8">
                     <a href="#method_presentAdmin">presentAdmin</a>()
@@ -177,10 +177,10 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    
+                    $this
                 </div>
                 <div class="col-md-8">
-                    <a href="#method_setPresenter">setPresenter</a>($presenter, $presenterProperty = &#039;presenter&#039;)
+                    <a href="#method_setPresenter">setPresenter</a>(string $presenter, string $presenterProperty = &#039;presenter&#039;)
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -189,10 +189,10 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    
+                    $this
                 </div>
                 <div class="col-md-8">
-                    <a href="#method_setPresenterAdmin">setPresenterAdmin</a>($presenter)
+                    <a href="#method_setPresenterAdmin">setPresenterAdmin</a>(string $presenter)
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -201,13 +201,12 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    
+                    bool
                 </div>
                 <div class="col-md-8">
-                    <a href="#method_isTranslatable">isTranslatable</a>($columns = null)
+                    <a href="#method_isTranslatable">isTranslatable</a>(array|string|null $columns = null)
         
-                                            <p class="no-description">No description</p>
-                                    </div>
+                                            <p><p>Checks if this model is translatable.</p></p>                </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Models/Behaviors/IsTranslatable.html#method_isTranslatable">
 <abbr title="A17\Twill\Models\Behaviors\IsTranslatable">IsTranslatable</abbr></a></small></div>
             </div>
@@ -516,6 +515,18 @@
                     
                 </div>
                 <div class="col-md-8">
+                    <a href="#method_autoloadConfigFiles">autoloadConfigFiles</a>($capsule)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_autoloadConfigFiles">
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
                     <a href="#method_isTranslationModel">isTranslationModel</a>()
         
                                             <p class="no-description">No description</p>
@@ -640,9 +651,9 @@
                     <div class="method-item">
                     <h3 id="method_present">
         <div class="location">in <a href="../../../A17/Twill/Models/Behaviors/HasPresenter.html#method_present">
-<abbr title="A17\Twill\Models\Behaviors\HasPresenter">HasPresenter</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Models/Behaviors/HasPresenter.php#L9">at line 9</a></div>
-        <code>                    
-    <strong>present</strong>($presenter = &#039;presenter&#039;)
+<abbr title="A17\Twill\Models\Behaviors\HasPresenter">HasPresenter</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Models/Behaviors/HasPresenter.php#L13">at line 13</a></div>
+        <code>                    object
+    <strong>present</strong>(string $presenter = &#039;presenter&#039;)
         </code>
     </h3>
     <div class="details">    
@@ -658,13 +669,22 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td></td>
+                <td>string</td>
                 <td>$presenter</td>
                 <td></td>
             </tr>
             </table>
 
             
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>object</td>
+            <td></td>
+        </tr>
+    </table>
+
             
             
             
@@ -675,8 +695,8 @@
                     <div class="method-item">
                     <h3 id="method_presentAdmin">
         <div class="location">in <a href="../../../A17/Twill/Models/Behaviors/HasPresenter.html#method_presentAdmin">
-<abbr title="A17\Twill\Models\Behaviors\HasPresenter">HasPresenter</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Models/Behaviors/HasPresenter.php#L22">at line 22</a></div>
-        <code>                    
+<abbr title="A17\Twill\Models\Behaviors\HasPresenter">HasPresenter</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Models/Behaviors/HasPresenter.php#L29">at line 29</a></div>
+        <code>                    object
     <strong>presentAdmin</strong>()
         </code>
     </h3>
@@ -690,6 +710,15 @@
         </div>
         <div class="tags">
             
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>object</td>
+            <td></td>
+        </tr>
+    </table>
+
             
             
             
@@ -700,9 +729,9 @@
                     <div class="method-item">
                     <h3 id="method_setPresenter">
         <div class="location">in <a href="../../../A17/Twill/Models/Behaviors/HasPresenter.html#method_setPresenter">
-<abbr title="A17\Twill\Models\Behaviors\HasPresenter">HasPresenter</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Models/Behaviors/HasPresenter.php#L27">at line 27</a></div>
-        <code>                    
-    <strong>setPresenter</strong>($presenter, $presenterProperty = &#039;presenter&#039;)
+<abbr title="A17\Twill\Models\Behaviors\HasPresenter">HasPresenter</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Models/Behaviors/HasPresenter.php#L39">at line 39</a></div>
+        <code>                    $this
+    <strong>setPresenter</strong>(string $presenter, string $presenterProperty = &#039;presenter&#039;)
         </code>
     </h3>
     <div class="details">    
@@ -718,18 +747,27 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td></td>
+                <td>string</td>
                 <td>$presenter</td>
                 <td></td>
             </tr>
                     <tr>
-                <td></td>
+                <td>string</td>
                 <td>$presenterProperty</td>
                 <td></td>
             </tr>
             </table>
 
             
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
             
             
             
@@ -740,9 +778,9 @@
                     <div class="method-item">
                     <h3 id="method_setPresenterAdmin">
         <div class="location">in <a href="../../../A17/Twill/Models/Behaviors/HasPresenter.html#method_setPresenterAdmin">
-<abbr title="A17\Twill\Models\Behaviors\HasPresenter">HasPresenter</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Models/Behaviors/HasPresenter.php#L35">at line 35</a></div>
-        <code>                    
-    <strong>setPresenterAdmin</strong>($presenter)
+<abbr title="A17\Twill\Models\Behaviors\HasPresenter">HasPresenter</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Models/Behaviors/HasPresenter.php#L51">at line 51</a></div>
+        <code>                    $this
+    <strong>setPresenterAdmin</strong>(string $presenter)
         </code>
     </h3>
     <div class="details">    
@@ -758,13 +796,22 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td></td>
+                <td>string</td>
                 <td>$presenter</td>
                 <td></td>
             </tr>
             </table>
 
             
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>$this</td>
+            <td></td>
+        </tr>
+    </table>
+
             
             
             
@@ -775,9 +822,9 @@
                     <div class="method-item">
                     <h3 id="method_isTranslatable">
         <div class="location">in <a href="../../../A17/Twill/Models/Behaviors/IsTranslatable.html#method_isTranslatable">
-<abbr title="A17\Twill\Models\Behaviors\IsTranslatable">IsTranslatable</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Models/Behaviors/IsTranslatable.php#L7">at line 7</a></div>
-        <code>                    
-    <strong>isTranslatable</strong>($columns = null)
+<abbr title="A17\Twill\Models\Behaviors\IsTranslatable">IsTranslatable</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Models/Behaviors/IsTranslatable.php#L13">at line 13</a></div>
+        <code>                    bool
+    <strong>isTranslatable</strong>(array|string|null $columns = null)
         </code>
     </h3>
     <div class="details">    
@@ -785,21 +832,29 @@
             
 
         <div class="method-description">
-                            <p class="no-description">No description</p>
-                    
+                            <p><p>Checks if this model is translatable.</p></p>                        
         </div>
         <div class="tags">
                             <h4>Parameters</h4>
 
                     <table class="table table-condensed">
                     <tr>
-                <td></td>
+                <td>array|string|null</td>
                 <td>$columns</td>
-                <td></td>
+                <td><p>Optionally limit the check to a set of columns.</p></td>
             </tr>
             </table>
 
             
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
             
             
             
@@ -1038,7 +1093,7 @@
                     <div class="method-item">
                     <h3 id="method_registerPsr4Autoloader">
         <div class="location">in <a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_registerPsr4Autoloader">
-<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L168">at line 168</a></div>
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L172">at line 172</a></div>
         <code>                    
     <strong>registerPsr4Autoloader</strong>($capsule)
         </code>
@@ -1073,7 +1128,7 @@
                     <div class="method-item">
                     <h3 id="method_capsuleRootPath">
         <div class="location">in <a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_capsuleRootPath">
-<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L186">at line 186</a></div>
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L190">at line 190</a></div>
         <code>                    
     <strong>capsuleRootPath</strong>($capsule)
         </code>
@@ -1108,7 +1163,7 @@
                     <div class="method-item">
                     <h3 id="method_getCapsuleRepositoryClass">
         <div class="location">in <a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_getCapsuleRepositoryClass">
-<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L191">at line 191</a></div>
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L195">at line 195</a></div>
         <code>                    
     <strong>getCapsuleRepositoryClass</strong>($model)
         </code>
@@ -1143,7 +1198,7 @@
                     <div class="method-item">
                     <h3 id="method_getCapsuleTranslationClass">
         <div class="location">in <a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_getCapsuleTranslationClass">
-<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L196">at line 196</a></div>
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L200">at line 200</a></div>
         <code>                    
     <strong>getCapsuleTranslationClass</strong>($model)
         </code>
@@ -1178,7 +1233,7 @@
                     <div class="method-item">
                     <h3 id="method_getCapsuleSlugClass">
         <div class="location">in <a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_getCapsuleSlugClass">
-<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L201">at line 201</a></div>
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L205">at line 205</a></div>
         <code>                    
     <strong>getCapsuleSlugClass</strong>($model)
         </code>
@@ -1213,7 +1268,7 @@
                     <div class="method-item">
                     <h3 id="method_getCapsuleRevisionClass">
         <div class="location">in <a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_getCapsuleRevisionClass">
-<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L206">at line 206</a></div>
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L210">at line 210</a></div>
         <code>                    
     <strong>getCapsuleRevisionClass</strong>($model)
         </code>
@@ -1248,7 +1303,7 @@
                     <div class="method-item">
                     <h3 id="method_getCapsuleFormRequestClass">
         <div class="location">in <a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_getCapsuleFormRequestClass">
-<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L211">at line 211</a></div>
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L215">at line 215</a></div>
         <code>                    
     <strong>getCapsuleFormRequestClass</strong>($model)
         </code>
@@ -1283,7 +1338,7 @@
                     <div class="method-item">
                     <h3 id="method_getCapsuleViewPrefix">
         <div class="location">in <a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_getCapsuleViewPrefix">
-<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L216">at line 216</a></div>
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L220">at line 220</a></div>
         <code>                    
     <strong>getCapsuleViewPrefix</strong>($capsule)
         </code>
@@ -1318,7 +1373,7 @@
                     <div class="method-item">
                     <h3 id="method_namespaceToPath">
         <div class="location">in <a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_namespaceToPath">
-<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L223">at line 223</a></div>
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L227">at line 227</a></div>
         <code>                    
     <strong>namespaceToPath</strong>($capsule, $namespace)
         </code>
@@ -1358,7 +1413,7 @@
                     <div class="method-item">
                     <h3 id="method_capsuleNamespaceToPath">
         <div class="location">in <a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_capsuleNamespaceToPath">
-<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L232">at line 232</a></div>
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L236">at line 236</a></div>
         <code>                    
     <strong>capsuleNamespaceToPath</strong>($namespace, $capsuleNamespace, $rootPath)
         </code>
@@ -1403,7 +1458,7 @@
                     <div class="method-item">
                     <h3 id="method_getManager">
         <div class="location">in <a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_getManager">
-<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L246">at line 246</a></div>
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L250">at line 250</a></div>
         <code>                    
     <strong>getManager</strong>()
         </code>
@@ -1428,7 +1483,7 @@
                     <div class="method-item">
                     <h3 id="method_seedCapsules">
         <div class="location">in <a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_seedCapsules">
-<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L251">at line 251</a></div>
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L255">at line 255</a></div>
         <code>                    
     <strong>seedCapsules</strong>($illuminateSeeder)
         </code>
@@ -1463,7 +1518,7 @@
                     <div class="method-item">
                     <h3 id="method_makeCapsuleSeeder">
         <div class="location">in <a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_makeCapsuleSeeder">
-<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L267">at line 267</a></div>
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L271">at line 271</a></div>
         <code>                    
     <strong>makeCapsuleSeeder</strong>($capsule)
         </code>
@@ -1498,7 +1553,7 @@
                     <div class="method-item">
                     <h3 id="method_capsuleExists">
         <div class="location">in <a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_capsuleExists">
-<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L278">at line 278</a></div>
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L282">at line 282</a></div>
         <code>                    
     <strong>capsuleExists</strong>($module)
         </code>
@@ -1533,7 +1588,7 @@
                     <div class="method-item">
                     <h3 id="method_capsule">
         <div class="location">in <a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_capsule">
-<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L283">at line 283</a></div>
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L287">at line 287</a></div>
         <code>                    
     <strong>capsule</strong>($string)
         </code>
@@ -1568,7 +1623,7 @@
                     <div class="method-item">
                     <h3 id="method_getCapsuleByPath">
         <div class="location">in <a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_getCapsuleByPath">
-<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L296">at line 296</a></div>
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L300">at line 300</a></div>
         <code>                    
     <strong>getCapsuleByPath</strong>($path)
         </code>
@@ -1603,7 +1658,7 @@
                     <div class="method-item">
                     <h3 id="method_getCapsuleByClass">
         <div class="location">in <a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_getCapsuleByClass">
-<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L316">at line 316</a></div>
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L320">at line 320</a></div>
         <code>                    
     <strong>getCapsuleByClass</strong>($class)
         </code>
@@ -1638,9 +1693,44 @@
                     <div class="method-item">
                     <h3 id="method_loadCapsuleConfig">
         <div class="location">in <a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_loadCapsuleConfig">
-<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L338">at line 338</a></div>
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L342">at line 342</a></div>
         <code>                    
     <strong>loadCapsuleConfig</strong>($capsule)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$capsule</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_autoloadConfigFiles">
+        <div class="location">in <a href="../../../A17/Twill/Services/Capsules/HasCapsules.html#method_autoloadConfigFiles">
+<abbr title="A17\Twill\Services\Capsules\HasCapsules">HasCapsules</abbr></a> <a href="https://github.com/area17/twill/blob/2.x/src/Services/Capsules/HasCapsules.php#L362">at line 362</a></div>
+        <code>                    
+    <strong>autoloadConfigFiles</strong>($capsule)
         </code>
     </h3>
     <div class="details">    
@@ -1764,7 +1854,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_scopeVisible">
-        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Models/Model.php#L41">at line 41</a></div>
+        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Models/Model.php#L42">at line 42</a></div>
         <code>                    
     <strong>scopeVisible</strong>($query)
         </code>
@@ -1798,7 +1888,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setPublishStartDateAttribute">
-        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Models/Model.php#L58">at line 58</a></div>
+        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Models/Model.php#L59">at line 59</a></div>
         <code>                    
     <strong>setPublishStartDateAttribute</strong>($value)
         </code>
@@ -1832,7 +1922,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_scopeDraft">
-        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Models/Model.php#L63">at line 63</a></div>
+        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Models/Model.php#L64">at line 64</a></div>
         <code>                    
     <strong>scopeDraft</strong>($query)
         </code>
@@ -1866,7 +1956,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_scopeOnlyTrashed">
-        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Models/Model.php#L68">at line 68</a></div>
+        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Models/Model.php#L69">at line 69</a></div>
         <code>                    
     <strong>scopeOnlyTrashed</strong>($query)
         </code>
@@ -1900,7 +1990,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getFillable">
-        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Models/Model.php#L73">at line 73</a></div>
+        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Models/Model.php#L74">at line 74</a></div>
         <code>                    
     <strong>getFillable</strong>()
         </code>
@@ -1924,7 +2014,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getTranslatedAttributes">
-        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Models/Model.php#L101">at line 101</a></div>
+        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Models/Model.php#L102">at line 102</a></div>
         <code>                    
     <strong>getTranslatedAttributes</strong>()
         </code>
@@ -1948,7 +2038,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_bootTaggableTrait">
-        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Models/Model.php#L106">at line 106</a></div>
+        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Models/Model.php#L107">at line 107</a></div>
         <code>        static    protected        
     <strong>bootTaggableTrait</strong>()
         </code>
@@ -1972,7 +2062,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_tags">
-        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Models/Model.php#L114">at line 114</a></div>
+        <div class="location"><a href="https://github.com/area17/twill/blob/2.x/src/Models/Model.php#L115">at line 115</a></div>
         <code>                    <abbr title="Illuminate\Database\Eloquent\Relations\MorphToMany">MorphToMany</abbr>
     <strong>tags</strong>()
         </code>
