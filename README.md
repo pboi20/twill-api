@@ -6,16 +6,16 @@ Twill API docs are now accessible at <a href="https://twill.io/docs/api/2.x/">tw
 # API browser for [Twill](https://github.com/area17/twill)
 
 Branches:
-[1.1](https://pboi20.github.io/twill-api/1.1/) |
-[1.2](https://pboi20.github.io/twill-api/1.2/) |
-[2.x](https://pboi20.github.io/twill-api/2.x/) |
-[master](https://pboi20.github.io/twill-api/master/)
+[1.1](https://pboivin.github.io/twill-api/1.1/) |
+[1.2](https://pboivin.github.io/twill-api/1.2/) |
+[2.x](https://pboivin.github.io/twill-api/2.x/) |
+[master](https://pboivin.github.io/twill-api/master/)
 
 
 ### Initial setup
 
 ```
-git clone https://github.com/pboi20/twill-api.git
+git clone https://github.com/pboivin/twill-api.git
 cd twill-api
 git submodule update --init
 composer install
